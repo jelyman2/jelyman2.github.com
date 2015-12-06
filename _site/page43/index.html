@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      Johnathan Lyman &middot; Writer. Developer. Support Ops.
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="Johnathan Lyman" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="container content">
+      <header class="masthead">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">Johnathan Lyman</a>
+          <small>Writer. Developer. Support Ops.</small>
+        </h3>
+      </header>
+
+      <main>
+        <div class="posts">
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/2015/01/31/naturebox/">
+        NatureBox &#8211; Super Tasty Snacks in the Mail
+      </a>
+    </h1>
+
+    <time datetime="2015-01-31T00:00:00-08:00" class="post-date">31 Jan 2015</time>
+
+    <p>There’s one thing I’ve always liked and that is super delicious tasty snacks. On top of that, there’s bonus points involved if said snacks are salty. Or sweet. Or anything.</p>
+
+<p>I received what some would call a “care package” in the mail today from a company called NatureBox. See, <a href="http://www.shareasale.com/r.cfm?u=696279&amp;b=395413&amp;m=41415&amp;afftrack=&amp;urllink=naturebox%2Ecom">NatureBox</a> has this crazy idea that people really enjoy tasty snacks that won’t make you feel gross or regret eating them. I figured I’d give them a shot (I’ll help you do that, too, at the end of this article) and see what they’re all about. I used my ever amazing hookup powers to get a sampler box with four small snack pouches and one full-size bag of something mysterious.</p>
+
+<p>Here’s what I had to think.</p>
+
+<p>I placed my order with <a href="http://www.shareasale.com/r.cfm?u=696279&amp;b=395413&amp;m=41415&amp;afftrack=&amp;urllink=naturebox%2Ecom">NatureBox</a> on their site and within roughly a full calendar week, I had my box come in the mail. Remember what it was like when grandma sent her world-famous fruit cake to everyone when Christmas came around? Yeah, it’s nothing like that. NatureBox doesn’t do fruit cake, but they do mail stuff. The snacks come in a safe package that won’t let them get crushed or spoiled.</p>
+
+<p>Each full size snack bag is re-sealable, too, which is nice. I’d hate to get some delicious food and at the end of the week have it go bad because I didn’t get to it in time.</p>
+
+<p>A typical order is five bags of goodies from their selection of over 100. If you have a food allergy, their site will filter out what you’re not keen on consuming, including nuts, gluten, eggs, lactose, and soy. Ordering is super easy and only take a couple minutes, just long enough to pick out what you want from their menu.</p>
+
+<p>If you’re too impatient, you can have them ship it out right away, instead of waiting around for your next monthly order to process. A five-snack box is $20 and you can go as high as 20 snacks for $50. Obviously, the more you get, the cheaper they are. If you have a large family or eat a lot of snacks, $50 can go a long way when a lot of the bags are rather hefty in size. The cranberry rice cake snack bag we received was four ounces and contained enough for four servings.</p>
+
+<p>All of NatureBox’s snacks use only the best ingredients and they keep processed stuff out of their foods as much as possible. This means your sugars are pure cane and HFCS (high fructose corn syrup) is absent.</p>
+
+<p>If I could justify ordering $50 worth of snacks in the mail every month, I would go for it. It’ll take a bit of time for my wife to be all right with that, so we’re sticking to the $20/five snack option. With that being said, if you’re not only interested in trying out NatureBox for yourself, but want to get $10 off your first order, <a href="http://www.shareasale.com/r.cfm?u=696279&amp;b=395413&amp;m=41415&amp;afftrack=&amp;urllink=naturebox%2Ecom">go to their site</a> and use the code <strong>share10off</strong>. When you tell your friends, tell them to use that code, too. They’ll appreciate it.</p>
+
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/2015/01/30/related-posts/">
+        How I Solved Related Posts not Showing when Running WordPress, JetPack, and Nginx
+      </a>
+    </h1>
+
+    <time datetime="2015-01-30T00:00:00-08:00" class="post-date">30 Jan 2015</time>
+
+    <p>Ever since I started this blog up again at the beginning of January, I wanted to have related posts be visible at the end of each post. I use JetPack and I figured turning Related Posts on would be easy and I would be all set.</p>
+
+<p>Well, not so much.</p>
+
+<p>I turned on Related Posts and discovered nothing was appearing. I knew there wasn’t really anything that could be wrong as I don’t have any errors in WordPress, PHP-FPM doesn’t report errors in any of my logs, and I can use other services like WordPress.com Stats and the like.</p>
+
+<p>I did some digging and after my search turned up nothing, I reached out to Automatic support and asked about my JetPack issue. We worked through a few things including making sure WordPress.com Stats was working, the JetPack servers could see my site (which they did). We even checked to make sure the plugin was even grabbing data to display in the first place. This can be done by adding ?relatedposts to the end of any single post URL. You’ll get a JSON blob in return if it’s doing what it’s supposed to on the back end. We figured, well, that can’t be it either. Turns out, the answer wasn’t anywhere where I was expecting it to be.</p>
+
+<p>My problem was with my Nginx server configuration for this site.</p>
+
+<p>Here’s where it gets technical. For any path, you’ll have a set of URIs for the server to try before it gives up. The code usually looks like this:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>try_files $uri $uri/ /index.php
+</code></pre>
+</div>
+
+<p>In most cases, that’s right! WordPress will work just fine like this. You won’t notice errors and everything will parse fine… except for JetPack’s Related Posts plugin.</p>
+
+<p>See, with the above line of code, we’re telling Nginx that it’s ok to try the URI by itself, with a slash after it, or try index.php by itself, depending on what the URI actually is. Nginx, however, is <em>very</em> detail-oriented and will only do exactly what you tell it to do. In my case, I left out a specific instruction: process index.php with arguments, please. By doing so, we turn the above line of code into this line of code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>try_files $uri $uri/ /index.php?q=$uri&amp;$args
+</code></pre>
+</div>
+
+<p>Notice the bold text starting with the question mark? that’s what we were missing. JetPack calls upon that JSON blob I told you about a bit ago just like that: index.php followed by the URI (not fancy, something like a post ID), and any additional arguments necessary after that. So in the case where my post ID is 105 and it’s grabbing the related posts for that, it would be calling</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>index.php?q=105&amp;relatedposts=1
+</code></pre>
+</div>
+
+<p>Boom.</p>
+
+<p>I hope you find this helpful. If you did, <a href="/contact">please let me know</a>. I enjoy a good chat and meeting folks who enjoy blogging and WordPress as much as I do.</p>
+
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/2015/01/30/learn-to-code/">
+        Learn to Code as Early as You Can!
+      </a>
+    </h1>
+
+    <time datetime="2015-01-30T00:00:00-08:00" class="post-date">30 Jan 2015</time>
+
+    <p>One thing I always wish I would have paid more attention to when I was younger was coding. I believe my generation is just the start of the potential batch of humans that become masters of writing code and making apps that do random things. My problem is I feel like I’m a bit behind the curve because I didn’t pay as much attention to it nor did I have a solid path to learn code in the first place…</p>
+
+<p>There’s a huge demand for software developers. A lot of these developers went to school for computer science and built up the foundations necessary to be successful in that career. While I’m decent—I could hold my own if I was writing something with HTML/CSS, Python, or PowerShell—I think I would be even better if I had paid more attention. When I was younger, I didn’t care so much about stuff like that. I wasn’t interested in the future. I was interested in girls and just making it through high school. If I had really kept my nose in the books so to speak, I could have gone to a good school and today I would have a CS degree and likely be pretty good in software development.</p>
+
+<p>I know what you’re thinking. Just because I didn’t get a degree doesn’t mean I can’t excel at programming. You’re right. That’s why I’m good with the above languages I cited. I used to be good with PHP, too, but that was before high school and those brain cells rusted out; a lot has changed with PHP but it’s not foreign to me. I use WordPress every day and I can handle my own when reading and understanding code.</p>
+
+<h2 id="where-to-learn">Where to Learn</h2>
+<p>There are a ton of resources out there to learn to code, some online and others in person. Here’s a good list from what I’ve discovered and personally think are fantastic:</p>
+
+<h3 id="online">Online</h3>
+<ul>
+  <li><a href="http://codeacademy.com">Code Academy</a></li>
+  <li><a href="http://code.org">Code.org</a></li>
+  <li><a href="https://www.codeschool.com">CodeSchool</a></li>
+  <li><a href="http://www.khanacademy.org/computing/hour-of-code">Khan Academy</a></li>
+  <li><a href="http://www.codeavengers.com">Code Avengers</a></li>
+  <li><a href="http://www.girldevelopit.com">Girl Develop It</a></li>
+  <li><a href="https://www.udacity.com">Udacity</a></li>
+  <li><a href="http://teamtreehouse.com">Treehouse</a>
+### In Person</li>
+  <li><a href="http://theironyard.com">The Iron Yard</a></li>
+  <li>Your Local University</li>
+  <li><a href="https://coderdojo.com">CoderDojo</a></li>
+  <li><a href="http://www.computerclubhouse.org">Intel Computer Clubhouse Network</a>
+There are a lot more out there, I’m sure, but these are just the ones I’m familiar with. Not all services and locations will offer up the same courses, but I think there’s a good mix of online and in-person resources to get anyone to a good place to start making their own apps.</li>
+</ul>
+
+<p>Once you have a solid foundation, it’s time to experiment and start making stuff. You’re at the point where you won’t get a high-paying software development job just yet, but it’s coming. Here are some ideas and idea lists to get you started:</p>
+
+<ul>
+  <li><a href="http://www.makeuseof.com/tag/5-project-ideas-help-learn-programming-faster/">5 Project Ideas To Help You Learn Programming Faster</a> (Make Use Of)</li>
+  <li><a href="http://www.codeconquest.com/programming-projects/ideas-for-programming-projects/%20">Ideas for Coding Projects</a> (Code Conquest)</li>
+  <li><a href="http://www.linuxtrainingacademy.com/projects/">1500+ Coding Project Ideas</a> (Linux Training Academy)</li>
+  <li><a href="http://fedoraproject.org/wiki/Summer_coding_ideas_for_2014">Summer Coding Ideas for 2014</a> (Fedora Project)</li>
+  <li><a href="https://github.com/karan/Projects-Solutions">List of Beginner Projects</a> (Github)</li>
+  <li><a href="https://www.daniweb.com/software-development/python/threads/131973/5-crucial-projects-for-beginners">Five Crucial Projects for Beginners</a> (DaniWeb)
+I’ve combed through a lot of these resources myself and have used some of the earlier resources I listed for learning to code. I personally believe that if you have the time and resources to learn in-person, you’ll have a much better time. If you don’t, please don’t fret. You might be surprised by how much you can learn online. If you ever get stuck, the very popular Q&amp;A site for whatever <a href="http://stackexchange.com">StackExchange</a> has great sub-sites for various programming languages but their biggest is <a href="http://stackoverflow.com">StackOverflow</a>. You’ll find an answer there, I’d almost guarantee it. Your problem probably isn’t unique if you’re working on something that may have been done before.</li>
+</ul>
+
+<p>I might have regrets about not learning to code sooner, but it’s also very much not too late to learn. With the amount of free resources, there’s no excuse.</p>
+
+<h3 id="bonus"><strong>Bonus</strong></h3>
+<p>There’s an iPad app called <a href="https://itunes.apple.com/us/app/codecademy-code-hour/id762950096?mt=8">Code Academy – Hour of Code</a> that also provides great resources on the basics of development and programming. If you have an iPad and want to learn the fundaments in an hour a day, give it a look. It’s free so you have nothing to lose and no excuse not to do it.</p>
+
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/2015/01/29/be-ready/">
+        Start Before You&#8217;re Ready
+      </a>
+    </h1>
+
+    <time datetime="2015-01-29T00:00:00-08:00" class="post-date">29 Jan 2015</time>
+
+    <p>Because you’ll never be ready if all you’re doing it waiting until you’re ready. At some point, one needs to take a leap of faith. I’m not talking about religious faith. I’m talking about taking a chance on yourself and believing that you can succeed. There are new challenges almost every day in life, and while we try to be as world smart as we can and prepare for them as much as possible, sometimes things just don’t go according to plan.</p>
+
+<p>This is something that I am working on myself, as I prepare for a life-changing move to California at the end of Spring. As someone who’s grown up and lived in the Seattle area my entire life, a move like this that involves a new, permanent location of living for at least ten years is frankly frightening. However, there isn’t an amount of preparation in the world that could prepare me 100% for something like this. I will never be 100% ready. I don’t have the data to support a hypothesis that if we move, zero bad things will happen. It’s easy to be cautious with that kind of idea, but that caution can also prevent me from continuing to do what I love and to support my wife and what she loves.</p>
+
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/2015/01/28/inter-team-dynamics/">
+        If I Could Change Just One Thing
+      </a>
+    </h1>
+
+    <time datetime="2015-01-28T00:00:00-08:00" class="post-date">28 Jan 2015</time>
+
+    <p>I get it. Working with another team can suck at times. I’ve had my fair share of cases where I wasn’t exactly thrilled about the idea of working with a team of people who I didn’t believe were in the right position to be of assistance. While that’s certainly my opinion, it’s not my place to tell them they’re idiots. It’s also not appropriate. That’s not the only thing that bothers me about inter-team dynamics that seems all too common today.</p>
+
+<p>What really grinds me gears is the lack of open communication between multiple teams and parties that exists, today. Most companies have several teams and aren’t on the scrappy startup level. Some companies have multiple teams doing one type of task, although that number is significantly less. I am in the second boat. More times than I can witness, no matter what management has described, open communication didn’t exist and to even suggest it did was nothing short of heresy. </p>
+
+<p>There’s a comfort zone or bubble that builds up when a team has been around a while and has had the opportunity to essentially do things the way they want to do them for some time. That bubble becomes something the team wants to protect at all costs because its safe and it feels nice. To have that taken away for what would at first seem like no good reason because now there’s team B coming in and helping with the same type of tasks, it can feel threatening. </p>
+
+<p>This situation is amplified when team A tries to take the dominant position in the relationship and doesn’t even try to hide the fact that they’re trying to put team B into a lower, less useful-feeling place to perhaps push them back out. Think of it as a “good ol’ boys club” of sorts or even a country club. If you’re not a member of the special club or organization, then you’re nothing to them. You might as well golf in your backyard because you’ll never be doing it on their lush green grass.</p>
+
+<p>I would fix that, if I could. This is 2015, in case nobody noticed, not 1986. These scrappy startups and small companies are thriving because they’re kicking ass at being one cohesive unit. If anyone expects to continue to be successful or even succeed once, this relationship can’t exist. </p>
+
+<p>At this point, however, if it already exists, it won’t ever go away. This kind of dynamic comes from above. Subordinates tend to conform to how the rest of the team is moving. Changing something like this is hard if not impossible. In this scenario, someone will always be the redheaded step child. It’s about time we accept that and fire everyone who creates that type of environment. It’s not going to do anyone any good in the long run. It hurts morale and low morale hurts quality.</p>
+
+
+  </article>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page44">Older</a>
+  
+  
+    <a class="pagination-item newer" href="/page42">Newer</a>
+  
+</div>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2015-12-06T11:59:41-08:00">2015</time>. All rights reserved.
+        </small>
+      </footer>
+    </div>
+
+  </body>
+</html>

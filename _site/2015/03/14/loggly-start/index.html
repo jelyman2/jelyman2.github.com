@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      Getting Started with Loggly &middot; Johnathan Lyman
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="Johnathan Lyman" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="container content">
+      <header class="masthead">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">Johnathan Lyman</a>
+          <small>Writer. Developer. Support Ops.</small>
+        </h3>
+      </header>
+
+      <main>
+        <article class="post">
+  <h1 class="post-title">Getting Started with Loggly</h1>
+  <time datetime="2015-03-14T00:00:00-07:00" class="post-date">14 Mar 2015</time>
+  <p>I love logs. I love massive amounts of data. I have this thing where if I feel I can consume and process tons of data by doing something menial and useless, I’ll do it. </p>
+
+<p>One thing I don’t really do though is keep tabs on the logs for my site and its services. This is where <a href="http://loggly.com">Loggly</a> comes in, and this is my experience getting it set up.</p>
+
+<p>Signing up was pretty easy. I just went to <a href="http://loggly.com">loggly.com,</a> clicked Sign Up in the top right corner, filled out a few things, and waited patiently while their systems used magic fairy dust and unicorn blood to construct my logging instance. They provide a full 30-day trial that gives a user full access to all features to determine if it’s really right for them. After 30 days, it drops down to their limited free tier, which is still good for small people like me.</p>
+
+<p>I’m writing this as I go through their service, so let’s take a moment to talk about what Loggly actually does.</p>
+
+<p>The whole goal of Loggly is to provide centralized log management without the need for agents. This allows sysadmins or anybody who cares to view and track log data in real time. You can search through logs as they come in and graph out instances of particular events to track down issues as they’re happening.</p>
+
+<p>Logy allows you to track logs from almost any source. Their list is pretty exhaustive if you ask me:</p>
+
+<ul>
+  <li>Windows</li>
+  <li>Linux</li>
+  <li>Apache</li>
+  <li>Nginx</li>
+  <li>IIS</li>
+  <li>JavaScript</li>
+  <li>Tomcat</li>
+  <li>MySQL</li>
+  <li>Microsoft SQL Server</li>
+  <li>Rails</li>
+  <li>Python</li>
+  <li>Django</li>
+  <li>MongoDB</li>
+  <li>PHP</li>
+  <li>Java</li>
+  <li>Ruby</li>
+  <li>Node.JS</li>
+  <li>.NET</li>
+  <li>Docket</li>
+  <li>Puppet</li>
+  <li>Chef</li>
+  <li>FluentD</li>
+  <li>AWS Cloudtrail</li>
+  <li>AWS S3</li>
+  <li>and Heroku
+That really is a pretty big list.</li>
+</ul>
+
+<p>I mentioned that you can get started for free than that there’s a free tier, but let’s talk about what that actually means and the other options that are available.</p>
+
+<p>The free tier gives you the basics including searching and filters, persistent workspaces, and built-in alerting. The standard tier ($49/month) gives you 1GB/day of log storage and 7-day retention, unlimited users, built-in alerting, customized dashboards, and more.</p>
+
+<p>Moving to the Pro tier is where you start getting some of the more tasty features.  You get peak overage protection, AWS S3 archiving, telephone support, and more. The default plan grants 15 days of retention at $109/month, but if you need more than that, you’re more than welcome to it: 10GB/day for $499, 50GB/day for $2500 and more. If 50GB/day and $2500 sounds like a lot, don’t worry, it is. 50GB of log files in a day though is a lot and if you need that kind of support, you’re not too worried about the price. </p>
+
+<p>The second half of this post is to follow after my account is set up… see you soon!</p>
+
+
+</article>
+
+
+<aside class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2015/11/28/after-three-weeks/">
+            After Three Weeks
+            <small><time datetime="2015-11-28T00:00:00-08:00">28 Nov 2015</time></small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2015/11/10/seeing-the-forest-for-the-trees/">
+            Seeing the Forest for the Trees
+            <small><time datetime="2015-11-10T00:00:00-08:00">10 Nov 2015</time></small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2015/11/04/xp1k/">
+            Let me Introduce You to XP1K
+            <small><time datetime="2015-11-04T00:00:00-08:00">04 Nov 2015</time></small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</aside>
+
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2015-12-06T11:59:41-08:00">2015</time>. All rights reserved.
+        </small>
+      </footer>
+    </div>
+
+  </body>
+</html>

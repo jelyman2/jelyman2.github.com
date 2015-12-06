@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      A Kitematic Overview &middot; Johnathan Lyman
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="Johnathan Lyman" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="container content">
+      <header class="masthead">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">Johnathan Lyman</a>
+          <small>Writer. Developer. Support Ops.</small>
+        </h3>
+      </header>
+
+      <main>
+        <article class="post">
+  <h1 class="post-title">A Kitematic Overview</h1>
+  <time datetime="2015-06-27T00:00:00-07:00" class="post-date">27 Jun 2015</time>
+  <p>I have only recently started tinkering with Docker when I made a brief attempt at getting Discourse running on my server. What started out as me being quite frustrated with my lack of SMTP knowledge ended in my admittance that a pre-packaged setup would be much easier, and indeed it was.</p>
+
+<p>Docker is good for that. Docker’s purpose is to allow swift and efficient deployment and management of applications that reside in their own containers. Think of a cargo ship. Each one of those containers can be its own app that runs exclusively in its own box/bubble/container/virtual world and on the outside Docker and the system it runs on maintains structural integrity so each container can keep running.</p>
+
+<p>If you’re relatively new to Docker like I am, you’ll probably be wondering how easy it is to get started.</p>
+
+<p>There are two routes: the command line route and the GUI route. Today I’m going to show off the GUI route by way of an app called Kitematic.</p>
+
+<p><a href="https://johnathanlyman.com/wp-content/uploads/2015/06/Screenshot-2015-06-27-16.02.42.png"><img src="https://i2.wp.com/johnathanlyman.com/wp-content/uploads/2015/06/Screenshot-2015-06-27-16.02.42.png?resize=882%2C570" alt="Screenshot 2015-06-27 16.02.42" /></a></p>
+
+<h3 id="overview">Overview</h3>
+<p>The purpose of Kitematic, in my opinion, is to bridge the gap that’s created by the learning curve created by not being fully aware of how to interact with Docker on the command line.</p>
+
+<p>Deploying an image is dirt simple. The UI presents you with a searchable area in which you can comb the Docker Hub. One click is all it takes to create an instance of the application you’re looking to install.</p>
+
+<p>The actual deployment time will depend on your Internet connection speed because the image has to be downloaded. The larger the application, the longer it’ll take to deploy, install, and configure, so keep that in mind.</p>
+
+<h3 id="deployment-tests">Deployment Tests</h3>
+<p>Here are a few examples of apps I downloaded and how long they took from the moment I clicked the Create button to the moment they were ready to go. These incredibly non-scientific numbers come from my 2011 Macbook Pro with a 2.2GHz Intel Core i7, 8GB of RAM, and the images being stored and run on an SSD. I also used the most popular choices for each of these images, including recommended ones if they were available. Each of the image were downloaded on a 125mbps Internet connection and the timing below includes that.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Application</td>
+      <td>Time to Ready</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Ghost</td>
+      <td>0m 26s</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Atlassian JIRA</td>
+      <td>1m 45s</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Redis</td>
+      <td>0m 12s</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MySQL</td>
+      <td>*</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Nginx</td>
+      <td>0m 5s</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Minecraft</td>
+      <td>1m 50s</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Jenkins</td>
+      <td>1m 16s</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Elasticsearch</td>
+      <td>0m 35s</td>
+      <td>I obviously want to stress that the above numbers are essentially me using a stopwatch and watching the process take place. When it came to MySQL, it never fully initialized and I was unable to determine its progress after about 30 seconds. I couldn’t connect to the service and the logs weren’t displaying anything. It’s possible that I just got a bad run and re-doing it could have fixed my issue. YMMV.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>If you plan on running Kitematic a lot, you’ll want to make sure you can reserve at least 2GB of RAM for the VirtualBox VM it runs in the background. Also, check Kitematic’s settings and check the box to clean up the VM on closure if you’re on a battery-powered system. It’ll take a bit of extra time on boot but it’ll save your battery when you’re not using it, for sure.</p>
+
+<p>I do believe it’s prudent to point out that if you choose the delete-on-closure option, you might find yourself with a VM that can’t fetch an IP address when you re-start Kitematic. This was the case 100% of the time I restarted Kitematic after killing VirtualBox on Kitematic’s closure.</p>
+
+<h3 id="the-bottom-line">The Bottom Line</h3>
+<p>So here’s where I tell you if it’s worth it. In short, completely. For people like me that just want to get things done and move on with my day and not have to deal with the command line all the time, this is a boon. If you’re a die-hard command line junkie that thrives on typos and mashing away at the keyboard, go do it the regular, old-fashioned way.</p>
+
+<p>Kitematic is free to use and is in Beta. It might be a bit rough around the edges, and may not work very well on Windows. I tried running the JIRA install on Windows and it failed every time.</p>
+
+<p>If you’re looking to break into Docker and the idea of containered apps, this is your vice.</p>
+
+<p>This slideshow requires JavaScript.</p>
+
+
+</article>
+
+
+<aside class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2015/11/28/after-three-weeks/">
+            After Three Weeks
+            <small><time datetime="2015-11-28T00:00:00-08:00">28 Nov 2015</time></small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2015/11/10/seeing-the-forest-for-the-trees/">
+            Seeing the Forest for the Trees
+            <small><time datetime="2015-11-10T00:00:00-08:00">10 Nov 2015</time></small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2015/11/04/xp1k/">
+            Let me Introduce You to XP1K
+            <small><time datetime="2015-11-04T00:00:00-08:00">04 Nov 2015</time></small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</aside>
+
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2015-12-06T11:59:41-08:00">2015</time>. All rights reserved.
+        </small>
+      </footer>
+    </div>
+
+  </body>
+</html>
