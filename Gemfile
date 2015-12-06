@@ -1,5 +1,6 @@
 source 'http://rubygems.org'
 
+# The main.
 gem 'jekyll'
 
 # For Jekyll
