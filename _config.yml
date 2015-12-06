@@ -37,7 +37,7 @@ gems:
 
 algolia:
   application_id:   'LYNILH4T6M'
-  index_name:       'JOHNATHANLYMAN_COM_BLOG_INDEX'
+  index_name:       'JOHNATHANLYMAN_COM_INDEX'
   record_css_selector: 'p,ul,ol'
   excluded_files:
     - index.html
