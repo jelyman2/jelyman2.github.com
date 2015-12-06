@@ -7,10 +7,18 @@ Thanks for thinking about getting in touch! Use the form below if you're interes
 
 Thanks!
 
-<form action="//formspree.io/johnathan@jlyman.net" method="POST">
-  <input type="text" name="Name" placeholder="Your name">
-  <input type="text" name="Email" placeholder="Your email">
-  <textarea name="Body"></textarea>
-  <input type="submit" value="Send">
-
+<form>
+  <div class="form-group">
+    <label for="EmailFormName">Your Name/label>
+    <input type="text" class="form-control" id="EmailFormName" placeholder="Name">
+  </div>
+  <div class="form-group">
+    <label for="EmailFormEmail">Email</label>
+    <input type="email" class="form-control" id="EmailFormEmail" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="EmailFormMessage">Message</label>
+    <textarea class="form-control" rows="3" id="EmailFormMessage"></textarea>
+  </div>
+  <button type="submit" class="btn btn-default">Send</button>
 </form>
