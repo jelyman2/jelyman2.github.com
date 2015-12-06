@@ -8,7 +8,7 @@ permalink:           pretty
 title:               Johnathan Lyman
 tagline:             Writer. Developer. Support Ops.
 url:                 http://johnathanlyman.com
-paginate:            5
+paginate:            10
 baseurl:             ""
 
 # Assets
