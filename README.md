@@ -1,4 +1,6 @@
 # Johnathan Lyman's blog
-### Powered by Jekyll and GitHub Pages
+### Powered by Jekyll.
+
+http://johnathanlyman.com
 
 Pretty cool, eh?
