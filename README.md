@@ -5,4 +5,4 @@ http://johnathanlyman.com
 
 Pretty cool, eh?
 
-It's a work in progress.
+It's a work in progress. Don't mind the mess.
