@@ -7,7 +7,7 @@ Thanks for thinking about getting in touch! Use the form below if you're interes
 
 Thanks!
 
-<form action"//formspree.io/johnathan@jlyman.net" method="POST">
+<form action="//formspree.io/johnathan@jlyman.net" method="POST">
   <input type="text" name="Name" placeholder="Your name">
   <input type="text" name="Email" placeholder="Your email">
   <textarea name="Body"></textarea>
