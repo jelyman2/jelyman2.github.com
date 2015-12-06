@@ -24,3 +24,29 @@
     letter-spacing: 0;
   }
 }
+
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  li {
+    float: left;
+    font-size: .75rem;
+    padding-top: 14px;
+    padding-bottom: 16px;
+    padding-right: 16px;
+    a {
+      display: block;
+      color: #777777;
+      text-align: center;
+      text-decoration: none;
+
+    }
+    a:hover {
+      text-decoration: underline;
+      color: #268bd2;
+    }
+  }
+}

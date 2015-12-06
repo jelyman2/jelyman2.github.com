@@ -33,3 +33,9 @@ gems:
   - jekyll-paginate
   - jekyll-gist
   - rouge
+  - algoliasearch-jekyll
+
+algolia:
+  application_id:   'LYNILH4T6M'
+  index_name:       'JOHNATHANLYMAN_COM_BLOG_INDEX'
+  record_css_selector: 'p,ul,ol'

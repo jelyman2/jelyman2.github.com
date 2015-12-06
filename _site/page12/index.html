@@ -34,6 +34,12 @@
           <a href="/" title="Home">Johnathan Lyman</a>
           <small>Writer. Developer. Support Ops.</small>
         </h3>
+        <ul class="navigation">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Resources</a></li>
+        </ul>
       </header>
 
       <main>
@@ -41,304 +47,339 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2015/06/30/stackedit/">
-        StackEdit
+      <a href="/2015/03/16/triple-digits/">
+        Triple Digits on Earth
       </a>
     </h1>
 
-    <time datetime="2015-06-30T00:00:00-07:00" class="post-date">30 Jun 2015</time>
+    <time datetime="2015-03-16T00:00:00-07:00" class="post-date">16 Mar 2015</time>
 
-    <p><a href="http://stackedit.io">StackEdit</a> is a in-browser markdown editor that takes on the likes of iA Writer and GitHub Pages in terms of its capability. If you’re a fan of Markdown in even the least bit, it’ll be easy for StackEdit to be your go to text editor.</p>
-
-<p>The interface window features the basic text editor and styling controls like text format, linking, inserting code and images, and creating lists. In fact, it’s so easy to pick up, you really don’t need any instructions.</p>
-
-<p><a href="https://i1.wp.com/johnathanlyman.com/wp-content/uploads/2015/06/Screenshot-2015-06-30-15.57.20.png"><img src="https://i1.wp.com/johnathanlyman.com/wp-content/uploads/2015/06/Screenshot-2015-06-30-15.57.20.png?resize=882%2C559" alt="Screenshot 2015-06-30 15.57.20" /></a></p>
-
-<p>The dual pane editor/preview layout is like that of the NodeJS-powered Ghost blog platform. Everything you type shows up in real time on the right-hand side of the screen in proper format. When you’re done, you can sync your texts to Dropbox or Google Drive, save them in the editor, and even push them to various end points including Blogger, WordPress, GitHub, Tumblr, and an SSH server if you have your own static site platform you wish to use.</p>
-
-<p>What’s really cool? If you have a CouchDB instance, it’ll push straight to it. Pretty nifty.</p>
-
-<p>Give <a href="http://stackedit.io">StackEdit</a> a try. I think you’ll like it.</p>
-
-
-  </article>
-  
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/06/27/a-kitematic-overview/">
-        A Kitematic Overview
-      </a>
-    </h1>
-
-    <time datetime="2015-06-27T00:00:00-07:00" class="post-date">27 Jun 2015</time>
-
-    <p>I have only recently started tinkering with Docker when I made a brief attempt at getting Discourse running on my server. What started out as me being quite frustrated with my lack of SMTP knowledge ended in my admittance that a pre-packaged setup would be much easier, and indeed it was.</p>
-
-<p>Docker is good for that. Docker’s purpose is to allow swift and efficient deployment and management of applications that reside in their own containers. Think of a cargo ship. Each one of those containers can be its own app that runs exclusively in its own box/bubble/container/virtual world and on the outside Docker and the system it runs on maintains structural integrity so each container can keep running.</p>
-
-<p>If you’re relatively new to Docker like I am, you’ll probably be wondering how easy it is to get started.</p>
-
-<p>There are two routes: the command line route and the GUI route. Today I’m going to show off the GUI route by way of an app called Kitematic.</p>
-
-<p><a href="https://johnathanlyman.com/wp-content/uploads/2015/06/Screenshot-2015-06-27-16.02.42.png"><img src="https://i2.wp.com/johnathanlyman.com/wp-content/uploads/2015/06/Screenshot-2015-06-27-16.02.42.png?resize=882%2C570" alt="Screenshot 2015-06-27 16.02.42" /></a></p>
-
-<h3 id="overview">Overview</h3>
-<p>The purpose of Kitematic, in my opinion, is to bridge the gap that’s created by the learning curve created by not being fully aware of how to interact with Docker on the command line.</p>
-
-<p>Deploying an image is dirt simple. The UI presents you with a searchable area in which you can comb the Docker Hub. One click is all it takes to create an instance of the application you’re looking to install.</p>
-
-<p>The actual deployment time will depend on your Internet connection speed because the image has to be downloaded. The larger the application, the longer it’ll take to deploy, install, and configure, so keep that in mind.</p>
-
-<h3 id="deployment-tests">Deployment Tests</h3>
-<p>Here are a few examples of apps I downloaded and how long they took from the moment I clicked the Create button to the moment they were ready to go. These incredibly non-scientific numbers come from my 2011 Macbook Pro with a 2.2GHz Intel Core i7, 8GB of RAM, and the images being stored and run on an SSD. I also used the most popular choices for each of these images, including recommended ones if they were available. Each of the image were downloaded on a 125mbps Internet connection and the timing below includes that.</p>
-
-<table>
-  <tbody>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Application</td>
-      <td>Time to Ready</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Ghost</td>
-      <td>0m 26s</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Atlassian JIRA</td>
-      <td>1m 45s</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Redis</td>
-      <td>0m 12s</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>MySQL</td>
-      <td>*</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Nginx</td>
-      <td>0m 5s</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Minecraft</td>
-      <td>1m 50s</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Jenkins</td>
-      <td>1m 16s</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Elasticsearch</td>
-      <td>0m 35s</td>
-      <td>I obviously want to stress that the above numbers are essentially me using a stopwatch and watching the process take place. When it came to MySQL, it never fully initialized and I was unable to determine its progress after about 30 seconds. I couldn’t connect to the service and the logs weren’t displaying anything. It’s possible that I just got a bad run and re-doing it could have fixed my issue. YMMV.</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>If you plan on running Kitematic a lot, you’ll want to make sure you can reserve at least 2GB of RAM for the VirtualBox VM it runs in the background. Also, check Kitematic’s settings and check the box to clean up the VM on closure if you’re on a battery-powered system. It’ll take a bit of extra time on boot but it’ll save your battery when you’re not using it, for sure.</p>
-
-<p>I do believe it’s prudent to point out that if you choose the delete-on-closure option, you might find yourself with a VM that can’t fetch an IP address when you re-start Kitematic. This was the case 100% of the time I restarted Kitematic after killing VirtualBox on Kitematic’s closure.</p>
-
-<h3 id="the-bottom-line">The Bottom Line</h3>
-<p>So here’s where I tell you if it’s worth it. In short, completely. For people like me that just want to get things done and move on with my day and not have to deal with the command line all the time, this is a boon. If you’re a die-hard command line junkie that thrives on typos and mashing away at the keyboard, go do it the regular, old-fashioned way.</p>
-
-<p>Kitematic is free to use and is in Beta. It might be a bit rough around the edges, and may not work very well on Windows. I tried running the JIRA install on Windows and it failed every time.</p>
-
-<p>If you’re looking to break into Docker and the idea of containered apps, this is your vice.</p>
-
-<p>This slideshow requires JavaScript.</p>
-
-
-  </article>
-  
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/06/26/check-yourself/">
-        Check Yourself
-      </a>
-    </h1>
-
-    <time datetime="2015-06-26T00:00:00-07:00" class="post-date">26 Jun 2015</time>
-
-    <p>TAKE IT FROM ME.</p>
-
-<p>It’s easy to give advice. It’s actually way too easy. Standing on the outside, looking in, it’s easy to observe, to judge. We compare someone and the pieces that make them whole to ourselves and our own components.</p>
-
-<p>One thing we fail to do all too often is heed our own advice.</p>
+    <p>One thing I’ve always found so amazing is that with today’s excellent blend of technologies to keep people living longer, we regularly see people living past 100 years of age.</p>
 
 <blockquote>
-  <p>do as I say, not as I do.</p>
+  <p>How do you live to be 109 years old? Exercise, a nice warm bowl of porridge, and staying away from men—at least that’s the explanation given by Scotland’s oldest woman, Jessie Gallan, in a story that  <a href="http://www.dailymail.co.uk/news/article-2912299/Scotland-s-oldest-woman-Jessie-Gallan-reveals-longevity-secrets-including-eating-porridge-avoiding-men.html">went viral earlier this year</a>.[<a href="http://www.thedailybeast.com/articles/2015/03/15/how-the-world-s-oldest-people-live-so-long.html">s</a>]</p>
 </blockquote>
-
-<p>Those words were likely spoken by every parent to ever exist even so far as millennia past. We secretly swear but tell our children that such acts are bad. We teach that good [religious group] should regularly [reglion-based activity] but we fail to even keep par with the course.</p>
-
-<p>I can sit here in front of my screen and bang on the keyboard in an attempt to preach to you about how you should <a href="http://johnathanlyman.com/p/life-changes/">create better habits</a> and how you should do that extra good thing every day and how you should <a href="http://johnathanlyman.com/p/naturebox/">stop shoveling shit</a> for food into your grub hole every day.</p>
-
-<p>I’d be a damn hypocrite if I did that. There’s a fine line between sharing good ideas and things that sound like they’d be worthwhile and preaching them as gospel and it’s hard to see when initially observed.</p>
-
-<p>Take it from me. There are times when I want to tell the world how awesome it is to <a href="http://johnathanlyman.com/p/half/">get up early</a> in the morning, sit down, and kick some creative ass, all before breakfast, except I can’t manage to do that, myself, right now. So I don’t. I use to. I used to tout how awesome it was, regularly.</p>
-
-<p>Back then, though, I did it. Every single day. I woke up between 3:30 and 4:00 A.M., hopped in the shower, made coffee, and sat down with enough time for almost an hour of un-interrupted creativity and morning reflection.</p>
-
-<blockquote>
-  <p>take care of your own yard before you start criticizing your neighbor’s.</p>
-</blockquote>
-
-<p>I refuse to tout what I don’t follow or believe, myself. I think it’s important to <a href="http://johnathanlyman.com/p/on-accepting/">nut up or shut up</a>. I know <a href="http://johnathanlyman.com/p/waiting-for-inspiration/">struggling</a> with <a href="http://johnathanlyman.com/p/waiting-for-inspiration/">inspiration</a> is real. I’ve discovered <a href="http://johnathanlyman.com/p/creativity-2/">creativity</a> comes to those who <a href="http://johnathanlyman.com/p/creativity-2/">hunt it down</a> like a rabid wolf hunts a juicy deer. I know what it’s like to <a href="http://johnathanlyman.com/p/keeping-score/">have your mind</a> in the <a href="http://johnathanlyman.com/p/keeping-score/">wrong place</a>.</p>
-
-<p>Most of all, I know <a href="http://johnathanlyman.com/p/incapacity/">making excuses</a> is for the weak. The <a href="http://johnathanlyman.com/p/professional-life-liver/">professional</a> doesn’t <a href="http://johnathanlyman.com/p/magic/">make an excuse</a>. Take it from me.</p>
 
 <p> </p>
 
+<p>It’s quite wild to think that there’s a possibility I might live to be that long. Shortly after that realization another one hits: I’m going to need to save more for retirement. Most retirement plans account for 20-30 years between retirement and death. If I want to stick to my valiant plans of retiring at 55, I’m going to need more than that. If I’m Jessie, I’ll need 50 years. Oh boy. Good thing there are services to help manage money out there. I’m not sure I could do that on my own.</p>
+
+<p>I’m not even going to start on the age of the <a href="http://www.dailymail.co.uk/health/article-2572316/The-secret-long-life-Sushi-sleep-according-worlds-oldest-woman.html">oldest living woman</a> at 118 years. I just can’t. It’s daunting to think that there’s so much more life left to live after retirement for some people. Usually when you reach that point, things change and daily life changes. I don’t think I could deal with that for over 60 years.</p>
+
+<p>Then again, I could just retire later, too.</p>
+
+<p>That’s so long from now, God only knows what’ll happen.</p>
+
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/2015/03/16/sage/">
+        Open-Source SageTV
+      </a>
+    </h1>
+
+    <time datetime="2015-03-16T00:00:00-07:00" class="post-date">16 Mar 2015</time>
+
+    <p>Comcast, I hope you’re reading this.</p>
+
+<blockquote>
+  <p>SageTV founder (and current Google employee) Jeffrey Kardatzke says that Google “has agreed to open-source the SageTV platform.”[<a href="http://www.engadget.com/2015/03/16/google-open-sourcing-sage-tv/?ncid=rss_truncated">s</a>]</p>
+</blockquote>
+
+<p> </p>
+
+<p> </p>
+
+<p>If you’re unfamiliar, SageTV has been off the market for a few years now after being one of the first to release a DVR box and home theater PC software title. Google bought it up and pulled it away, only to end up using it in their Google Fiber TV box.</p>
+
+<p>It’s great to see this kind of move. There’s a lot of capability in set top boxes that go untouched. I can speak from experience with my X1 box from Comcast. I have HDMI in and out, of which I can only use the OUT. I also have USB and Ethernet, both of which do nothing. I would love to be able to use the ethernet jack instead. It would behoove Comcast to switch to an IPTV-type setup, instead. The bandwidth of traditional cable (QAM256) is limited to something like 39mbps per channel, and each channel is typically split in half (since there aren’t enough channels in the spectrum for 1:1 usage). That brings us down to 19.8mbps per channel, at max. That’s not bad, but it could be better. Blu-Ray discs are usually 25-35mbps for video and roughly 5-8mbps for audio. Compressed 5.1 is roughly 1.5mbps so taking that out of our 19.8mbps stream leaves us with 18.3mbps.</p>
+
+<p>But enough about that. I can ramble about the quality of a TV signal all day. The point is that each stream could be any number of bits in size, not just a technological maximum of 19.8mbps. The trick would be switching streams in a timely manner and implementing some pretty hardcore QoS all along the pipe to ensure the TV signal doesn’t become degraded because your kids are having a LAN party in their room and sucking up all the Internets.</p>
+
+<p>Even without a move to IPTV, opening up a box to other apps and developers would make for a much more desirable platform, regardless of the vendor. One thing I’ve always wanted on my X1 was a Netflix app. Will that happen? Probably not, so long as Comcast has a beef with Netflix.</p>
+
+<p>The trick will be to not let too many crazy things through the flood gates. If app developers start making shoddy apps, the quality of service for the entire system becomes compromised, and we know how Google loves to keep Android and open platform and what that ultimately does for the quality of apps.</p>
+
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/2015/03/16/blocks/">
+        Blocks
+      </a>
+    </h1>
+
+    <time datetime="2015-03-16T00:00:00-07:00" class="post-date">16 Mar 2015</time>
+
+    <blockquote>
+  <p>You can’t think yourself out of a writing block; you have to write yourself out of a thinking block.  — <a href="http://en.wikipedia.org/wiki/John_Rogers_(writer)" title="John Rogers">John Rogers</a>These words are very true, and I have the experience to back them up.</p>
+</blockquote>
+
+<p>Last week, I spent 30 minutes <a href="http://johnathanlyman.com/p/half-hour" title="Half Hour of Random">writing non-stop</a>. I didn’t think about what I was writing, nor did I stop to even see if what I wrote flowed. At the end, I just published it. The premise behind that exercise was to not just pad my monthly word count, but to simply see what ideas come to mind as I write.</p>
+
+<p>The result was quite interesting. There were clear transitions between topics, but each of those topics was a morph from the one previous. It’s as though when I was discussing one thing, another idea started forming in my mind.</p>
+
+<p>Another prime example is just today when I was discussing <a href="http://johnathanlyman.com/p/sage" title="Open-Source SageTV">SageTV</a>. I started going on about QAM 256 and channel bandwidth and other non-related stuff all to come back to the point of there being better ways to go about executing a set top box in 2015 like what Google’s doing.</p>
+
+<p>This is what <a href="http://en.wikipedia.org/wiki/John_Rogers_(writer)" title="John Rogers">Rogers</a> is talking about. I could easily have another couple posts right there about things I have at least some knowledge of. I could explain the intricacies of QAM and bore the hell out of you. I could also explain why open-sourcing a set-top box is both a great and a terrible idea.</p>
+
+<p>Perhaps I will. Who knows. The point is that I wouldn’t have even thought of those topics to talk about had I not written about them.</p>
+
+<p>This is one of the many reasons why I like writing on a regular basis. There isn’t some massive end-goal in mind. I’m not trying to build a mega-blog full of money-making ideas that I can litter with ads and end up in a penthouse. Not even close. I write because it stimulates my mind and gives me new things to talk about and new ideas to ponder. There isn’t another medium of creativity where I’ve been able to work out how to write at a pace of almost 3500 words an hour.</p>
+
+<p>Some say I should really write a book.</p>
+
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/2015/03/15/40-years/">
+        Forty Years
+      </a>
+    </h1>
+
+    <time datetime="2015-03-15T00:00:00-07:00" class="post-date">15 Mar 2015</time>
+
+    <p>Voyager 1 and 2. Covering a million miles a day, these two crafts are still humming along. After 40 years of travel, they still gather data, and some of the original crew still watch over them… even if they do so from a simple office park in Pasadena.</p>
+
+<p><a href="http://www.theguardian.com/science/2015/mar/15/voyager-1-and-2-space-journey-nasa">Reading about Steve Howard</a>, 65, the man who’s in a group of people controlling the space crafts from 16 light hours away, is quite humbling. Voyager 1 took a “family photo” of the solar system 25 years ago and in 2036, will shut down. Most sensors will do so long before the nine 2025 as its Plutonium-238 reactor dwindles into nothingness, but an eleven more years is still an impressive feat. </p>
+
+<p>Howard will be 90 by then. There isn’t much of a change either Voyager will find anything super interesting until 40,000 years from now, when they’ll be dead metal and nothing more.</p>
+
+<p>The next time you complain your internet is slow, think about Steve and his 17 34 hour round-trip transmission time from his computer, through the Deep Space Network, to Voyager 1. </p>
+
 <hr />
-<p>This post came about from the <a href="https://dailypost.wordpress.com/dp_prompt/take-it-from-me/">daily writing prompt</a> at <a href="http://dailypost.wordpress.com">The Daily Post</a>.</p>
+<p>featured image credit: NASA/JPL-Caltech</p>
 
 
   </article>
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2015/06/25/on-accepting/">
-        On Accepting
+      <a href="/2015/03/14/wordpress-hosting-series/">
+        WordPress Hosting Series
       </a>
     </h1>
 
-    <time datetime="2015-06-25T00:00:00-07:00" class="post-date">25 Jun 2015</time>
+    <time datetime="2015-03-14T00:00:00-07:00" class="post-date">14 Mar 2015</time>
 
-    <p>There’s a perpetual battle that takes place every day. This battle involves everything around you, your life, your hobbies, your friends, and your home.</p>
+    <p>I’ve been mulling this idea over in my head for a few weeks, now and now I think it’s time to start it. I’m starting a series of posts on various managed WordPress offerings and my impressions of them. Since I run a WordPress site by hand, I believe it’ll allow me to have a fair point of view when it comes to transitioning to a managed service.</p>
 
-<p>This battle isn’t really a battle at all. It’s a dance. A tango, of sorts. We wake up in the morning and it’s time to dance. We lay our heads down at night and only after we close our eyes and drift into dreamland do we stop the motions.</p>
+<p>What I’ll be looking for is a roughly the following:</p>
 
-<p>From those words, it should be at least a step down from completely confusing what I’m referring to. If you’re not a mind-reader, or you haven’t skipped ahead, I don’t hold it against you.</p>
+<ul>
+  <li>Signup Process. How easy was it to sign up for the service?</li>
+  <li>Migration. How much time would it take to migrate a site and if it costs more, how much extra?</li>
+  <li>Launching. How easy it is to go live from the time the account becomes active?</li>
+  <li>Extra Features. Are things like SSL and CDNs included? Are they limited to certain plans? </li>
+  <li>Price Point. How much would it cost to get into the service?</li>
+  <li>Free Trials. This is a big one for a lot of people. Does the service have a free trial that can be exercised? 
+Here’s a list of the services I plan on going over in the next month or so:</li>
+</ul>
 
-<p>What I’m talking about is satisfaction… being content with the things you have… the people you know… the amount of money you make.</p>
+<p>Flywheel<br />
+Kinsta<br />
+Pagely<br />
+MediaTemple<br />
+DreamHost<br />
+Pantheon<br />
+WPEngine<br />
+WordPress.com<br />
+Synthesis<br />
+Pressable</p>
 
-<p>Let me get this out there right now before I continue: I’m not saying you shouldn’t push for that raise or buy a new car to replace your current mode of transportation or anything of the sort. What I’m talking about is knowing when to gun for greatness and when to sit and be satisfied.</p>
+<p>If you have any other services you’d like to see covered, please let me know in the comments below.</p>
 
-<p>Let me tell you a story.</p>
-
-<p>Over the last four years, a lot in my life has changed. The biggest change in my life was when I got married. My wife has been and will always be the biggest blessing to me. Beside her, there’ve been a host of other life changes (also known as obstacles) and there have been improvements.</p>
-
-<p>Every so often, we move. This has been the case, historically, since 2011. So far as I can count, in the last four years, we’ve lived in five apartments of our own and one belonging to friends, including the one we live in, now. Each move has led us to a progressively better living situation, for the most part.</p>
-
-<p>But there are times when we’ve taken lateral steps and most currently, we took a half-step backward.</p>
-
-<p>I’m not talking about downgrading to living with other people or on the street or having to move back home. We picked a less-than-ideal neighborhood.</p>
-
-<p>We had good reason, however. It was April, myy wife was slated to start graduate school at the end of the summer, our existing lease was set to end at the end of May, and I received a job offer that required us to move sooner rather than later, with later being the end of May.</p>
-
-<p>We only had a few weeks to find a place to live. The money wasn’t unlimited so we couldn’t take our sweet time. Based on information we found online (apartment hunting), we found a place that looked decent. We had no idea what the neighborhood would be like because we had never been there before and were pretty new to the Bay Area in general. Our last visit was almost an indirect one as we played tourists and visited Golden Gate Park.</p>
-
-<p>After we move in, we come to find that perhaps our decision was a bit rushed, but it was too late to do anything about it, now. We were already there. We spent two days moving 900 miles and couldn’t return home. We also couldn’t shore up somewhere until we figured out a better living situation. We discovered our neighborhood wasn’t the best, as some would call Hayward, CA <em>Little Mexico</em>. Maybe they were right. I, for one, love Mexican food, so there’s no harm in that.</p>
-
-<p>However it’s not the safest area, either. I’ll admit that the large gates and high walls around our apartment building signify more than just styling choices.</p>
-
-<p>We have a little crime-free oasis. While it might not be ideal, it’s working out for us, right now, and we’re OK with that.</p>
-
-<p>After all that, it all comes down to accepting what we have and learning to cope. Sure, we could move out, and we probably will at some point, but until that time comes, there’s nothing we can do about it. It’s time to suck it up and deal with our choices.</p>
-
-<p>Do I regret the decision to move to the East Bay? No. Do I regret any of the decisions I’ve made in recent history? Absolutely not. Why? Because I’ve accepted them. I accepted the fact that I defaulted on a credit card one time, or I spent too much money on something I didn’t need. Fuck it. Life happens.</p>
-
-<p>We all make mistakes and decide to travel the less than ideal path. However, when we’re faced with two decisions were neither are perfect, we suck it up and pick one. It’s the whole life-giving-you-lemons thing. We have a ton of lemonade to go around.</p>
-
-<p>Don’t take my story as me saying I just gave up and decided that complacency is the best path to choose. That’s not at all the case. The path I code is one of more careful planning, better allocation of resources and making more informed decisions. I’m choosing to do take the slow road so I can spend the time to do it right.</p>
-
-<p>So when it comes to making a life-changing decision, do you jump down off the roof onto the ground head first or feet first?</p>
+<p>Stay tuned!</p>
 
 
   </article>
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2015/06/25/48-hours-of-slack/">
-        48 Hours of Slack
+      <a href="/2015/03/14/max-cloud/">
+        Maximize Your Free Cloud Storage
       </a>
     </h1>
 
-    <time datetime="2015-06-25T00:00:00-07:00" class="post-date">25 Jun 2015</time>
+    <time datetime="2015-03-14T00:00:00-07:00" class="post-date">14 Mar 2015</time>
 
-    <p>Two nights ago, I convinced my team to pick up Slack. I wanted them to stop slacking on effective communication and while I can cut them some slack on being in different time zones, there’s no excuse with today’s technology.</p>
+    <p>I’m a fan of getting as much as you can for free without breaking the rules.</p>
 
-<p>That’s about all I have for Slack puns and euphemisms. We’ve been using Slack for about 48 hours now and we’re loving it. I think I might be loving it the most because I championed the idea.</p>
+<blockquote>
+  <p>Every cloud storage provider has a variety of changing promos that can give you extra storage space, so it’s always worthwhile to keep an ear to the ground. Some of the promotions we mention here may change over time, but they’ll also likely be replaced by something else. Cloud storage providers seem to like giving away space like candy if it means new customers.Check out the <a href="http://drippler.com/drip/how-maximize-your-free-storage-space-every-cloud-service">full article, here</a>! I can speak to the Dropbox bonuses, personally. I have 10GB and didn’t spend a dime to get it.</p>
+</blockquote>
 
-<p>Given its super low barrier for entry (free!) it wasn’t hard for us to pick it up and give it a go. My team is only twelve people but I think we’ve communicated more via text than we’ve communicated via Lync and email in a week.</p>
 
-<p>I described it in our meeting as IRC for this decade, but it’s a lot more than that and I’m striving to find ways to expand the service for my people as much as possible.</p>
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/2015/03/14/make-school/">
+        Make School
+      </a>
+    </h1>
 
-<p>For those who don’t know, I’m the Senior Technical Support Lead for Zephyr’s Americas support team. That puts me at second in command and makes me responsible for my teams success. One struggle I’ve seen is keeping effective lines of communication open between each staff member and creating open dialog about technical and customer-facing issues we encounter on a regular basis.</p>
+    <time datetime="2015-03-14T00:00:00-07:00" class="post-date">14 Mar 2015</time>
 
-<p>We really didn’t have any sort of real-time collaboration going on.</p>
+    <p>If only there was something like this when I was getting out of high school.</p>
 
-<p>This is why I brought in Slack. I can see who’s available, strike up conversations with them, discuss particular issues in channels, and get notified from various other systems right away, without having to leave Slack.</p>
+<p>Introducing <a href="https://www.makeschool.com">Make School</a>:</p>
 
-<p>I’ve found out about support requests faster through Slack than by staring at ZenDesk all day (our ticketing system). Getting notifications on all my devices at the same time about what’s happening as its happening is a boon for me and that only drives my desire to integrate more.</p>
+<blockquote>
+  <p>Imagine going to a school where everyone is trying to change the world with technology. Welcome to Make School. Your education will be focused on building apps and websites that improve the lives of those around you. You’ll learn the underlying computer science theory, development best practices and design principles that enable you to ship polished products.&gt; You’ll start a company, work on teams, contribute to open source software and intern at a tech startup, all in 2 years. You’ll improve your storytelling, writing, pitching, and learn the social engineering needed to excel as a founder or climb a corporate ladder. You’ll culminate your experience with a 2 month capstone project where you can build a startup or dive deep into computer science topics like artificial intelligence and machine learning.<a href="https://www.makeschool.com">Make School</a> was featured in Fast Company when they featured a kid fresh out of high school who could have gone to MIT. Even before finishing, he was already jumping into the real world:</p>
+</blockquote>
 
-<p>One thing that bothers me though is autocomplete requires some fancy service on the other end in order to work. I don’t want to sit down and write middleware to tie into Slack so I can shorthand with a <code class="highlighter-rouge">/slash</code> command. I should be able to say <code class="highlighter-rouge">/ticket 12345</code> prints in chat <code class="highlighter-rouge">http://ticket.system/12345</code>. I don’t see what’s so hard about that.</p>
+<blockquote>
+  <p>One month shy of officially finishing  <a href="http://www.fastcompany.com/organization/make-school">Make School</a>’s course—which included iOS,  <a href="http://www.fastcompany.com/programminglanguage/ruby-on-rails">Ruby on Rails</a>, and  <a href="http://www.fastcompany.com/explore/web-development">web development</a>—Bando’s preliminary job hunt yielded an offer for a  <a href="http://www.fastcompany.com/explore/software-engineering-position">software engineering position</a> at  <a href="https://papaly.com/">Papaly</a>, a  <a href="http://www.fastcompany.com/explore/social-bookmarking-startup">social bookmarking startup</a>, at a salary just north of $90,000.[<a href="http://www.fastcompany.com/3043275/my-creative-life/how-one-high-school-grad-studied-computer-science-debt-free-and-nabbed-a-90?partner=rss">s</a>]</p>
+</blockquote>
 
-<p>Webhooks are super cool though and being able to touch them with 3rd party service and update my channels with relevant information is awesome. Being able to be notified in real time about anything that’s happening in another system with minimal code change is sweet. All our custom apps can push notifications, now.</p>
+<p>I’ll say again: where was this when I was finishing high school? <em>sigh</em> </p>
 
-<p>Even well-known 3rd party services can integrate well. Some leave things to be desired like my ZenDesk-Slack integration, but I can’t blame Slack for that.</p>
+<p>You can read the rest of the article from Fast Company <a href="http://www.fastcompany.com/3043275/my-creative-life/how-one-high-school-grad-studied-computer-science-debt-free-and-nabbed-a-90?partner=rss">here</a> or check out <a href="https://www.makeschool.com">Make School</a>. Both are good choices, I think.</p>
 
-<p>For a service that’s had next to no marketing done and has survived on majority word of mouth and small advertisements here and there, Slack is killing it in the real-time collaboration space.</p>
 
-<p>Someone on my team suggested we look at HipChat, too… is it bad that I sort of don’t want to?</p>
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/2015/03/14/loggly-start/">
+        Getting Started with Loggly
+      </a>
+    </h1>
+
+    <time datetime="2015-03-14T00:00:00-07:00" class="post-date">14 Mar 2015</time>
+
+    <p>I love logs. I love massive amounts of data. I have this thing where if I feel I can consume and process tons of data by doing something menial and useless, I’ll do it. </p>
+
+<p>One thing I don’t really do though is keep tabs on the logs for my site and its services. This is where <a href="http://loggly.com">Loggly</a> comes in, and this is my experience getting it set up.</p>
+
+<p>Signing up was pretty easy. I just went to <a href="http://loggly.com">loggly.com,</a> clicked Sign Up in the top right corner, filled out a few things, and waited patiently while their systems used magic fairy dust and unicorn blood to construct my logging instance. They provide a full 30-day trial that gives a user full access to all features to determine if it’s really right for them. After 30 days, it drops down to their limited free tier, which is still good for small people like me.</p>
+
+<p>I’m writing this as I go through their service, so let’s take a moment to talk about what Loggly actually does.</p>
+
+<p>The whole goal of Loggly is to provide centralized log management without the need for agents. This allows sysadmins or anybody who cares to view and track log data in real time. You can search through logs as they come in and graph out instances of particular events to track down issues as they’re happening.</p>
+
+<p>Logy allows you to track logs from almost any source. Their list is pretty exhaustive if you ask me:</p>
+
+<ul>
+  <li>Windows</li>
+  <li>Linux</li>
+  <li>Apache</li>
+  <li>Nginx</li>
+  <li>IIS</li>
+  <li>JavaScript</li>
+  <li>Tomcat</li>
+  <li>MySQL</li>
+  <li>Microsoft SQL Server</li>
+  <li>Rails</li>
+  <li>Python</li>
+  <li>Django</li>
+  <li>MongoDB</li>
+  <li>PHP</li>
+  <li>Java</li>
+  <li>Ruby</li>
+  <li>Node.JS</li>
+  <li>.NET</li>
+  <li>Docket</li>
+  <li>Puppet</li>
+  <li>Chef</li>
+  <li>FluentD</li>
+  <li>AWS Cloudtrail</li>
+  <li>AWS S3</li>
+  <li>and Heroku
+That really is a pretty big list.</li>
+</ul>
+
+<p>I mentioned that you can get started for free than that there’s a free tier, but let’s talk about what that actually means and the other options that are available.</p>
+
+<p>The free tier gives you the basics including searching and filters, persistent workspaces, and built-in alerting. The standard tier ($49/month) gives you 1GB/day of log storage and 7-day retention, unlimited users, built-in alerting, customized dashboards, and more.</p>
+
+<p>Moving to the Pro tier is where you start getting some of the more tasty features.  You get peak overage protection, AWS S3 archiving, telephone support, and more. The default plan grants 15 days of retention at $109/month, but if you need more than that, you’re more than welcome to it: 10GB/day for $499, 50GB/day for $2500 and more. If 50GB/day and $2500 sounds like a lot, don’t worry, it is. 50GB of log files in a day though is a lot and if you need that kind of support, you’re not too worried about the price. </p>
+
+<p>The second half of this post is to follow after my account is set up… see you soon!</p>
+
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/2015/03/14/loggly-part-2/">
+        Getting Started with Loggly Part 2: The Cool Stuff!
+      </a>
+    </h1>
+
+    <time datetime="2015-03-14T00:00:00-07:00" class="post-date">14 Mar 2015</time>
+
+    <p>This is a continuation of part 1: <a href="http://johnathanlyman.com/p/loggly-start">Getting Started with Loggly</a>.</p>
+
+<p>Note: Apparently waiting hours for account generation isn’t a thing according to the fine folks on twitter @loggly.</p>
+
+<blockquote>
+  <p><a href="https://twitter.com/theeJL">@theeJL</a> Creation takes a few sec so likely something happened during form validation. Perhaps try again or DM us the subdomain you typed in— Loggly, Inc. (@loggly) <a href="https://twitter.com/loggly/status/576938047004024832">March 15, 2015</a></p>
+</blockquote>
+
+<script src="//platform.twitter.com/widgets.js" async="" charset="utf-8"></script>
+
+<p>Now that we’re signed up, let’s get down to the good stuff!</p>
+
+<p>The first thing I want to do is start tracking Linux. The <a href="http://johnathanlyman.com/p/stack">core of my site</a> is Ubuntu (among other things). Loggly makes this easy. All I need to do is click the Linux icon on my account’s main page.</p>
+
+<p><img src="https://i0.wp.com/johnathanlyman.com/wp-content/uploads/2015/03/Screenshot2015-03-1419.52.30.png?w=882" alt="" /></p>
+
+<p><img src="https://i1.wp.com/johnathanlyman.com/wp-content/uploads/2015/03/Screenshot2015-03-1420.01.19.png?resize=693%2C433" alt="" /></p>
+
+<p>It really is as simple as copying the two lines of code and running them with superuser access. Within a few seconds, Loggly grabbed a hold and started showing me cool stuff!</p>
+
+<p><img src="https://i2.wp.com/johnathanlyman.com/wp-content/uploads/2015/03/Screenshot2015-03-1420.05.00.png?w=882" alt="" /></p>
+
+<p>It’s pretty empty now, because I literally just started tracking and I’m only tracking Linux. With time this will become more populated and more interesting to parse through.</p>
+
+<p>Moving on to other applications, now. I want to start tracking nginx. Nginx is just one of the apps Loggly can track. The list is massive.</p>
+
+<p><img src="https://i0.wp.com/johnathanlyman.com/wp-content/uploads/2015/03/Screenshot2015-03-1420.06.39.png?w=882" alt="" /></p>
+
+<p>Getting Nginx set up was just as easy as Linux, although Loggly believed my Nginx logs weren’t of a proper format. No matter, they’re coming in great.</p>
+
+<p>Getting MySQL set up isn’t a one-click process like the others. This requires MySQL to do some extra work and get a bit re-configured. No worries, it’s nothing extravagant.</p>
+
+<p>Setting up PHP was a breeze, and I like a good breeze.</p>
+
+<p>Once everything was added like I wanted, I started poking through my logs to see if I could really find good data without hassle. Turns out, I can.</p>
+
+<p>What’s better than watching someone from China try to hack into your system via SSH by trying to log in as the root user?</p>
+
+<p><img src="https://i2.wp.com/johnathanlyman.com/wp-content/uploads/2015/03/Screenshot2015-03-1420.25.24.png?w=882" alt="" /></p>
+
+<p>Nothing <img src="https://johnathanlyman.com/wp-includes/images/smilies/simple-smile.png" alt=":)" /></p>
+
+<p>I’d recommend Loggly to anyone who wants to consolidate and be able to parse and search through their log data. You might not need the heavy plans, I know I don’t. It’s still good to be able to look at events as they happen in real time with an interface that doesn’t suck and from anywhere in the world without having to log into your system.</p>
+
+<p>Go check out <a href="http://loggly.com">Loggly</a>, right now. You’ll enjoy it, for sure!</p>
+
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/2015/03/14/gaget/">
+        GAget
+      </a>
+    </h1>
+
+    <time datetime="2015-03-14T00:00:00-07:00" class="post-date">14 Mar 2015</time>
+
+    <p>I use <a href="https://google.com/analytics">Google Analytics</a>. It keeps track of all sorts of goodies for me. The thing I like the most and really appreciate is the visitor tracking. I like knowing how many people visit my site on a regular basis. I don’t use much outside those base features, though. Good thing there’s an app for that.</p>
+
+<p><img src="https://i2.wp.com/johnathanlyman.com/wp-content/uploads/2015/03/logo_black.png?resize=301%2C89" alt="" />There’s a sick little iPhone and OS X app called <a href="http://gagetapp.com">GAget</a>. It’s sole purpose is to provide you with just-the-meat of your <a href="https://google.com/analytics">Google Analytics</a> data including visitor sessions, bounce rate, new visitor percentage, and visit length. On iOS, this comes in the form of a super clean app that you can scroll though. On OS X, it’s a notification center widget. Both are super sexy.</p>
+
+<p>I strongly recommend you check it out on the <a href="https://itunes.apple.com/us/app/gaget-simple-widget-for-google/id968487158?mt=12">OS X App Store</a> ($2.99) or the <a href="https://itunes.apple.com/us/app/gaget/id716442061">iOS App Store</a> ($1.99).</p>
+
+<p> </p>
 
 
   </article>
@@ -358,7 +399,7 @@
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2015-12-06T12:04:40-08:00">2015</time>. All rights reserved.
+          &copy; <time datetime="2015-12-06T13:32:21-08:00">2015</time>. All rights reserved.
         </small>
       </footer>
     </div>

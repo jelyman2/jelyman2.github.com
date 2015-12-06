@@ -34,6 +34,12 @@
           <a href="/" title="Home">Johnathan Lyman</a>
           <small>Writer. Developer. Support Ops.</small>
         </h3>
+        <ul class="navigation">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Resources</a></li>
+        </ul>
       </header>
 
       <main>
@@ -41,195 +47,150 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2015/03/11/goodbye-dev-blog/">
-        Goodbye Dev Blog
+      <a href="/2014/09/09/photograph/">
+        Create A Photograph
       </a>
     </h1>
 
-    <time datetime="2015-03-11T00:00:00-07:00" class="post-date">11 Mar 2015</time>
+    <time datetime="2014-09-09T00:00:00-07:00" class="post-date">09 Sep 2014</time>
 
-    <p>I thought I would use it, I really did. I like <a href="http://ghost.org">Ghost</a> as a platform but it’s just not where I want it to be, right now. Perhaps in a year or so, I’ll give it another shot with serious intentions.</p>
+    <p><em>Level of Entry: Low</em></p>
 
-<p>In other news, the <a href="http://newrelic.com">New Relic</a> agent monitoring it sucks up memory like a Dyson vacuum. For an app that literally is doing nothing, New Relic’s NodeJS agent sure seems to look like it’s doing a lot of work.</p>
+<p>_Time to Master: Infinity_There’s a thought in the photography community which extends to pretty much any facet of life: you only get better by doing. One does not become a pro golfer by reading a book—although reading does help—nor does merely buying a professional-grade camera make you a good photographer.</p>
 
-<p>I’m sorry, I need my RAM back. It’s nothing personal.</p>
+<p>How does one become a pro, though? If that’s a path you want to take, awesome. If not, don’t worry, as this still applies to even those who want to excel at photography as a hobby or a small side gig to pass the time and pay the photography bills. I’ve broken it down into four super easy steps.</p>
 
-<p>Don’t get me wrong, I really like New Relic as a whole. They watch over my PHP environment, nginx and MySQL servers, and my server as a whole on the resource and load level for free. That’s pretty good in my book. Plus, all those agents seem to be playing nice, so they can stay.</p>
+<figure id="attachment_129" style="width: 640px;" class="wp-caption aligncenter"><a href="https://i0.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/F9g2FiPUSyC7IybhyI2p_09.jpg"><img class="wp-image-129 size-large" src="https://i2.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/F9g2FiPUSyC7IybhyI2p_09-1024x680.jpg?resize=640%2C425" alt="Guess what camera took this photo? I bet you can’t." data-recalc-dims="1" /></a><figcaption class="wp-caption-text">Guess what camera took this photo? I bet you can’t.</figcaption></figure>
+<p>## Get.
+At the start of this little conversation I told you a high-end camera does not a pro photographer make. But let’s make sure we differentiate high-end and high-quality. A Canon T5 is a high quality camera based on how its built, but a Canon PowerShot might not feel the same way. Whereas a Canon 1D-X is a high-end camera compared to a Canon T5.</p>
 
+<p>(side note: Yes, I could use Nikon, Pentax, Sony, Samsung, etc., but the brand doesn’t matter.)</p>
 
-  </article>
-  
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/03/11/apple-watch/">
-        Apple Watch
-      </a>
-    </h1>
-
-    <time datetime="2015-03-11T00:00:00-07:00" class="post-date">11 Mar 2015</time>
-
-    <p>The Apple Watch was formally announced on Monday. Part of me cares, part of me doesn’t.</p>
-
-<p>I like the idea of the Apple Watch. I like the way the stainless steel watch with the metal link band looks. I buy regular watches that look like that. Too bad it’s $1000.</p>
-
-<p>It’ll be hard for me to justify that kind of price tag. I look at what the Apple Watch allegedly can do, and I think to myself that I’d never use any of that. I like the idea of fitness trackers, and I like watches. If the Apple Watch was half the price, if I could get the watch I described for $500, instead, I’d buy it.</p>
-
-<p>Because I can’t, though, I’m looking for alternatives. This is where <a href="http://withings.com">Withings</a> comes in.</p>
-
-<p><a href="https://i0.wp.com/johnathanlyman.com/wp-content/uploads/2015/03/6.Withings_Activite_silver_side.png"><img src="https://i0.wp.com/johnathanlyman.com/wp-content/uploads/2015/03/6.Withings_Activite_silver_side-1024x683.png?resize=660%2C440" alt="6.Withings_Activite_silver_side.png" /></a></p>
-
-<p>I’m really enjoying the look of the Activité. It’s a simple device that does exactly what I want at a price tag that’s reasonable. The analog style is great and the battery life is outstanding.</p>
-
-<p>I’ve never 100% liked having a watch on one hand, and a FitBit on the other. I like my FitBit, but I’d like to wear it on my left arm… except my watch is there.</p>
-
-<p>I smell a birthday gift to myself coming soon.</p>
-
-<p>If my wife ever reads this: Wife, this is what I want for my birthday.</p>
-
-
-  </article>
-  
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/03/10/stack/">
-        The Stack
-      </a>
-    </h1>
-
-    <time datetime="2015-03-10T00:00:00-07:00" class="post-date">10 Mar 2015</time>
-
-    <p>Yesterday someone asked me what my stack looked like.</p>
-
-<p>Today I think it makes a good blog post.</p>
-
-<p>I’m always open to share the tech behind my sites and this one is no different. While not incredibly in depth, here’s how it goes:</p>
-
-<h2 id="layer-1-infrastructure">Layer 1: Infrastructure</h2>
-<p>The core of it all is DigitalOcean. They provide the resources my site sits on and so far they’re doing amazingly well. If I ever need more space or resources, I just need to click a few buttons and I’m on my way. I could also set up load balancing, too, with little effort if it comes to that. Their claim to fame are their awesome little (or big) droplets that start at $5. For $5 you get 512mb of RAM 20GB of SSD-backed storage, and 1TB of bandwidth. That’s enough for a small, site, for sure. I’ve moved higher than that mainly because of one member of my software stack that naturally uses more RAM. I’ll cover it later.</p>
-
-<h2 id="layer-2-operating-system">Layer 2: Operating System</h2>
-<p>Within my DigitalOcean home, Ubuntu 14.04 sits. I’ve chosen the LTS branch because I’m very much of a set-and-forget mentality when it comes to supporting architecture. I like the idea of not having to worry about my OS becoming outdated in a short window of time. It’ll effectively be supported until 16.04 comes out, and to give you an idea of when that is, 14.10 is currently the newest in line and 15.04 isn’t slated until the <a href="http://www.zdnet.com/article/ubuntu-developments-15-04-beta-1-and-the-first-ubuntu-phone/">end of April</a> for a release date. In essence, I’m good until at least April 2016. </p>
-
-<h2 id="layer-3-web-server">Layer 3: Web Server</h2>
-<p>Presenting all of these bits is hard work. That’s why I chose nginx to take up the task. It’s a great server application that I’ve combined with SSL to make every visit to <a href="https://jlyman.net">https://jlyman.net</a> secure. Minimal configuration is needed in order to make things hum along smoothly, and I’m glad for that.</p>
-
-<h2 id="layer-4-12-interpreter">Layer 4 1/2: Interpreter</h2>
-<p>PHP. Given I run WordPress, this is a given. However there are several ways to run it. In my case, I’ve taken then PHP5-FPM route. I could also use FastCGI (the more generic form of FPM) or MOD_PHP (which is actually not that fast in today’s environments). FPM allows me to keep PHP from sucking up too many resources and limiting its worker count. If something gets stuck, I can gracefully shut it down and bring it back up without any major headaches.</p>
-
-<h2 id="layer-4-22-database">Layer 4 2/2: Database</h2>
-<p>This one is also a given because I run WordPress. MySQL is on the back side hosting the actual content of this site. It’s backed up every hour for good measure and backups are stored in a safe place that can be reached via the outside. There are much more efficient databases however getting WordPress to work with them is rough going if not impossible at this time and I don’t see much changing any time soon.</p>
-
-<h2 id="layer-5-wordpress">Layer 5: WordPress</h2>
-<p>This is the cream on top. WordPress is my CMS of choice and it’s one I’ve used for several years. I remember when I first started using it back on version 2.5. WordPress has come a very long way and I’m grateful that development of such a product continues today with a massive community behind it. </p>
-
-<h2 id="layer-6-cloudflare--ssl">Layer 6: CloudFlare + SSL</h2>
-<p>On top of all this, CloudFlare + SSL takes care of all my caching needs. They’re very intelligent about what can be cached and what’s dynamic. I have yet to run into a case where stale content has been served. With their system comes continued use of SSL. This means that from the server to their server is secure, and from their server to you is also secure, no questions. DDoS efforts are limited quickly and geographic-dependencies are removed. Wherever you are, you’ll get quick load times and a lot of burden is taken off my system, which keeps my costs low. I love keeping costs low.</p>
-
-
-  </article>
-  
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/03/07/like-a-girl/">
-        Like a Girl
-      </a>
-    </h1>
-
-    <time datetime="2015-03-07T00:00:00-08:00" class="post-date">07 Mar 2015</time>
-
-    <p>I’ve been on this kick for the last few days about women in the software development world, or even the lack thereof. Some of it is based off of what I’ve witnessed, and some of it comes from personal experience.</p>
-
-<p>I work in an environment that’s mostly men. I also work in a rather large company that has several buildings where people get shuffled around from time to time. Recently, a new team took up some empty space in my building and after seeing our new tech residents, I became disappointed with what crossed my mind: “wow… she’s a developer?”</p>
-
-<p>Now that I’ve effectively made you think I’m a complete douche and that I think women should be in the kitchen, let me explain.</p>
-
-<p>First off, I think the level of female participation in STEM careers is awesome, especially technical fields like software development. There are a lot of bright female minds out there that I’m sure have crazy cool ideas and are just as good if not better at programming than a man.</p>
-
-<p>I reflected a bit on what happened and I came to realize, that thought didn’t cross my mind because she’s a woman, but because she wasn’t nerdy-looking.</p>
-
-<p>As a society, we’ve developed a stigma with software developers that they’re typically the nerdiest of the group and spend all of their time in front of a computer screen “hacking” or some crap like that.</p>
-
-<p>While a man might not care so much about his image, a woman most likely will. To be feminine in a technical role is to ask for trouble. Take this particular article on Medium titled “ <a href="https://medium.com/@sailorhg/coding-like-a-girl-595b90791cce">Coding Like a Girl</a>.” I wanted to pick it apart for a bit and point out some rather sad truths about the state of the developer union.</p>
-
-<blockquote>
-  <p>I can’t tell you how many people, when meeting me and hearing my profession, tell me that I look like a designer, someone in accounting, someone in marketing, anything but a programmer.This. If nothing else sticks through the rest of this post, consume this sentence. We’ve crafted an ideal female in various positions. In marketing, she’s probably going to be hot, skinny, likely blonde, and can sell you the air you’re already breathing. She knows how to pitch a new product and she makes good eye candy for the guys. If she was a developer, though, she’s probably just wearing a Zelda t-shirt and jeans, because that’s just what developers do, right?</p>
-</blockquote>
-
-<blockquote>
-  <p><a href="http://twitter.com/triketora">Tracy Chou</a>, an engineer at Pinterest, shared this story with me: A couple years ago she attended a technical conference and on the first day, she wore a dress. When she walked around the conference, no one came up to talk to her. When she asked people very technical questions about their stack, questions she assumed would indicate that she was a programmer, she was brushed aside and told, “ <strong>You wouldn’t understand</strong>.” She went back home that night really frustrated and flustered. She almost didn’t feel like going to the conference the next day. But she did and wore a nerdy t-shirt and jeans instead, and she had a better experience that day. People assumed she was technical and didn’t dilute their explanations to her.Not only have we come to a point where people can’t be pretty, but now they’re pretty stupid. It’s sad, really. I added my own emphasis to the above story because I want that statement to stick out. Telling someone they wouldn’t understand, regardless if they’re a woman or a man or a five year old is degrading. If you’ve told someone that, go die. I’ll admit, I’ve said that myself, and I hate myself for it. It’s an old habit that needs to die super hard.</p>
-</blockquote>
-
-<p>Who cares if someone doesn’t understand. Don’t be a pompous asshole and explain it to them. You never know the level of curiosity or interest someone has. Maybe you’ll end up being the gateway for them to broaden their skill set or learn something new. Instead, you just put them down. Way to go.</p>
-
-<p>The author goes on to talk about how people have said to her that acting like a woman is distracting. When I read this part, I actually chuckled a little bit that someone would even say that. I’m not entirely sure what do say about this besides something along the lines of “keep it in your pants.”</p>
-
-<p>I want to let you finish reading the article yourself, because I think it’s important that you get this from the source, from someone who’s experienced this firsthand. I’m a guy, so I’ll never know what it’s like to end up feeling second-class just because I have boobs. Yeah, I have boobs, but my wife isn’t dying to see them, if you know what I mean.</p>
-
-<p>To all the women out there who are actively pursuing what they want and aren’t fussing over making sure they don’t look too good or who aren’t dumbing down themselves and their looks to fit in and not rock the boat, good for you. Feminism was created out of the exact issues you’re going against. Instead of conforming, continue reforming.</p>
-
-
-  </article>
-  
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/03/07/failure-part-3/">
-        Failure, Part 3
-      </a>
-    </h1>
-
-    <time datetime="2015-03-07T00:00:00-08:00" class="post-date">07 Mar 2015</time>
-
-    <p>Recently, I discussed a recent failure of mine that hit home pretty hard. You can read <a href="http://johnathanlyman.com/p/failure" title="Recovering from Failure">part one</a> and <a href="http://johnathanlyman.com/p/failure-part-2" title="Recovering From Failure, Part 2">part two</a>, first, if you’d like, but it’s not necessary. Today another important event happened that goes well with this impromptu series I’ve started and I want to talk about it.</p>
-
-<p>Every day contains a new measure of varying successes. From the very beginning whether we get up in the morning on time and how many times we hit the snooze button, to whether we make it to work on time because of an accident on the freeway, to if we prepared enough for the meeting with the big cheeses.</p>
-
-<p>Let’s be honest about something. Failure isn’t a thing.</p>
-
-<p>Whoa, wait what?</p>
-
-<p>Says who?</p>
-
-<p>Me.</p>
-
-<p>As someone who’s “failed” many times you and I should very well know by now that sometimes shit happens. That doesn’t make any one thing a failure.</p>
-
-<p>We define failure as a threshold. Beyond X percentage of things going according to plan, we’re succeeding at something. Below X, we’re failing. This starts early in life with school. The archaic grading system we still use today—because if it ain’t broke, don’t fix it, right?…right?…guys?—tells us if we’re 100% correct on whatever menial task we’re completing, we’re performing admirably. If we only complete 59%, we’re failures.</p>
-
-<p>Well damn.</p>
-
-<p>I’m no rocket scientist but I think we’re on to something and it’s surely not rocket science.</p>
-
-<p>This rather feudal method of ranking each other sets everyone up for failure. We carry it through life and it becomes how we go about our day. Maybe we’re not getting a grade on how quickly we showered, but we’re still looking internally and ranking ourselves.</p>
-
-<p>We just use the words “today sucked.”</p>
-
-<p>We have this system so ingrained in our minds and in our ways of life that after a point, we just say “I give up” or “I’m over it.” It becomes easy to care none because we not only have this mindless scale, but we automatically think that once we cross the point of no return, it’s better to blow the rest off.</p>
-
-<p>That would certainly be the case in school if you didn’t have a passing grade and there wasn’t enough time or “things” left to do to possibly raise the score… 20th century education at its finest.</p>
-
-<p>I keep going back and bashing on the educational system and in all honesty, that wasn’t my original goal when I started writing this. Things just kind of turned that way as the pieces started falling into place.</p>
-
-<p>Failure is a completely synthetic thing. Failure is only measurable because we as humans believe we need to measure it.</p>
-
-<p>Think about everything we have and interact with that measures failure:</p>
+<p>What you need to do to complete the “get” phase is this:</p>
 
 <ul>
-  <li>Performance Reviews</li>
-  <li>Report Cards</li>
-  <li>Credit Reports</li>
-  <li>Insurance Rates</li>
-  <li>Incarceration</li>
-  <li>Counseling
-I bet you’d love to shoot back at me with a million reason why each one of those don’t actually measure failure, and I’d be interested to hear what you have to say. I was going to originally break down each one of these things but I really don’t think it’s necessary. I made the list to prove a point.</li>
+  <li>Determine your budget.</li>
+  <li>Make a list of everything you want in a camera.</li>
+  <li>Cross off everything that has anything to do with megapixels, high quantity of auto-focus points, the letters “L” or “G” for Canon or Nikon lenses, frames per second, CompactFlash vs SD, Medium Format. You don’t need any of that extra stuff to take a good photo.</li>
+  <li>Find a camera lens for less than $200. Your choices are limited. On purpose.</li>
+  <li>No flashes until you feel comfortable without them.</li>
+  <li>Gather the necessary accessories for said camera. This includes a memory card and bag (simple is fine).
+Now that you’ve collected your gear, it’s time to get outside and make a photograph of something. (If you have the space, resources, and ability, you can make a photograph indoors, too, but it’s generally cheaper to walk outside than to buy studio equipment.</li>
 </ul>
 
-<p>Our lives rotate around not failing, and failing is how we learn. We complete a task or an action and don’t do well at it, so we figure out what we did wrong and continue. We shouldn’t dwell on the idea that a particular thing takes time to master and in the meantime, we’re sub-par. No one is a master of anything overnight. No one is a master of anything even over two nights.</p>
+<figure id="attachment_122" style="width: 1024px;" class="wp-caption aligncenter"><a href="https://i0.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/standby.jpg"><img class="wp-image-122 size-large" src="https://i2.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/standby-1024x683.jpg?resize=882%2C588" alt="Or this photo for that matter!" data-recalc-dims="1" /></a><figcaption class="wp-caption-text">Or this photo for that matter!</figcaption></figure>
+<p>## Do.
+This is the easiest step.</p>
 
-<p>The next time you tell yourself: “I wish I could just do today over,” let me know so I can slap you. You can go ahead and be a little bitch about it or you can just keep moving. You of all people should care the least if you haven’t mastered the day. Continue doing you and don’t worry about the rest. If you’re learning a new language, just keep working on it. If you’re trying to get into graduate school, just keep applying. If you’re developing a new app and don’t feel like it’ll meet everyone’s standards and would rather play video games because at least there you don’t get to see utter failure in the form of bad reviews, I’m sorry to say it but you need to nut up.</p>
+<p>Before you being, make sure you take your camera out of the box. That’s a key step to becoming fluent in the language of photography. Also, make sure you know it’s controls. The manual is the most detailed source of information on this. If you don’t have a manual, check out your manufacturer’s website. I’ve even provided a few links for you to give you a head start:  <a href="http://www.usa.canon.com/cusa/support/consumer">Canon</a>,  <a href="https://support.nikonusa.com/app/answers/detail/a_id/13948/~/nikon-product-manuals-available-for-download">Nikon</a>,  <a href="http://www.samsung.com/us/support/#Digital%20Cameras">Samsung</a>,  <a href="http://esupport.sony.com/US/p/select-system.pl?DIRECTOR=DOCS">Sony</a>,  <a href="http://www.ricoh-imaging.co.jp/english/support/download_manual.html">Pentax</a>,  <a href="http://www.olympusamerica.com/cpg_section/cpg_download_manuals.asp">Olympus</a>.</p>
 
-<p>The best things you have in life are the ones you worked the hardest for. You’ll value them the most and you’ll appreciate having them around. This goes for people, too.</p>
+<p>If you haven’t taken a photo of more than your cat, do take a photo of something other than your cat. If you haven’t taken a photo at night, go do that. Do as much as you can as often as you can. You’ll take loads of crappy photos.</p>
 
-<p>The next time you tell yourself you failed, tell yourself instead that you’ll be better at it tomorrow. Yoda tells us there is no “try.” That cat was right.</p>
+<p>While this is the <em>Do</em> step, <em>Do Not</em> let that break your spirit. You’ll figure out ways to tweak and find your unique touch in the next step.</p>
+
+<p>Doing requires time, of course. If you don’t have hours upon hours of free time to spare, do a 365 project—take a photo of something you haven’t taken a photo of before, every day, for a year. Do that as much as you can. Do take photos with your friends. Of your friends. Around your friends. Of people you want to be friends with. Perfect strangers (ask first—don’t rude).</p>
+
+<p>Once you’ve taken your daily photo, go take a hundred more of different things. Go to a park. A zoo. A car show. Walk down the street. Walk up the street. Find a bug. Find two bugs. Find a bug killing a bug, National Geographic style!</p>
+
+<p>There should be zero people in your life pressuring you to perform here. If anything people around you should be supportive of your new endeavor. Maybe if you ask nicely, they’ll pose for you! If you feel pressured to perform, remove that source of pressure from your life. Stop wishing. Stop comparing. Stop thinking. Now is not the time to think. Now is the time to do, to make.</p>
+
+<p>Getting the idea?</p>
+
+<h2 id="dvdhttpsi1wpcomjohnathanlymancomwp-contentuploads201501dvd-1024x683jpgfit8822c882httpsi0wpcomjohnathanlymancomwp-contentuploads201501dvdjpg"><a href="https://i0.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/dvd.jpg"><img src="https://i1.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/dvd-1024x683.jpg?fit=882%2C882" alt="dvd" /></a></h2>
+<p>## Look.
+Time to learn. You’ve taken a load of photos and are starting to get a hang of your camera. If not, go back to Step Do. Now’s the time to learn and pretty much down right steal from other people.</p>
+
+<p>We need to be very clear, though. By steal, I don’t mean ripping off another’s work and calling it your own. I’ll go into more detail about that, but first let’s talk about learning. There are great free and fee-based learning platforms and videos available on the Internet. In this day and age, a DVD takes second fiddle to instant, on-demand content.</p>
+
+<p>Great free videos, courses, and platforms include  <a href="http://petapixel.com/2014/07/03/best-free-online-photography-courses-tutorials/">this list from PetaPixel</a>,  <a href="https://www.creativelive.com/photography">free live events by CreativeLive</a>, and funny  <a href="https://www.youtube.com/user/DigitalRevCom">YouTube videos by DigitalRev</a>,  <a href="https://www.youtube.com/user/PhlearnLLC">Phlearn</a>, and  <a href="https://www.youtube.com/user/thatnikonguy">Matt Granger</a>.</p>
+
+<p>Premium platforms include  <a href="http://www.lynda.com/Photography-training-tutorials/70-0.html?bnr=NMHP_blocks">Lynda.com</a>,  <a href="http://kelbyone.com/">KelbyOne</a>, and  <a href="https://www.creativelive.com/photography">CreativeLive’s On Demand video selection</a>.</p>
+
+<p>Watch everything you can. If you have to, take notes and watch it again. You can’t watch too many videos.</p>
+
+<p>Once you’ve consumed more videos and articles than your brain can handle, find photographers in niches you personally enjoy. Look at their work. Read their blogs. Follow them on Facebook, Twitter, Google+, Pinterest, 500px, and any other social networking site they use. Even better, don’t just follow them, chat with them. Reach out to them for tips or really anything you can think of that would possibly help you! If you were to reach out to me on twitter  <a href="https://twitter.com/theejl">@theejl</a>, I’d respond… just saying.</p>
+
+<p>Once you’ve done that, steal from them. Specifically, steal their look. Try to make a photo that looks like that. If it’s something like a landscape or wildlife, capture that same animal or area! When you’ve successfully done that, do it again, with another photographer. I’d be willing to bet cold hard money bags of money that the second photographer you follow or are otherwise interested in their work shoots differently than you do, with a different style. Once you’ve knocked out number two, go for a third, and a fourth. After every attempt or measure of success, make it your own. This’ll help you figure out what your style is. You’ll find yourself going back to what you like the most and over time, tweaking it to make it your own.</p>
+
+<p><a href="https://i2.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/building.jpg"><img src="https://i2.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/building-1024x683.jpg?fit=882%2C882" alt="building" /></a></p>
+
+<h3 id="repeat">Repeat.</h3>
+<p>So you’ve completed Step Learn. Now what? Do it all over! If only a small amount of time has passed (less than a year), start with Step Do. If it’s been a bit of time or you have the ability to upgrade, do that, with the mindset that you’re upgrading because you can improve yourself with your new gear in ways that you can easily quantify, not just because you like a red band on the end of your lens.</p>
+
+<p>You’ll find this to be an endless cycle that even pros will execute from time to time. If you become a full-time professional, you’ll <em>always</em> be looking for ways to improve and making sure you have everything you need to be as creative and as successful as possible.</p>
+
+<hr />
+<section></section>
+<p><em>Author’s Note: I could have made this list stupid long as in reality there are hundreds of different ways to learn or improve.  <a href="http://petapixel.com/2014/01/24/40-tips-take-better-photos/">PetaPixel</a> went into great detail with quotes from professional photographers that’s definitely worth reading.</em></p>
+
+<section class=" section--last"></section>
+<hr />
+<p>Tell me what you think of this article. I love hearing from my readers. You can email me:  <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#116;&#104;&#101;&#101;&#106;&#108;&#121;&#109;&#097;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">TheeJLyman@GMail.com</a> or tweet  <a href="https://twitter.com/theejl">@theejl</a>. I read and respond to everything on both platforms. I look forward to chatting!</p>
+
+<hr />
+<p>I originally <a href="https://medium.com/@jlyman/create-a-photograph-ca87c78afbac">wrote this on Medium</a> on September 9, 2014.</p>
+
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/2014/09/07/plans/">
+        When Things Don’t Go According to Plan
+      </a>
+    </h1>
+
+    <time datetime="2014-09-07T00:00:00-07:00" class="post-date">07 Sep 2014</time>
+
+    <p><em>Why it’s not the end of the world and sometimes you just need to suck it up.</em></p>
+
+<blockquote>
+  <p>ad·ven·ture (n.) — an unusual and exciting, typically hazardous, experience or activity.I’m a landscape photographer when I’m not studying or working at my day job in IT. My free time is limited but when I have the ability to go on an adventure with my gear I take it. Sometimes, I take a wrong turn.</p>
+</blockquote>
+
+<p>With summer coming to an end, I know I only have a few weekends left before fall rolls in and crushes my hopes of a great sunset somewhere new, or awesome weather patterns. See, here in the State of Washington, Fall looks a hell of a lot like this:</p>
+
+<figure id="attachment_128" style="width: 1024px;" class="wp-caption aligncenter"><a href="https://i1.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/2009-09-27-16.31.04.jpg"><img class="wp-image-128 size-large" src="https://i1.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/2009-09-27-16.31.04-1024x768.jpg?resize=882%2C662" alt="Courtesy of http://hakuinthemirror.blogspot.com" data-recalc-dims="1" /></a><figcaption class="wp-caption-text">Courtesy of http://hakuinthemirror.blogspot.com</figcaption></figure>
+<p>That freaking sucks. Granted, that photo was taken in Denmark, but Denmark and the Pacific Northwest are pretty close to the same latitudinal line. From October to May, Washington is usually a variation of the above, with a day or two here and there with awesome weather.</p>
+
+<p>My most recent attempt and wrapping up summer on a high note ended in failure. It was frustrating. I was pissed, but at the same time, I had no right to be. There was not a good reason why I was as frustrated as I felt after realizing I took a terribly wrong turn an hour after I made it.</p>
+
+<p>But I was upset, nonetheless. Good thing I had cell service to look up an alternate route.</p>
+
+<p>Oh wait.</p>
+
+<p>I didn’t.</p>
+
+<p>Crap.</p>
+
+<p>Now what?</p>
+
+<p>Do I turn around or keep going?</p>
+
+<p>Where the hell am I?</p>
+
+<p>My original goal was to arrive at the Johnston Ridge Observatory on the northwest side of the mountain. Instead, I ended up at the end of a road on the south side of the mountain. Good thing I didn’t blow a tire… or run out of gas.</p>
+
+<p>Here’s where my frustration kicks in. Once I realize I’m nowhere near where I want to be, I lose my cool. I got off Interstate 5 about twenty miles too early and there’s no other way to get around the mountain than by backtracking all the way to said freeway. Not only that, but I’m missing my window that I Wanted to arrive by and unless a miracle happens (which none did), I won’t make it at all.</p>
+
+<p>After turning around and driving back the way I came, in search of a cell signal to verify the sinking suspicion I already had, it hits me that this whole problem is really my fault. I wasted the opportunity. I dragged my wife—who is already very tired from a long day with family—to the middle of nowhere only to turn around and go home with <em>zero</em> to show for it. My wife tries to apologize and while I appreciate her empathy and consideration for how important photography is to me, she did nothing wrong.</p>
+
+<h3 id="how-the-hell-did-we-end-up-here">How The Hell Did We End Up Here?</h3>
+<p>Well I’ll tell you. See, when you search for “Mt. St. Helens” on Google Maps, you get <em>exactly</em> what you searched for. It drops a pin smack freaking dab in the middle of the mountain.</p>
+
+<p>But guess what? that’s not where I want to go. See I want to go a bit north, to the end of highway 504 (at the top of the image above). Where did Google Maps decide we need to go to reach out destination? About half-way between the pin on the map and the Swift Resivoir at the bottom of the image. Guess what’s out there?  <strong>Nothing</strong>.</p>
+
+<p>I didn’t know this was taking place, however, when I asked my wife and adventure co-pilot to get directions to Mt. St. Helens. What I <em>should</em> have asked was to get directions to the Johnston Ridge Observatory, which is exactly where I want to go. Did my wife know that? No. Typically she knows what I tell her because she trusts me and trusts the fact that I know what I’m doing—I’m supposed to be a professional. Reason two why I’m pissed off.</p>
+
+<p>To top it all off, I’m already freakin’ tired, myself, and knowing that I just blew two hours of daylight driving to and from the middle of nowhere makes reason number three.</p>
+
+<h3 id="nut-up-and-write-it-off-as-another-learning-experience">Nut up and write it off as another learning experience.</h3>
+<p>You can never have too many of those, and that’s the conclusion I’ve come to. Beyond my frustration, there was regular me understanding that making sure the plan is not only in existence but is correct is quite important. Any adventure you take needs to have some sort of plan, unless the goal is merely to wander without purpose. (You can’t wander with purpose, just so we’re clear).</p>
+
+<p>For next time, I know that when I set my route (or my co-pilot in life and in the car, my wonderful wife does it for me), it’s important to make sure that the destination is correct. Everything that happens in the meantime is up in the air and I’m fine with that; that’s what makes an adventure, an adventure.</p>
+
+<hr />
+<p><em>I originally <a href="https://medium.com/@jlyman/when-things-dont-go-according-to-plan-57770b94c847">wrote this on Medium</a> on September 7th, 2014.</em></p>
 
 
   </article>
@@ -238,7 +199,7 @@ I bet you’d love to shoot back at me with a million reason why each one of tho
 
 <div class="pagination">
   
-    <a class="pagination-item older" href="/page27">Older</a>
+    <span class="pagination-item older">Older</span>
   
   
     <a class="pagination-item newer" href="/page25">Newer</a>
@@ -249,7 +210,7 @@ I bet you’d love to shoot back at me with a million reason why each one of tho
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2015-12-06T12:04:40-08:00">2015</time>. All rights reserved.
+          &copy; <time datetime="2015-12-06T13:32:21-08:00">2015</time>. All rights reserved.
         </small>
       </footer>
     </div>

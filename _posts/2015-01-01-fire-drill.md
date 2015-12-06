@@ -21,8 +21,8 @@ The takeaway here is this: do what you can with what you have, and that’s that
 ## How to Triage a Last-Minute Project
 Here’s the scenario: you’ve arrived at the office at your normal time, and team lead Joe from the Development team at XYZ Corp (the company you work for) rushes to your desk and says they need all of your staff to drop whatever they’re doing and do A, B, and C tasks by the end of the day, then scurries back to whatever hole he came out of. You, the PM and leader of your team of elite superhumans, knows very well how quickly a project can go sideways and understands the need to make sure the pieces all fall into place in a timely fashion. Here’s where you have three options:
 
-- Automatically say yes without any second thoughts. 
-- Say No with an asterisk (a.k.a: “I need more information”). 
+- Automatically say yes without any second thoughts.
+- Say No with an asterisk (a.k.a: “I need more information”).
 - Say No and give a reason.
 Let’s cover those three options in detail and determine which will create what outcome, starting with the worst-possible choice.
 
@@ -86,4 +86,3 @@ Don’t get mad at me if you get fired over anything I’ve written. These are m
 Thanks for taking the time to read this. If you have any comments, suggestions or questions, please don’t hesitate to reach out to me. If you’d like, hit me up on twitter. I’d love to have a conversation with you. I’m always open to hearing what other’s think about various topics. There’s never just one way of doing things and something can always be improved upon.
 
 (you can also find this post on the wonderful writing platform [Medium](https://medium.com/@jlyman/poor-planning-on-your-part-does-not-necessarily-constitute-an-emergency-on-mine-cfe45ec14162).)
-
