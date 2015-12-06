@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 
 gem 'jekyll'
 
+# For Jekyll
 group :jekyll_plugins do
   gem 'jekyll-gist'
   gem 'kramdown'
