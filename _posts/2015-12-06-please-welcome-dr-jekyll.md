@@ -19,7 +19,7 @@ There were a few reasons why I finally bit the bullet and I wanted to share them
 
 4. **I feel more developer-y**. I don't know if *not* using WordPress is a requirement for this one but it just feels right. I really enjoyed the setup process and learned a lot about the whole thing. Granted I have a bit of experience with [Ruby](https://github.com/search?l=Ruby&q=user%3Ajelyman2&ref=searchresults&type=Repositories&utf8=✓), already, which really helped in troubleshooting.
 
-So with all that being said, here it is. Every time I update, I push the new files to both a GitHub repo and my server at the same time[^2] so I have redundancy and it's an easy way to show off what i'm doing to make this site interesting using a popular static site generator.
+So with all that being said, here it is. Every time I update, I push the new files to both a [GitHub repo](http://jelyman2.github.io) and my server at the same time[^2] so I have redundancy and it's an easy way to show off what i'm doing to make this site interesting using a popular static site generator.
 
 Over the next couple weeks, I'll be sure to share any unique experiences I had and what I learned from them so stay tuned!
 
