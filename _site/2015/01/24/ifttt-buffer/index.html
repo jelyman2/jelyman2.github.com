@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      How to Set up Automatic WordPress Blog Post Scheduling with IFT.TT, and Buffer &middot; Johnathan Lyman
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico"> -->
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="Johnathan Lyman" href="/atom.xml">
+  <!-- Latest compiled and minified CSS -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-957608-12', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="container content">
+      <header class="masthead">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">Johnathan Lyman</a>
+          <small>Writer. Developer. Support Ops.</small>
+        </h3>
+        <ul class="navigation">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/resources">Resources</a></li>
+        </ul>
+      </header>
+
+      <main>
+        <article class="post">
+  <h1 class="post-title">How to Set up Automatic WordPress Blog Post Scheduling with IFT.TT, and Buffer</h1>
+  <time datetime="2015-01-24T00:00:00-08:00" class="post-date">24 Jan 2015</time>
+  <p>Let’s be honest. The year is 2015 and nobody wants to do things by hand or manually if they can help it. Companies are hiring people to automate the hell out of everything because like M.I.A (sort of, not really) <a href="http://go.jlyman.net/1JnTw3K">famously rapped</a>:</p>
+
+<blockquote>
+  <p>“<em>live fast, die young, robots do it well.</em>“I’ll admit, I like speeding up the process of sharing what I’ve written but I like controlling it a bit more than some. Here’s how I do it.</p>
+</blockquote>
+
+<p>You’ll want to create an account with <a href="http://go.jlyman.net/1Cpvd3e" title="IFTTT">IFTTT</a> and <a href="https://bufferapp.com">Buffer</a> if you haven’t already. IFTTT stands for <strong>IF</strong>  <strong>T</strong> his, <strong>T</strong> hen <strong>T</strong> hat. The premise is that you can take data being expelled from one service, and based on certain criteria, do something with it via another. Things like “Text me with the daily weather report at 5AM” are easy and, well, kind of cheesy. If you become a power user of IFT.TT or already are, you’ll know that there’s so much more you can do with the service like auto-tweet breaking news stories from news sources or trigger your Philips Hue home lighting to change color when a storm warning comes into effect.</p>
+
+<p>In my case, I want to sync IFTTT with my WordPress install. To start, I’ll need to create a new recipe and click on the blue <em>this</em> link (A) and choose the WordPress trigger channel (B). This will be the source for the data that IFTT uses.</p>
+
+<p><a href="https://i1.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/ifttt_step1.jpg"><img src="https://i0.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/ifttt_step1-1024x640.jpg?resize=629%2C393" alt="ifttt_step1" /></a></p>
+
+<p> </p>
+
+<p>Once I have that set, I can choose whether I want this action to be triggered by any new post from WordPress, or just when the post has a particular tag or category. In my case, I choose the former, because I want to share all posts.</p>
+
+<p><a href="https://i0.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/Screenshot-2015-01-24-20.48.33.png"><img src="https://i0.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/Screenshot-2015-01-24-20.48.33.png?resize=629%2C243" alt="Screenshot 2015-01-24 20.48.33" /></a></p>
+
+<p> </p>
+
+<p>We can skip Step 3 as there’s nothing else to set for these triggers and move on to step four. Click Create Trigger.</p>
+
+<p>So at this point we’ve established that if there’s any new post on WordPress Blog then we’ll do something. Now we establish what that something is. Click the blue _that _link. In my case, I want to share to Buffer.</p>
+
+<p><a href="https://i0.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/Screenshot-2015-01-24-20.51.36.png"><img src="https://i1.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/Screenshot-2015-01-24-20.51.29.png?resize=627%2C199" alt="Screenshot 2015-01-24 20.51.29" /></a></p>
+
+<p><a href="https://i0.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/Screenshot-2015-01-24-20.51.36.png"><img src="https://i0.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/Screenshot-2015-01-24-20.51.36.png?resize=627%2C262" alt="Screenshot 2015-01-24 20.51.36" /></a></p>
+
+<p> </p>
+
+<p>I will want to choose the “Add to Buffer” option since I won’t be pushing photos from my source. My final step is to set up how I want my shares to look and then I create my action.</p>
+
+<p><em>Note: If this is your first time, you’ll have to set up what account you want Buffer to schedule this IFTTT-pushed content on. </em></p>
+
+<p><a href="https://i2.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/Screenshot-2015-01-24-20.53.36.png"><img src="https://i2.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/Screenshot-2015-01-24-20.53.36.png?resize=627%2C308" alt="Screenshot 2015-01-24 20.53.36" /></a></p>
+
+<p>There are a couple things to keep in mind when setting this up. Anything pushed from IFTTT to Buffer: 1) will be set to whatever schedules you have created and 2), will only be pushed to whatever social media account you have set up for this channel. You can only have one social media account chosen for this type of setup.</p>
+
+<p>If you want to use more than just one social media account to share you content, I recommend creating separate recipes for each. Granted, only one of them will be scheduled via Buffer, so keep that in mind. In my situation, I don’t really mind, and I use Buffer so much already that I like having the ability to manually schedule for other social media accounts that don’t get as much regular pushing of content.</p>
+
+<h3 id="all-done">All Done!</h3>
+<p>It’s that simple. If you have account with IFTTT and Buffer already set up, this will take you thirty seconds to do. You’ll find this thirty seconds will save you time in the long run and will become something that you don’t even think about at the end of the day.</p>
+
+<p>Sure you could use WordPress plugins, too, and that’s all fine and dandy. I’m not stopping you! This is how I like to do it and I figured someone out there might like to know.</p>
+
+<p>Thanks for stopping by, have a good one!</p>
+
+<p> </p>
+
+<p> </p>
+
+
+</article>
+
+
+<aside class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2015/12/06/please-welcome-dr-jekyll/">
+            Please Welcome Dr. Jekyll
+            <small><time datetime="2015-12-06T00:00:00-08:00">06 Dec 2015</time></small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2015/11/28/after-three-weeks/">
+            After Three Weeks
+            <small><time datetime="2015-11-28T00:00:00-08:00">28 Nov 2015</time></small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2015/11/10/seeing-the-forest-for-the-trees/">
+            Seeing the Forest for the Trees
+            <small><time datetime="2015-11-10T00:00:00-08:00">10 Nov 2015</time></small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</aside>
+
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2015-12-06T19:02:06-08:00">2015</time>. Blog by Johnathan Lyman. All rights reserved.
+        </small>
+      </footer>
+    </div>
+
+  </body>
+</html>

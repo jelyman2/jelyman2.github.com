@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      Bulk Updating Any Meta Values in WordPress Posts Automatically &middot; Johnathan Lyman
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico"> -->
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="Johnathan Lyman" href="/atom.xml">
+  <!-- Latest compiled and minified CSS -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-957608-12', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="container content">
+      <header class="masthead">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">Johnathan Lyman</a>
+          <small>Writer. Developer. Support Ops.</small>
+        </h3>
+        <ul class="navigation">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/resources">Resources</a></li>
+        </ul>
+      </header>
+
+      <main>
+        <article class="post">
+  <h1 class="post-title">Bulk Updating Any Meta Values in WordPress Posts Automatically</h1>
+  <time datetime="2015-05-02T00:00:00-07:00" class="post-date">02 May 2015</time>
+  <p>I updated the look of my site, today, and with that came a non-standard setup for featured images and the realization I’d have to manually update a lot of posts.</p>
+
+<p>The theme requires custom meta be used for the featured image setting to determine how to display an image. As of this post, I have roughly 170 blog posts in the database that would need updating from the beginning of January until now. I definitely didn’t want to spend the next 60 minutes (170 posts * time to click) updating each post, so I did a bit of quick and dirty PHP coding.</p>
+
+<p>Placing the code within the_loop() allowed it to run automatically for each post that was presented. Setting the per-page post count to 200, I effectively had all 170 posts pushed on screen at the same time. This subsequently updated all 170 posts at the same time. This of course put a little bit of a hit on my SQL database, but not so much that it bogged it down. I’m sure having 170 * 2 reads then writes all at once blew out a few of the cobwebs. Most of this site is cached pretty effectively so the database doesn’t do much.</p>
+
+<p><a href="https://i0.wp.com/johnathanlyman.com/wp-content/uploads/2015/05/Screenshot-2015-05-02-18.23.56.png"><img src="https://i0.wp.com/johnathanlyman.com/wp-content/uploads/2015/05/Screenshot-2015-05-02-18.23.56.png?resize=882%2C359" alt="Screenshot 2015-05-02 18.23.56" /></a></p>
+
+<p>You’ll see in the image above where I made the updates. The first spike should have been the only one, but I entered the wrong value for one of the custom meta fields so I had to go back and do it again. The code has logic so if it was already correct, it skipped it, hence the smaller second peak.</p>
+
+<p>If you’re curious, the above came from <a href="http://newrelic.com">NewRelic</a>, a service offering made by some pretty cool people. They’re free to use for the basic stuff and their customer service rocks. &lt;/shameless plug&gt;</p>
+
+<p>Anyway, without further delay, here’s the code that made this happen:</p>
+
+<script src="https://gist.github.com/jelyman2/56c68169e85ae18ce62c.js"></script>
+<noscript>View the code on <a href="https://gist.github.com/jelyman2/56c68169e85ae18ce62c">Gist</a>.</noscript>
+<p>Pretty neat, eh? I know it’s nothing spectacular but it gets the job done, for sure.</p>
+
+<p>Share this post with everyone you know who’s even just remotely interested in WordPress development. One could even bulk-update posts themselves with zero clicks or interaction necessary.</p>
+
+<p>I feel like I did a great thing, today. Time for a beer.</p>
+
+
+</article>
+
+
+<aside class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2015/12/06/please-welcome-dr-jekyll/">
+            Please Welcome Dr. Jekyll
+            <small><time datetime="2015-12-06T00:00:00-08:00">06 Dec 2015</time></small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2015/11/28/after-three-weeks/">
+            After Three Weeks
+            <small><time datetime="2015-11-28T00:00:00-08:00">28 Nov 2015</time></small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2015/11/10/seeing-the-forest-for-the-trees/">
+            Seeing the Forest for the Trees
+            <small><time datetime="2015-11-10T00:00:00-08:00">10 Nov 2015</time></small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</aside>
+
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2015-12-06T19:02:06-08:00">2015</time>. Blog by Johnathan Lyman. All rights reserved.
+        </small>
+      </footer>
+    </div>
+
+  </body>
+</html>

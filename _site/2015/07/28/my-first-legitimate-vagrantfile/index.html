@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      My First Legitimate Vagrantfile &middot; Johnathan Lyman
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico"> -->
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="Johnathan Lyman" href="/atom.xml">
+  <!-- Latest compiled and minified CSS -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-957608-12', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+  <body>
+
+    <div class="container content">
+      <header class="masthead">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">Johnathan Lyman</a>
+          <small>Writer. Developer. Support Ops.</small>
+        </h3>
+        <ul class="navigation">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/resources">Resources</a></li>
+        </ul>
+      </header>
+
+      <main>
+        <article class="post">
+  <h1 class="post-title">My First Legitimate Vagrantfile</h1>
+  <time datetime="2015-07-28T00:00:00-07:00" class="post-date">28 Jul 2015</time>
+  <p>I feel like I’ve created this sort of new kind of being. Previously, I had rarely used Vagrant or Docker or anything of the sort, so the idea of being able to craft an on-demand virtual machine with whatever the hell I want inside of it was both exciting and terrifying.</p>
+
+<p>Linux isn’t foreign to me, and neither is the idea of automation, but after being so accustomed to working in a Windows environment against my better judgement for several years, there was a lot of cobweb removal.</p>
+
+<p>Needless to say I could have prevented the aging of my knowledge by staying up to date on every development and deployment technology I could get my hands on. There are, however, only so many hours in the day. Something had to give.</p>
+
+<p>Now I’m paying for that decision as I work on slowing transitioning myself into a more software-development oriented career path. I enjoy ops-y stuff, but I like building things. I like tinkering (hacking?). My boss made a joke today about how involved I get whenever there’s a discussion about minor HTML tweaks to one of our sites.</p>
+
+<p>Hey… I like that shit.</p>
+
+<p>One thing that made it easier for me to get into this new and soon-to-be-awe-inspiring technology is that I had a purpose. There was a clear goal I wanted to meet and beat.</p>
+
+<p>One of our software offerings runs on JIRA. If you’re unfamiliar with the product, it’s a Java-based project management/issue tracking/development/agile tool for organize and keep track of just about anything. Software companies and app development teams are likely the largest consumers of this product. On a regular basis, my team is spinning up and burning down JIRA instances in the never-ending hunt for bug reproduction, walkthroughs, and everyday troubleshooting.</p>
+
+<p>Unfortunately, installing JIRA by hand isn’t fun if you’re running a Linux box. The Windows installer is pretty hands-off but Windows is Windows.</p>
+
+<p>My end goal was to be able to fire up the almighty Vagrant, have it build out a Linux image with a database, JIRA, and be ready to accept input in the browser. I piggy-backed off a couple other like-minded setups I found on GitHub so it only took a couple hours to get it doing what I wanted.</p>
+
+<p>So without further ado, <a href="http://github.com/jelyman2/vagrant-jira-mysql">here’s the link</a>. It’s a work in progress as I’d like to someday have data pre-filled and JIRA pre-installed. I’m not sure how feasible that is given JIRA’s licensing structure. For the uninitiated, the license key is unique and time-based. The key starts to wither away the moment its generated instead of the system stopping working after 30 days from install.</p>
+
+<p>Next week I might try the same with Docker. I’d love to be able to manage a cluster of these types of setups that can be built up and torn down as needed with little overhead. Instead of making the pre-game ritual longer, I want to make it shorter but more enjoyable.</p>
+
+
+</article>
+
+
+<aside class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2015/12/06/please-welcome-dr-jekyll/">
+            Please Welcome Dr. Jekyll
+            <small><time datetime="2015-12-06T00:00:00-08:00">06 Dec 2015</time></small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2015/11/28/after-three-weeks/">
+            After Three Weeks
+            <small><time datetime="2015-11-28T00:00:00-08:00">28 Nov 2015</time></small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2015/11/10/seeing-the-forest-for-the-trees/">
+            Seeing the Forest for the Trees
+            <small><time datetime="2015-11-10T00:00:00-08:00">10 Nov 2015</time></small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</aside>
+
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2015-12-06T19:02:06-08:00">2015</time>. Blog by Johnathan Lyman. All rights reserved.
+        </small>
+      </footer>
+    </div>
+
+  </body>
+</html>

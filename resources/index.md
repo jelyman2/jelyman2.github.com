@@ -8,35 +8,39 @@ title: Resources
 One of the ways I like to share with the tech and blogging community is to share what I read, like use, and recommend. Everything you see below is recommended because I like it, use it, or believe in it.
 
 ### Books
-* Turning Pro by Stephen Pressfield ([Amazon](http://amzn.to/1LvnEgh)*)
-* How to Win Friends and Influence People ([Amazon](http://amzn.to/1fXfYr5)*)
+* Turning Pro by Stephen Pressfield ([Amazon](http://amzn.to/1LvnEgh)[^1])
+* How to Win Friends and Influence People ([Amazon](http://amzn.to/1fXfYr5)[^2])
 
 ### Software
 **Design, Photography/Imaging**
+
 * [Adobe Photoshop](https://www.adobe.com)
 * [Adobe Lightroom](https://www.adobe.com)
 * [JPEGMini](http://www.jpegmini.com)
-* [Monotype Skyfonts](http://www.fonts.com/web-fonts/google)
 * [Perfect Photo Suite](http://onone.com)
 * [Photomatix Pro](http://hdrsoft.com)
 * [Promotee](https://www.netwalkapps.com/app/promotee) ([Blog Post](http://johnathanlyman.com/p/create-mockups-promotee/))
 
 **Development**
+
 * [Coda](https://panic.com/coda/)
 * [Kitematic](https://kitematic.com) ([Blog Post](http://johnathanlyman.com/p/a-kitematic-overview/))
 * [JetBrains PyCharm](http://jetbrains.com)
+* [JetBrains RubyMine](http://jetbrains.com)
 * [Sublime Text](http://sublimetext.com)
 
 **Writing**
+
 * [Desk](http://desk.pm) ([Blog Post](http://johnathanlyman.com/p/desk-overview/))
 * [iaWriter](http://iawriter.com)
 
 **Productivity**
+
 * [Evernote](http://evernote.com)
 * [Microsoft Office](http://microsoft.com)
 
 **Utilities**
-* [1Password](http://1password.com)
+
 * [AirServer](http://airserver.com)
 * [GifGrabber](http://gifgrabber.com)
 * [proXPN](http://proxpn.me)
@@ -45,23 +49,28 @@ One of the ways I like to share with the tech and blogging community is to share
 * [Wireshark](http://wireshark.org)
 
 **Entertainment**
+
 * [Apple Music](http://apple.com)
 * [Spotify](http://spotify.com)
 
 **Data Backup and Security**
-* [CrashPlan](http://crashplan.com)
+
+* [Backblaze](http://backblaze.com)
 
 **For the Web**
+
 * [GAGet](http://gagetapp.com)
 
 ### Hardware
 **Computing**
+
 * [Apple Macbook Pro](http://apple.com)
 * [Apple iPhone 6](http://apple.com)
 * [Apple Wireless Keyboard](http://apple.com)
 * [Apple Trackpad and Mouse](http://apple.com)
 
 **Networking**
+
 * [Ubiquiti Wireless Access Points](http://ubnt.com)
 * [Asus RT-N66U Wireless Router](http://asus.com)
 
@@ -76,9 +85,11 @@ One of the ways I like to share with the tech and blogging community is to share
 
 ### Web Hosts
 **VPS**
+
 * [Digital Ocean](http://digitalocean.com)
 
 **Managed WordPress Hosting**
+
 * [Flywheel](http://getflywheel.com)
 
 ### On-Demand Services
@@ -109,6 +120,7 @@ One of the ways I like to share with the tech and blogging community is to share
 
 ### Free Stuff
 **Stock Photography**
+
 * [Stocksnap](http://stocksnap.io)
 * [Death to the Stock Photo](http://deathtothestockphoto.com)
 * [Raumrot](http://raumrot.com)
@@ -118,5 +130,5 @@ One of the ways I like to share with the tech and blogging community is to share
 ### Curated Lists
 * [18 Resources to Get You Started with WordPress](http://johnathanlyman.com/p/18-wordpress-resources/)
 
----
-*Disclaimer: this link might be monetized. It pays the bills. I didn't sell the link placement.
+[^1]: This link is monetized.
+[^2]: Also monetized.
