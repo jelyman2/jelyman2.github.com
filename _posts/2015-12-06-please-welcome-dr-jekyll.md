@@ -2,6 +2,7 @@
 title: "Please Welcome Dr. Jekyll"
 author: Johnathan Lyman
 layout: post
+date: 2015-12-06 16:00:00 -08:00
 permalink: /2015/12/06/please-welcome-dr-jekyll/
 categories:
     - Blog
