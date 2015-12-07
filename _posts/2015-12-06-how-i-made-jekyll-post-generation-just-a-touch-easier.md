@@ -2,7 +2,7 @@
 title: "How I Made Jekyll Post Generation Just a Touch Easier"
 author: Johnathan Lyman
 layout: post
-permalink: /2015-12-06/how-i-made-jekyll-post-generation-just-a-touch-easier/
+permalink: /2015/12/06/how-i-made-jekyll-post-generation-just-a-touch-easier/
 categories:
     - Blog
 ---
