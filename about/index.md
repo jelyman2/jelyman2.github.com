@@ -5,6 +5,8 @@ title: About
 
 >This page is out of date and will be updated soon.
 
+![An engagement shoot with my wife and I](/files/my_wife_and_i.jpg)
+
 My name is Johnathan Lyman, as you might have already picked up. I’m a native Seattleite and a lover of technology that doesn’t suck. My new wife and I are both working on our professional careers, with her goals being much more elevated than mine.
 
 I got my first start in technology around the age of ten when I started learning HTML. Looking back on history, I think that was really the turning point for me. Nothing else seemed quite as interesting and computers and the Web. A couple years later, I started my first web site with the free hosting service Tripod.com. The service has come a very long way since I used it and still apparently seems to be owned by Lycos. When I wrote this, I hadn’t visited either web property in many years. However, they still seem to offer super basic free web hosting straight out of 1999, so that’s nice if you like nostalgia!
@@ -21,31 +23,35 @@ Along with my blog, I plan on making photography a really big thing. Everything 
 
 That will all change.
 
-What I Do
+## What I Do
+
 I’m a sysadmin for a living, with my most current role as tier-3/lead for a crack team of individuals providing tech support. When I’m not working, I’m usually writing, gaming, or taking photos. I’m studying for my Bachelor’s of Science in Information Technology because I want IT to be my career. I haven’t decided exactly where in IT I want to land permanently, and perhaps that’s a good thing. I think having experience in all aspects of IT is crucial to understanding how it all works, and with the shift to the cloud for IT resources that don’t depend on specific environments, platforms, or use resources that can be considered “a dime a dozen,” it’s good to understand and have experience working with virtual technologies and the “cloud.” I’m talking about services like AWS and DigitalOcean. In fact, this site is being hosted on DigitalOcean. I greatly enjoy the idea of having virtual systems across one super huge platform that can scale up and down as needed and there’s no worry about running out of RAM and having to spend an arm and a leg to upgrade a sever. I can speak from experience that if you buy a low end HP server on the current market with something like 8GB of ram, you’ll spend a good amount of money to upgrade it, because HP likes you to use their RAM. Virtual setups prevent this from happening. You don’t have to deal with that kind of crap, anymore, and that’s nice.
 
-What This Blog is About
+## What This Blog is About
+
 I created this blog for one reason: to share my thoughts. There are a lot of things I think about and want to write down, and this is the place I want to write them down. Most posts will likely be tech related in some aspect, perhaps with a blend of photography. I want to create a place where I can share what I’ve experienced and hope it can serve others and help them, too.
 
-Expect These Things from Me
-Content. Everything that comes from me will be original. Nothing I write will be because I was paid to write it.
+## Expect These Things from Me
 
-Advertising. Such things will be kept to a minimum. I don’t really plan on making much money from this blog, and that’s fine. Anything you do see me offering up are things I’ve used myself and find to be useful. I won’t just arbitrarily show an ad for something, it has to be relevant and beneficial.
+**Content.** Everything that comes from me will be original. Nothing I write will be because I was paid to write it.
 
-Truth. Anything I write will be true. I promise not to make things up because I feel like it. If I do, it’ll be clearly marked as satire and should always be treated as such.
+**Advertising.** Such things will be kept to a minimum. I don’t really plan on making much money from this blog, and that’s fine. Anything you do see me offering up are things I’ve used myself and find to be useful. I won’t just arbitrarily show an ad for something, it has to be relevant and beneficial.
 
-Open Communication. I will always accept an invite for a conversation via twitter or email. If you have thoughts on something I’ve written about, think I might be wrong, or just want to share your two cents or contribute, please do.
+**Truth.** Anything I write will be true. I promise not to make things up because I feel like it. If I do, it’ll be clearly marked as satire and should always be treated as such.
 
-The Tools I Use
+**Open Communication.** I will always accept an invite for a conversation via [twitter](http://twitter.com/theejl) or [email](/contact). If you have thoughts on something I’ve written about, think I might be wrong, or just want to share your two cents or contribute, please do.
+
+## The Tools I Use
+
 Up until 2011, I was a die-hard Windows/PC fan. I had a kickaas gaming machine I did all my work on, but when I started working at a company that provided mac laptops as computers, I was able to actively see the other side. I wrote about that transition, here.
 
-Apple 2015 15” Macbook Pro: 16GB Ram, 256GB SSD
-Apple iPhone 6, 64GB
-Apple iPad Mini 2. Black. Loving reading on it and the battery life rocks on it, too!
-2x 3TB External HDD for the Time Machine and other backups
-CrashPlan cloud backup service
-* Bose QuietComfort 25 Noise Cancelling Headphones
-Adobe Photoshop and Lightroom for my photography
-WordPress. The thing that powers this blog!
-DigitalOcean. The service that hosts the thing that powers this blog!
-Spotify. Stimulating the creative juices!
+* [Apple](http://apple.com) 2015 15” Macbook Pro: 16GB Ram, 256GB SSD
+* [Apple](http://apple.com) iPhone 6, 64GB
+* [Apple](http://apple.com) iPad Mini 2. Black. Loving reading on it and the battery life rocks on it, too!
+* 2x 3TB External HDD for the Time Machine and other backups
+* [CrashPlan](http://crashplan.com) cloud backup service
+* Bose QuietComfort 25 Noise Cancelling Headphones
+* [Adobe](http://adobe.com) Photoshop and Lightroom for my photography
+* [Wordpress](http://wordpress.org). The thing that powers this blog!
+* [DigitalOcean](http://digitalocean.com). The service that hosts the thing that powers this blog!
+* [Spotify](http://spotify.com). Stimulating the creative juices!
