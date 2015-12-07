@@ -12,4 +12,5 @@ group :jekyll_plugins do
   gem 'jekyll-watch'
   gem 'algoliasearch-jekyll', '~>0.4.3'
   gem 'jekyll-feed'
+  gem 'jekyll-sitemap'
 end
