@@ -3,6 +3,8 @@ layout: page
 title: About
 ---
 
+>This page is out of date and will be updated soon.
+
 My name is Johnathan Lyman, as you might have already picked up. I’m a native Seattleite and a lover of technology that doesn’t suck. My new wife and I are both working on our professional careers, with her goals being much more elevated than mine.
 
 I got my first start in technology around the age of ten when I started learning HTML. Looking back on history, I think that was really the turning point for me. Nothing else seemed quite as interesting and computers and the Web. A couple years later, I started my first web site with the free hosting service Tripod.com. The service has come a very long way since I used it and still apparently seems to be owned by Lycos. When I wrote this, I hadn’t visited either web property in many years. However, they still seem to offer super basic free web hosting straight out of 1999, so that’s nice if you like nostalgia!
