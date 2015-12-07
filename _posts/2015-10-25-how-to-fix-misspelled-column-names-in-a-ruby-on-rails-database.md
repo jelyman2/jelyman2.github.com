@@ -25,4 +25,3 @@ You’ll be generating a new database migration with the name FixColumnName (whi
 Keep in mind that after this migration, you’ll need to update your references to the column everywhere within your app.
 
 Seems like a simple fix but as someone who’s relatively new to Ruby on Rails, this saved me a load of time figuring out what to do and preventing me from starting over.
-
