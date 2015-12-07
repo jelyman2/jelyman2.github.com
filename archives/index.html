@@ -1,0 +1,16 @@
+---
+layout: page
+title: Archive
+---
+
+Here lies every single post in this blog, sorted by date.<br /><br />
+<div class="posts">
+  <ul style="list-style-type: none;">
+  {% for post in site.posts %}
+    <li>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%B %d, %Y' }}</time> |
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</div>

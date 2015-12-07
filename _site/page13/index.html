@@ -60,6 +60,64 @@
   
   <article class="post">
     <h1 class="post-title">
+      <a href="/2015/03/14/loggly-part-2/">
+        Getting Started with Loggly Part 2: The Cool Stuff!
+      </a>
+    </h1>
+
+    <time datetime="2015-03-14T00:00:00-07:00" class="post-date">14 Mar 2015</time>
+
+    <p>This is a continuation of part 1: <a href="http://johnathanlyman.com/p/loggly-start">Getting Started with Loggly</a>.</p>
+
+<p>Note: Apparently waiting hours for account generation isn’t a thing according to the fine folks on twitter @loggly.</p>
+
+<blockquote>
+  <p><a href="https://twitter.com/theeJL">@theeJL</a> Creation takes a few sec so likely something happened during form validation. Perhaps try again or DM us the subdomain you typed in— Loggly, Inc. (@loggly) <a href="https://twitter.com/loggly/status/576938047004024832">March 15, 2015</a></p>
+</blockquote>
+
+<script src="//platform.twitter.com/widgets.js" async="" charset="utf-8"></script>
+
+<p>Now that we’re signed up, let’s get down to the good stuff!</p>
+
+<p>The first thing I want to do is start tracking Linux. The <a href="http://johnathanlyman.com/p/stack">core of my site</a> is Ubuntu (among other things). Loggly makes this easy. All I need to do is click the Linux icon on my account’s main page.</p>
+
+<p><img src="https://i0.wp.com/johnathanlyman.com/wp-content/uploads/2015/03/Screenshot2015-03-1419.52.30.png?w=882" alt="" /></p>
+
+<p><img src="https://i1.wp.com/johnathanlyman.com/wp-content/uploads/2015/03/Screenshot2015-03-1420.01.19.png?resize=693%2C433" alt="" /></p>
+
+<p>It really is as simple as copying the two lines of code and running them with superuser access. Within a few seconds, Loggly grabbed a hold and started showing me cool stuff!</p>
+
+<p><img src="https://i2.wp.com/johnathanlyman.com/wp-content/uploads/2015/03/Screenshot2015-03-1420.05.00.png?w=882" alt="" /></p>
+
+<p>It’s pretty empty now, because I literally just started tracking and I’m only tracking Linux. With time this will become more populated and more interesting to parse through.</p>
+
+<p>Moving on to other applications, now. I want to start tracking nginx. Nginx is just one of the apps Loggly can track. The list is massive.</p>
+
+<p><img src="https://i0.wp.com/johnathanlyman.com/wp-content/uploads/2015/03/Screenshot2015-03-1420.06.39.png?w=882" alt="" /></p>
+
+<p>Getting Nginx set up was just as easy as Linux, although Loggly believed my Nginx logs weren’t of a proper format. No matter, they’re coming in great.</p>
+
+<p>Getting MySQL set up isn’t a one-click process like the others. This requires MySQL to do some extra work and get a bit re-configured. No worries, it’s nothing extravagant.</p>
+
+<p>Setting up PHP was a breeze, and I like a good breeze.</p>
+
+<p>Once everything was added like I wanted, I started poking through my logs to see if I could really find good data without hassle. Turns out, I can.</p>
+
+<p>What’s better than watching someone from China try to hack into your system via SSH by trying to log in as the root user?</p>
+
+<p><img src="https://i2.wp.com/johnathanlyman.com/wp-content/uploads/2015/03/Screenshot2015-03-1420.25.24.png?w=882" alt="" /></p>
+
+<p>Nothing <img src="https://johnathanlyman.com/wp-includes/images/smilies/simple-smile.png" alt=":)" /></p>
+
+<p>I’d recommend Loggly to anyone who wants to consolidate and be able to parse and search through their log data. You might not need the heavy plans, I know I don’t. It’s still good to be able to look at events as they happen in real time with an interface that doesn’t suck and from anywhere in the world without having to log into your system.</p>
+
+<p>Go check out <a href="http://loggly.com">Loggly</a>, right now. You’ll enjoy it, for sure!</p>
+
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
       <a href="/2015/03/14/gaget/">
         GAget
       </a>
@@ -347,48 +405,6 @@
 
   </article>
   
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/03/07/like-a-girl/">
-        Like a Girl
-      </a>
-    </h1>
-
-    <time datetime="2015-03-07T00:00:00-08:00" class="post-date">07 Mar 2015</time>
-
-    <p>I’ve been on this kick for the last few days about women in the software development world, or even the lack thereof. Some of it is based off of what I’ve witnessed, and some of it comes from personal experience.</p>
-
-<p>I work in an environment that’s mostly men. I also work in a rather large company that has several buildings where people get shuffled around from time to time. Recently, a new team took up some empty space in my building and after seeing our new tech residents, I became disappointed with what crossed my mind: “wow… she’s a developer?”</p>
-
-<p>Now that I’ve effectively made you think I’m a complete douche and that I think women should be in the kitchen, let me explain.</p>
-
-<p>First off, I think the level of female participation in STEM careers is awesome, especially technical fields like software development. There are a lot of bright female minds out there that I’m sure have crazy cool ideas and are just as good if not better at programming than a man.</p>
-
-<p>I reflected a bit on what happened and I came to realize, that thought didn’t cross my mind because she’s a woman, but because she wasn’t nerdy-looking.</p>
-
-<p>As a society, we’ve developed a stigma with software developers that they’re typically the nerdiest of the group and spend all of their time in front of a computer screen “hacking” or some crap like that.</p>
-
-<p>While a man might not care so much about his image, a woman most likely will. To be feminine in a technical role is to ask for trouble. Take this particular article on Medium titled “ <a href="https://medium.com/@sailorhg/coding-like-a-girl-595b90791cce">Coding Like a Girl</a>.” I wanted to pick it apart for a bit and point out some rather sad truths about the state of the developer union.</p>
-
-<blockquote>
-  <p>I can’t tell you how many people, when meeting me and hearing my profession, tell me that I look like a designer, someone in accounting, someone in marketing, anything but a programmer.This. If nothing else sticks through the rest of this post, consume this sentence. We’ve crafted an ideal female in various positions. In marketing, she’s probably going to be hot, skinny, likely blonde, and can sell you the air you’re already breathing. She knows how to pitch a new product and she makes good eye candy for the guys. If she was a developer, though, she’s probably just wearing a Zelda t-shirt and jeans, because that’s just what developers do, right?</p>
-</blockquote>
-
-<blockquote>
-  <p><a href="http://twitter.com/triketora">Tracy Chou</a>, an engineer at Pinterest, shared this story with me: A couple years ago she attended a technical conference and on the first day, she wore a dress. When she walked around the conference, no one came up to talk to her. When she asked people very technical questions about their stack, questions she assumed would indicate that she was a programmer, she was brushed aside and told, “ <strong>You wouldn’t understand</strong>.” She went back home that night really frustrated and flustered. She almost didn’t feel like going to the conference the next day. But she did and wore a nerdy t-shirt and jeans instead, and she had a better experience that day. People assumed she was technical and didn’t dilute their explanations to her.Not only have we come to a point where people can’t be pretty, but now they’re pretty stupid. It’s sad, really. I added my own emphasis to the above story because I want that statement to stick out. Telling someone they wouldn’t understand, regardless if they’re a woman or a man or a five year old is degrading. If you’ve told someone that, go die. I’ll admit, I’ve said that myself, and I hate myself for it. It’s an old habit that needs to die super hard.</p>
-</blockquote>
-
-<p>Who cares if someone doesn’t understand. Don’t be a pompous asshole and explain it to them. You never know the level of curiosity or interest someone has. Maybe you’ll end up being the gateway for them to broaden their skill set or learn something new. Instead, you just put them down. Way to go.</p>
-
-<p>The author goes on to talk about how people have said to her that acting like a woman is distracting. When I read this part, I actually chuckled a little bit that someone would even say that. I’m not entirely sure what do say about this besides something along the lines of “keep it in your pants.”</p>
-
-<p>I want to let you finish reading the article yourself, because I think it’s important that you get this from the source, from someone who’s experienced this firsthand. I’m a guy, so I’ll never know what it’s like to end up feeling second-class just because I have boobs. Yeah, I have boobs, but my wife isn’t dying to see them, if you know what I mean.</p>
-
-<p>To all the women out there who are actively pursuing what they want and aren’t fussing over making sure they don’t look too good or who aren’t dumbing down themselves and their looks to fit in and not rock the boat, good for you. Feminism was created out of the exact issues you’re going against. Instead of conforming, continue reforming.</p>
-
-
-  </article>
-  
 </div>
 
 <div class="pagination">
@@ -404,7 +420,7 @@
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2015-12-06T19:02:06-08:00">2015</time>. Blog by Johnathan Lyman. All rights reserved.
+          &copy; <time datetime="2015-12-06T21:57:58-08:00">2015</time>. Blog by Johnathan Lyman. All rights reserved.
         </small>
       </footer>
     </div>
