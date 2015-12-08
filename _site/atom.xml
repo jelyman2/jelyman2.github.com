@@ -4,7 +4,7 @@
  <title>Johnathan Lyman</title>
  <link href="http://johnathanlyman.com/atom.xml" rel="self"/>
  <link href="http://johnathanlyman.com/"/>
- <updated>2015-12-07T20:10:48-08:00</updated>
+ <updated>2015-12-07T20:12:52-08:00</updated>
  <id>http://johnathanlyman.com</id>
  <author>
    <name>Mark Otto</name>
@@ -29,7 +29,7 @@
 
 &lt;p&gt;Deferring an email until “the evening” or at some point in the future when I could pay more attention to it rocked. I would use this almost on a daily basis with my personal emails.&lt;/p&gt;
 
-&lt;p&gt;Now, I guess I’m going back to the native Mail app, an app I never left on the Mac[^1]. I could use something like Spark[^2] or Inbox. I’m not &lt;em&gt;that&lt;/em&gt; resistant to change.&lt;/p&gt;
+&lt;p&gt;Now, I guess I’m going back to the native Mail app, an app I never left on the Mac&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. I could use something like Spark&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; or Inbox. I’m not &lt;em&gt;that&lt;/em&gt; resistant to change.&lt;/p&gt;
 
 &lt;p&gt;There’s one thing that sets this event up for another one of those things that can be classified by the phrase &lt;em&gt;historically speaking&lt;/em&gt;, and Brent Simmons puts it quite succinctly:&lt;/p&gt;
 
@@ -47,8 +47,16 @@
 
 &lt;p&gt;I’ll pour one out for Mailbox because I have some crappy beer in the fridge, but in a week, I’ll have already moved on.&lt;/p&gt;
 
-&lt;p&gt;[^1] Mailbox for Mac never was very good.
-[^2] Tried spark for a bit, wasn’t a huge fan. Is it odd for me to say it didn’t feel very “iOS-y”?&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Mailbox for Mac never was very good. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;Tried spark for a bit, wasn’t a huge fan. Is it odd for me to say it didn’t feel very “iOS-y”? &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
 </content>
  </entry>
  

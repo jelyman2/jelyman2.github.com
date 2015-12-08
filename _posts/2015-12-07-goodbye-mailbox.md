@@ -32,5 +32,5 @@ This is so true. I like to use [Nik](http://niksoftware.com) as an example. A so
 
 I'll pour one out for Mailbox because I have some crappy beer in the fridge, but in a week, I'll have already moved on.
 
-[^1] Mailbox for Mac never was very good.
-[^2] Tried spark for a bit, wasn't a huge fan. Is it odd for me to say it didn't feel very "iOS-y"?
+[^1]: Mailbox for Mac never was very good.
+[^2]: Tried spark for a bit, wasn't a huge fan. Is it odd for me to say it didn't feel very "iOS-y"?
