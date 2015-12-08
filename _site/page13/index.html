@@ -36,14 +36,7 @@
   ga('send', 'pageview');
 
   </script>
-  <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
-  <script type="text/javascript" src="/assets/js/repo.min.js"></script>
-  <script type="text/javascript">
 
-  $('repo').repo({ user: 'jelyman2', name: 'wordpress-to-jekyll-post-converter'});
-
-
-  </script>
 </head>
 
 
@@ -69,6 +62,65 @@
 
       <main>
         <div class="posts">
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/2015/03/14/loggly-start/">
+        Getting Started with Loggly
+      </a>
+    </h1>
+    <time datetime="2015-03-14T00:00:00-07:00" class="post-date">14 Mar 2015</time>
+    <p>I love logs. I love massive amounts of data. I have this thing where if I feel I can consume and process tons of data by doing something menial and useless, I’ll do it. </p>
+
+<p>One thing I don’t really do though is keep tabs on the logs for my site and its services. This is where <a href="http://loggly.com">Loggly</a> comes in, and this is my experience getting it set up.</p>
+
+<p>Signing up was pretty easy. I just went to <a href="http://loggly.com">loggly.com,</a> clicked Sign Up in the top right corner, filled out a few things, and waited patiently while their systems used magic fairy dust and unicorn blood to construct my logging instance. They provide a full 30-day trial that gives a user full access to all features to determine if it’s really right for them. After 30 days, it drops down to their limited free tier, which is still good for small people like me.</p>
+
+<p>I’m writing this as I go through their service, so let’s take a moment to talk about what Loggly actually does.</p>
+
+<p>The whole goal of Loggly is to provide centralized log management without the need for agents. This allows sysadmins or anybody who cares to view and track log data in real time. You can search through logs as they come in and graph out instances of particular events to track down issues as they’re happening.</p>
+
+<p>Logy allows you to track logs from almost any source. Their list is pretty exhaustive if you ask me:</p>
+
+<ul>
+  <li>Windows</li>
+  <li>Linux</li>
+  <li>Apache</li>
+  <li>Nginx</li>
+  <li>IIS</li>
+  <li>JavaScript</li>
+  <li>Tomcat</li>
+  <li>MySQL</li>
+  <li>Microsoft SQL Server</li>
+  <li>Rails</li>
+  <li>Python</li>
+  <li>Django</li>
+  <li>MongoDB</li>
+  <li>PHP</li>
+  <li>Java</li>
+  <li>Ruby</li>
+  <li>Node.JS</li>
+  <li>.NET</li>
+  <li>Docket</li>
+  <li>Puppet</li>
+  <li>Chef</li>
+  <li>FluentD</li>
+  <li>AWS Cloudtrail</li>
+  <li>AWS S3</li>
+  <li>and Heroku
+That really is a pretty big list.</li>
+</ul>
+
+<p>I mentioned that you can get started for free than that there’s a free tier, but let’s talk about what that actually means and the other options that are available.</p>
+
+<p>The free tier gives you the basics including searching and filters, persistent workspaces, and built-in alerting. The standard tier ($49/month) gives you 1GB/day of log storage and 7-day retention, unlimited users, built-in alerting, customized dashboards, and more.</p>
+
+<p>Moving to the Pro tier is where you start getting some of the more tasty features.  You get peak overage protection, AWS S3 archiving, telephone support, and more. The default plan grants 15 days of retention at $109/month, but if you need more than that, you’re more than welcome to it: 10GB/day for $499, 50GB/day for $2500 and more. If 50GB/day and $2500 sounds like a lot, don’t worry, it is. 50GB of log files in a day though is a lot and if you need that kind of support, you’re not too worried about the price. </p>
+
+<p>The second half of this post is to follow after my account is set up… see you soon!</p>
+
+
+  </article>
   
   <article class="post">
     <h1 class="post-title">
@@ -360,43 +412,6 @@
 
   </article>
   
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/03/10/stack/">
-        The Stack
-      </a>
-    </h1>
-    <time datetime="2015-03-10T00:00:00-07:00" class="post-date">10 Mar 2015</time>
-    <p>Yesterday someone asked me what my stack looked like.</p>
-
-<p>Today I think it makes a good blog post.</p>
-
-<p>I’m always open to share the tech behind my sites and this one is no different. While not incredibly in depth, here’s how it goes:</p>
-
-<h2 id="layer-1-infrastructure">Layer 1: Infrastructure</h2>
-<p>The core of it all is DigitalOcean. They provide the resources my site sits on and so far they’re doing amazingly well. If I ever need more space or resources, I just need to click a few buttons and I’m on my way. I could also set up load balancing, too, with little effort if it comes to that. Their claim to fame are their awesome little (or big) droplets that start at $5. For $5 you get 512mb of RAM 20GB of SSD-backed storage, and 1TB of bandwidth. That’s enough for a small, site, for sure. I’ve moved higher than that mainly because of one member of my software stack that naturally uses more RAM. I’ll cover it later.</p>
-
-<h2 id="layer-2-operating-system">Layer 2: Operating System</h2>
-<p>Within my DigitalOcean home, Ubuntu 14.04 sits. I’ve chosen the LTS branch because I’m very much of a set-and-forget mentality when it comes to supporting architecture. I like the idea of not having to worry about my OS becoming outdated in a short window of time. It’ll effectively be supported until 16.04 comes out, and to give you an idea of when that is, 14.10 is currently the newest in line and 15.04 isn’t slated until the <a href="http://www.zdnet.com/article/ubuntu-developments-15-04-beta-1-and-the-first-ubuntu-phone/">end of April</a> for a release date. In essence, I’m good until at least April 2016. </p>
-
-<h2 id="layer-3-web-server">Layer 3: Web Server</h2>
-<p>Presenting all of these bits is hard work. That’s why I chose nginx to take up the task. It’s a great server application that I’ve combined with SSL to make every visit to <a href="https://jlyman.net">https://jlyman.net</a> secure. Minimal configuration is needed in order to make things hum along smoothly, and I’m glad for that.</p>
-
-<h2 id="layer-4-12-interpreter">Layer 4 1/2: Interpreter</h2>
-<p>PHP. Given I run WordPress, this is a given. However there are several ways to run it. In my case, I’ve taken then PHP5-FPM route. I could also use FastCGI (the more generic form of FPM) or MOD_PHP (which is actually not that fast in today’s environments). FPM allows me to keep PHP from sucking up too many resources and limiting its worker count. If something gets stuck, I can gracefully shut it down and bring it back up without any major headaches.</p>
-
-<h2 id="layer-4-22-database">Layer 4 2/2: Database</h2>
-<p>This one is also a given because I run WordPress. MySQL is on the back side hosting the actual content of this site. It’s backed up every hour for good measure and backups are stored in a safe place that can be reached via the outside. There are much more efficient databases however getting WordPress to work with them is rough going if not impossible at this time and I don’t see much changing any time soon.</p>
-
-<h2 id="layer-5-wordpress">Layer 5: WordPress</h2>
-<p>This is the cream on top. WordPress is my CMS of choice and it’s one I’ve used for several years. I remember when I first started using it back on version 2.5. WordPress has come a very long way and I’m grateful that development of such a product continues today with a massive community behind it. </p>
-
-<h2 id="layer-6-cloudflare--ssl">Layer 6: CloudFlare + SSL</h2>
-<p>On top of all this, CloudFlare + SSL takes care of all my caching needs. They’re very intelligent about what can be cached and what’s dynamic. I have yet to run into a case where stale content has been served. With their system comes continued use of SSL. This means that from the server to their server is secure, and from their server to you is also secure, no questions. DDoS efforts are limited quickly and geographic-dependencies are removed. Wherever you are, you’ll get quick load times and a lot of burden is taken off my system, which keeps my costs low. I love keeping costs low.</p>
-
-
-  </article>
-  
 </div>
 
 <div class="pagination">
@@ -412,7 +427,7 @@
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2015-12-07T18:20:10-08:00">2015</time>. Blog by Johnathan Lyman. All rights reserved.
+          &copy; <time datetime="2015-12-07T20:10:48-08:00">2015</time>. Blog by Johnathan Lyman. All rights reserved.
         </small>
       </footer>
     </div>

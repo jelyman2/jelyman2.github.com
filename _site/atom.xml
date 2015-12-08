@@ -4,13 +4,53 @@
  <title>Johnathan Lyman</title>
  <link href="http://johnathanlyman.com/atom.xml" rel="self"/>
  <link href="http://johnathanlyman.com/"/>
- <updated>2015-12-07T18:20:10-08:00</updated>
+ <updated>2015-12-07T20:10:48-08:00</updated>
  <id>http://johnathanlyman.com</id>
  <author>
    <name>Mark Otto</name>
    <email>markdotto@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Goodbye Mailbox</title>
+   <link href="http://johnathanlyman.com/2015/12/07/goodbye-mailbox/"/>
+   <updated>2015-12-07T19:50:00-08:00</updated>
+   <id>http://johnathanlyman.com/2015/12/07/goodbye-mailbox</id>
+   <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;When the Mailbox team joined Dropbox in 2013, we shared a passion for simplifying the way people work together. And solving the email problem seemed like a strong complement to the challenges Dropbox was already tackling.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;But as we deepened our focus on collaboration, we realized there’s only so much an email app can do to fundamentally fix email. We’ve come to believe that the best way for us to improve people’s productivity going forward is to streamline the workflows that generate so much email in the first place.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In other words, it was only a matter of time. I enjoyed Mailbox. When I first discovered it and received my beta invite way back when, I was instantly hooked. The concept of being able to swipe emails around and either put them off until later or never have to deal with them at all was amazing. In my opinion, the best feature about the app was probably the reminder/scheduling swipe.&lt;/p&gt;
+
+&lt;p&gt;Deferring an email until “the evening” or at some point in the future when I could pay more attention to it rocked. I would use this almost on a daily basis with my personal emails.&lt;/p&gt;
+
+&lt;p&gt;Now, I guess I’m going back to the native Mail app, an app I never left on the Mac[^1]. I could use something like Spark[^2] or Inbox. I’m not &lt;em&gt;that&lt;/em&gt; resistant to change.&lt;/p&gt;
+
+&lt;p&gt;There’s one thing that sets this event up for another one of those things that can be classified by the phrase &lt;em&gt;historically speaking&lt;/em&gt;, and Brent Simmons puts it quite succinctly:&lt;/p&gt;
+
+&lt;div class=&quot;embed tweet&quot;&gt;Tweet could not be processed&lt;/div&gt;
+
+&lt;p&gt;Again… it was only a matter of time.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://inessential.com/2015/12/07/on_apps_that_get_acquired&quot;&gt;Brent&lt;/a&gt; goes on to &lt;a href=&quot;http://inessential.com/2015/12/07/on_apps_that_get_acquired&quot;&gt;say&lt;/a&gt; a few pretty key things:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;When deciding whether or not you can trust an app to stick around, you can’t go by whether or not it was acquired.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is so true. I like to use &lt;a href=&quot;http://niksoftware.com&quot;&gt;Nik&lt;/a&gt; as an example. A software company that developed photography editing tools, it was &lt;a href=&quot;http://techcrunch.com/2012/09/17/google-acquires-nik-software-the-company-behind-the-popular-snapseed-photo-editing-app-for-ios/&quot;&gt;acquired&lt;/a&gt; by Google in &lt;a href=&quot;http://techcrunch.com/2012/09/17/google-acquires-nik-software-the-company-behind-the-popular-snapseed-photo-editing-app-for-ios/&quot;&gt;September 2012&lt;/a&gt; but is still going strong as a part of the &lt;a href=&quot;https://www.google.com/nikcollection/&quot;&gt;Google Nik Collection&lt;/a&gt;. If you’re still not sure who Nik are, have you heard of Snapseed?&lt;/p&gt;
+
+&lt;p&gt;I’ll pour one out for Mailbox because I have some crappy beer in the fridge, but in a week, I’ll have already moved on.&lt;/p&gt;
+
+&lt;p&gt;[^1] Mailbox for Mac never was very good.
+[^2] Tried spark for a bit, wasn’t a huge fan. Is it odd for me to say it didn’t feel very “iOS-y”?&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>How I Made Jekyll Post Generation Just a Touch Easier</title>
