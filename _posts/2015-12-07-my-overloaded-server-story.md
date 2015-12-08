@@ -22,19 +22,19 @@ My baby of a server has, for the last five or so months, been filling NewRelic g
 
 **CPU**
 
-![CPU](/assets/post_images/loaded_server/loaded_server_before_cpu.jpg)
+![CPU](/assets/post_images/loaded_server/loaded_server_before_cpu.png)
 
 **Memory**
 
-![Memory](/assets/post_images/loaded_server/loaded_server_before_mem.jpg)
+![Memory](/assets/post_images/loaded_server/loaded_server_before_mem.png)
 
 **Disk**
 
-![Disk](/assets/post_images/loaded_server/loaded_server_before_disk.jpg)
+![Disk](/assets/post_images/loaded_server/loaded_server_before_disk.png)
 
 **Load**
 
-![Load Rating](/assets/post_images/loaded_server/loaded_server_before_load.jpg)
+![Load Rating](/assets/post_images/loaded_server/loaded_server_before_load.png)
 
 So I'm just going to go ahead and say that's not good. The only graph above that's even remote decent is the Disk graph, but it's washed over by the CPU > 80% indication so it's also pretty much hosed.
 
@@ -55,20 +55,20 @@ Needless to say, after the almost-winter cleaning, I gained quite a bit of groun
 
 **CPU**
 
-![CPU](/assets/post_images/loaded_server/loaded_server_after_cpu.jpg)
+![CPU](/assets/post_images/loaded_server/loaded_server_after_cpu.png)
 
 **Memory**
 
-![Memory](/assets/post_images/loaded_server/loaded_server_after_mem.jpg)
+![Memory](/assets/post_images/loaded_server/loaded_server_after_mem.png)
 
 **Disk**
 
-![Disk](/assets/post_images/loaded_server/loaded_server_after_disk.jpg)
+![Disk](/assets/post_images/loaded_server/loaded_server_after_disk.png)
 
 **Load**
 
-![Load Rating](/assets/post_images/loaded_server/loaded_server_after_load.jpg)
+![Load Rating](/assets/post_images/loaded_server/loaded_server_after_load.png)
 
 Sorry this story wasn't more interesting. If you're curious, my Jekyll build time was cut in half.
 
-That's about it. Orphaned tools and processes makes my server a dull VPS. 
+That's about it. Orphaned tools and processes makes my server a dull VPS.
