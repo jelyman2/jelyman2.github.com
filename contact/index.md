@@ -9,7 +9,8 @@ On Twitter: <a href="http://twitter.com/theejl">@theeJL</a>
 
 ## Email
 
-<form class="form-horizontal">
+<form class="form-horizontal" accept-charset="UTF-8" action="https://formkeep.com/f/4cf798849cd2" method="POST">
+<input type="hidden" name="utf8" value="✓">
 <fieldset>
 
 <!-- Form Name -->
