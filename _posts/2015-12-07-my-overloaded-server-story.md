@@ -10,15 +10,15 @@ categories:
 
 *And the server belongs to me*
 
-So as you probably know by now, I converted my blog to Jekyll, yesterday, and it's been a huge success, in my opinion. I'm motivated more than ever to start blogging more because I have the added tinker factor and using Git and GitHub to keep everything organized rocks.
+So as you probably know by now, I converted my blog to [Jekyll](http://jekyllrb.org), yesterday, and it's been a huge success, in my opinion. I'm motivated more than ever to start blogging more because I have the added tinker factor and using Git and GitHub to keep everything organized rocks.
 
-But that isn't what this story is about. Tonight's story is about a server. A lowly VPS floating somewhere in the SFO DigitalOcean.... ocean. I've had this server running for many months--probably over a year now and I just don't know it--and it's hosted just about anything and everything I've tinkered with including many a failed idea.
+But that isn't what this story is about. Tonight's story is about a server. A lowly VPS floating somewhere in the SFO [DigitalOcean](http://digitalocean.com).... ocean. I've had this server running for many months--probably over a year now and I just don't know it--and it's hosted just about anything and everything I've tinkered with including many a failed idea.
 
-I use this server a lot and for the most part it always responds well and isn't sluggish. It's hosted my former WordPress blog since January and hasn't made but a peep about it so I've spent quite a bit of time thinking nothing's amiss. I felt, though, that Jekyll shouldn't be taking as long as it was to build my site but I couldn't convince myself the server was overloaded.
+I use this server a lot and for the most part it always responds well and isn't sluggish. It's hosted my former [WordPress blog](http://old.johnathanlyman.com) since January and hasn't made but a peep about it so I've spent quite a bit of time thinking nothing's amiss. I felt, though, that Jekyll shouldn't be taking as long as it was to build my site but I couldn't convince myself the server was overloaded.
 
 As it Turns Out<sup>TM</sup>, I was wrong.
 
-My baby of a server has, for the last five or so months, been filling NewRelic graphs with stuff like this:
+My baby of a server has, for the last five or so months, been filling [Newrelic](http://newrelic.com) graphs with stuff like this:
 
 **CPU**
 
@@ -44,9 +44,9 @@ I started digging. I wanted to see what's running and who's sucking up all the j
 
 Hmm. That doesn't make any sense... I'm not running any node apps and jekyll is the only ruby thing I use right now... oh wait.
 
-See, I tinkered with NodeJS apps late last spring. Ghost was a blogging tool I was considering for a while. I also tinkered with Discourse to see what it was all about. Turns Out<sup>TM</sup>, neither are suited for my needs.
+See, I tinkered with NodeJS apps late last spring. [Ghost](http://ghost.org) was a blogging tool I was considering for a while. I also tinkered with [Discourse](http://discourse.org) to see what it was all about. Turns Out<sup>TM</sup>, neither are suited for my needs.
 
-I don't really know what happened but I can only assume I forogt about them and they've been running all this time. I had a total of five Node instances running and Docker was running Discourse so between the two of them, I was on `swap` 24/7. So dirty.
+I don't really know what happened but I can only assume I forgot about them and they've been running all this time. I had a total of five Node instances running and Docker was running Discourse so between the two of them, I was on `swap` 24/7. So dirty.
 
 This story isn't super climactic in any way and the fix was easy: kill all the things. I also found this to be a good time to remove Node and Docker since I need neither.
 
