@@ -10,9 +10,6 @@ group :jekyll_plugins do
   gem 'jekyll-paginate'
   gem 'rouge'
   gem 'jekyll-watch'
-  gem 'algoliasearch-jekyll', '~>0.4.3'
   gem 'jekyll-feed'
   gem 'jekyll-sitemap'
-  gem 'jekyll-twitter-plugin'
-  gem 'jekyll-assets'
 end

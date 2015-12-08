@@ -33,14 +33,19 @@ gems:
   - jekyll-paginate
   - jekyll-gist
   - rouge
-  - algoliasearch-jekyll
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-twitter-plugin
 
-algolia:
-  application_id:   'LYNILH4T6M'
-  index_name:       'JOHNATHANLYMAN_COM_INDEX'
-  record_css_selector: 'p,ul,ol'
-  excluded_files:
-    - index.html
+timezone:       America/Los Angeles # eg. Asia/Kathmandu
+locale:         en_us # eg. en_us
+baseurl:        "/" # does not include hostname
+url:            "https://johnathanlyman.com" # URL of site, include http://, do not include a trailing slash
+name:           "Johnathan Lyman"
+description:    "The tech blog of a developer, writer, and support ops guy."
+icon:           /assets/images/icon.png # /assets/img/icon.png [best 300px X 300px]
+author:
+  facebook:     johnathan.lyman
+  twitter:      theejl
+  google_plus:  +JohnathanLyman
+fb_admins:      1586250162
+fb_appid:       114316288938899
