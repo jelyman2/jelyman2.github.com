@@ -13,4 +13,5 @@ group :jekyll_plugins do
   gem 'algoliasearch-jekyll', '~>0.4.3'
   gem 'jekyll-feed'
   gem 'jekyll-sitemap'
+  gem 'jekyll-twitter-plugin'
 end

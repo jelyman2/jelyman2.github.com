@@ -20,7 +20,7 @@ Now, I guess I'm going back to the native Mail app, an app I never left on the M
 
 There's one thing that sets this event up for another one of those things that can be classified by the phrase *historically speaking*, and Brent Simmons puts it quite succinctly:
 
-{% tweet https://twitter.com/brentsimmons/status/673921598240391168 %}
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Apps that get acquired don’t last. Apps that don’t get acquired also don’t last. (Exceptions are rare.)</p>&mdash; Brent Simmons (@brentsimmons) <a href="https://twitter.com/brentsimmons/status/673921598240391168">December 7, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Again... it was only a matter of time.
 

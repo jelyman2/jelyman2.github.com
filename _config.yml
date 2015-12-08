@@ -36,6 +36,7 @@ gems:
   - algoliasearch-jekyll
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-twitter-plugin
 
 algolia:
   application_id:   'LYNILH4T6M'
