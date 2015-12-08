@@ -38,7 +38,7 @@ gems:
 
 timezone:       America/Los Angeles # eg. Asia/Kathmandu
 locale:         en_us # eg. en_us
-baseurl:        "/" # does not include hostname
+baseurl:        "" # does not include hostname
 url:            "https://johnathanlyman.com" # URL of site, include http://, do not include a trailing slash
 name:           "Johnathan Lyman"
 description:    "The tech blog of a developer, writer, and support ops guy."
