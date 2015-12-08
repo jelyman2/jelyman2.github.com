@@ -1,0 +1,1 @@
+Site contents copyright 2015 Johnathan Lyman and beyond. Content published on this site may not be duplicated verbatim but may be cited and linked to where appropriate. Contact Johnathan Lyman for other usage permissions.
