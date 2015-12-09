@@ -17,6 +17,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="/styles.css">
 
+
   <!-- Icons -->
   <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
   <link rel="shortcut icon" href="/public/favicon.ico"> -->
@@ -36,6 +37,30 @@
   ga('send', 'pageview');
 
   </script>
+
+  <meta property="og:title" content="Home">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://johnathanlyman.com/">
+  <meta property="og:image" content="https://johnathanlyman.com/assets/images/icon.png">
+  <meta property="og:description" content="The tech blog of a developer, writer, and support ops guy.">
+  <meta property="og:site_name" content="Johnathan Lyman">
+  <meta property="og:locale" content="en_us">
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@theejl" />
+  <meta name="twitter:title" content="Home" />
+  <meta name="twitter:description" content="The tech blog of a developer, writer, and support ops guy." />
+  <meta name="twitter:image" content="https://johnathanlyman.com/assets/images/icon.png" />
+
+  
+
+  
+
+  
+
+  <meta property="fb:admins" content="1586250162">
+  <meta property="fb:app_id" content="114316288938899">
+
 
 </head>
 
@@ -64,12 +89,91 @@
         <div class="posts">
   
   <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/12/07/goodbye-mailbox/">
-        Goodbye Mailbox
-      </a>
-    </h1>
-    <time datetime="2015-12-07T19:50:00-08:00" class="post-date">07 Dec 2015</time>
+    
+      <h1 class="post-title"><i class="fa fa-bookmark permalink"></i> <a href="http://google.com">A link post</a> &#x279e;</h1>
+    
+    <time datetime="2015-12-09T00:00:00+00:00" class="post-date">09 Dec 2015</time>
+    <p>This is a link post.</p>
+
+  </article>
+  
+  <article class="post">
+    
+      <h1 class="post-title"><a href="https://johnathanlyman.com/" rel="bookmark" title="My Overloaded Server Story">My Overloaded Server Story</a></h1>
+    
+    <time datetime="2015-12-07T22:02:00+00:00" class="post-date">07 Dec 2015</time>
+    <p><em>And the server belongs to me</em></p>
+
+<p>So as you probably know by now, I converted my blog to <a href="http://jekyllrb.org">Jekyll</a>, yesterday, and it’s been a huge success, in my opinion. I’m motivated more than ever to start blogging more because I have the added tinker factor and using Git and GitHub to keep everything organized rocks.</p>
+
+<p>But that isn’t what this story is about. Tonight’s story is about a server. A lowly VPS floating somewhere in the SFO <a href="http://digitalocean.com">DigitalOcean</a>…. ocean. I’ve had this server running for many months–probably over a year now and I just don’t know it–and it’s hosted just about anything and everything I’ve tinkered with including many a failed idea.</p>
+
+<p>I use this server a lot and for the most part it always responds well and isn’t sluggish. It’s hosted my former <a href="http://old.johnathanlyman.com">WordPress blog</a> since January and hasn’t made but a peep about it so I’ve spent quite a bit of time thinking nothing’s amiss. I felt, though, that Jekyll shouldn’t be taking as long as it was to build my site but I couldn’t convince myself the server was overloaded.</p>
+
+<p>As it Turns Out<sup>TM</sup>, I was wrong.</p>
+
+<p>My baby of a server has, for the last five or so months, been filling <a href="http://newrelic.com">Newrelic</a> graphs with stuff like this:</p>
+
+<p><strong>CPU</strong></p>
+
+<p><img src="/assets/post_images/loaded_server/loaded_server_before_cpu.png" alt="CPU" /></p>
+
+<p><strong>Memory</strong></p>
+
+<p><img src="/assets/post_images/loaded_server/loaded_server_before_mem.png" alt="Memory" /></p>
+
+<p><strong>Disk</strong></p>
+
+<p><img src="/assets/post_images/loaded_server/loaded_server_before_disk.png" alt="Disk" /></p>
+
+<p><strong>Load</strong></p>
+
+<p><img src="/assets/post_images/loaded_server/loaded_server_before_load.png" alt="Load Rating" /></p>
+
+<p>So I’m just going to go ahead and say that’s not good. The only graph above that’s even remote decent is the Disk graph, but it’s washed over by the CPU &gt; 80% indication so it’s also pretty much hosed.</p>
+
+<p>At this point I’m honestly surprised. I’m a terrible pseudo-sysadmin and I should be fired but there’s no one to fire me and I’m the boss so whatever. If I can fix all this, I’m giving myself a raise.</p>
+
+<p>I started digging. I wanted to see what’s running and who’s sucking up all the juices. I fired up <code class="highlighter-rouge">top</code> and waited a few seconds. A few things popped up: a couple instances of <code class="highlighter-rouge">node</code> and an instance of <code class="highlighter-rouge">ruby</code>.</p>
+
+<p>Hmm. That doesn’t make any sense… I’m not running any node apps and jekyll is the only ruby thing I use right now… oh wait.</p>
+
+<p>See, I tinkered with NodeJS apps late last spring. <a href="http://ghost.org">Ghost</a> was a blogging tool I was considering for a while. I also tinkered with <a href="http://discourse.org">Discourse</a> to see what it was all about. Turns Out<sup>TM</sup>, neither are suited for my needs.</p>
+
+<p>I don’t really know what happened but I can only assume I forgot about them and they’ve been running all this time. I had a total of five Node instances running and Docker was running Discourse so between the two of them, I was on <code class="highlighter-rouge">swap</code> 24/7. So dirty.</p>
+
+<p>This story isn’t super climactic in any way and the fix was easy: kill all the things. I also found this to be a good time to remove Node and Docker since I need neither.</p>
+
+<p>I still couldn’t figure out why my disk usage was so high, though. Leave it to me to forget about a 4GB <code class="highlighter-rouge">.iso</code> I left in a folder and leave it to Discourse to fail at sending 5GB of emails through postfix over the last five months and clog up my <code class="highlighter-rouge">/var/mail</code> folder.
+Needless to say, after the almost-winter cleaning, I gained quite a bit of ground:</p>
+
+<p><strong>CPU</strong></p>
+
+<p><img src="/assets/post_images/loaded_server/loaded_server_after_cpu.png" alt="CPU" /></p>
+
+<p><strong>Memory</strong></p>
+
+<p><img src="/assets/post_images/loaded_server/loaded_server_after_mem.png" alt="Memory" /></p>
+
+<p><strong>Disk</strong></p>
+
+<p><img src="/assets/post_images/loaded_server/loaded_server_after_disk.png" alt="Disk" /></p>
+
+<p><strong>Load</strong></p>
+
+<p><img src="/assets/post_images/loaded_server/loaded_server_after_load.png" alt="Load Rating" /></p>
+
+<p>Sorry this story wasn’t more interesting. If you’re curious, my Jekyll build time was cut in half.</p>
+
+<p>That’s about it. Orphaned tools and processes makes my server a dull VPS.</p>
+
+  </article>
+  
+  <article class="post">
+    
+      <h1 class="post-title"><a href="https://johnathanlyman.com/" rel="bookmark" title="Goodbye Mailbox">Goodbye Mailbox</a></h1>
+    
+    <time datetime="2015-12-07T19:50:00+00:00" class="post-date">07 Dec 2015</time>
     <blockquote>
   <p>When the Mailbox team joined Dropbox in 2013, we shared a passion for simplifying the way people work together. And solving the email problem seemed like a strong complement to the challenges Dropbox was already tackling.</p>
 </blockquote>
@@ -86,7 +190,8 @@
 
 <p>There’s one thing that sets this event up for another one of those things that can be classified by the phrase <em>historically speaking</em>, and Brent Simmons puts it quite succinctly:</p>
 
-<div class="embed tweet">Tweet could not be processed</div>
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Apps that get acquired don’t last. Apps that don’t get acquired also don’t last. (Exceptions are rare.)</p>&mdash; Brent Simmons (@brentsimmons) <a href="https://twitter.com/brentsimmons/status/673921598240391168">December 7, 2015</a></blockquote>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <p>Again… it was only a matter of time.</p>
 
@@ -114,12 +219,10 @@
   </article>
   
   <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/12/06/how-i-made-jekyll-post-generation-just-a-touch-easier/">
-        How I Made Jekyll Post Generation Just a Touch Easier
-      </a>
-    </h1>
-    <time datetime="2015-12-06T21:30:00-08:00" class="post-date">06 Dec 2015</time>
+    
+      <h1 class="post-title"><a href="https://johnathanlyman.com/" rel="bookmark" title="How I Made Jekyll Post Generation Just a Touch Easier">How I Made Jekyll Post Generation Just a Touch Easier</a></h1>
+    
+    <time datetime="2015-12-07T05:30:00+00:00" class="post-date">07 Dec 2015</time>
     <p>Now that I’m running my blog using Jekyll, one thing I’ve already found to be rather frustrating is the post generation process. I have a blank <code class="highlighter-rouge">.md</code> template I open, save in a new location, then edit, but that seems cumbersome, to me. What I decided to do instead is write a quick Ruby script that generated a post <code class="highlighter-rouge">.md</code> file for me based on the information I provide.</p>
 
 <h2 id="thought-process">Thought Process</h2>
@@ -186,12 +289,10 @@ system(&#39;atom&#39;, &quot;_posts/#{the_post_file_name}&quot;)</pre></noscript
   </article>
   
   <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/12/06/please-welcome-dr-jekyll/">
-        Please Welcome Dr. Jekyll
-      </a>
-    </h1>
-    <time datetime="2015-12-06T16:00:00-08:00" class="post-date">06 Dec 2015</time>
+    
+      <h1 class="post-title"><a href="https://johnathanlyman.com/" rel="bookmark" title="Please Welcome Dr. Jekyll">Please Welcome Dr. Jekyll</a></h1>
+    
+    <time datetime="2015-12-07T00:00:00+00:00" class="post-date">07 Dec 2015</time>
     <p>It’s taken a while for me to mentally get to this point but today I finally crossed the threshold and converted my blog into one generated by Jekyll. Essentially, every time I post or make a change, the blog is rebuilt into static files making the load on my server super light as well as saving disk space. On top of it all, I really wanted to tinker with the idea.</p>
 
 <p>There were a few reasons why I finally bit the bullet and I wanted to share them in hopes that one day someone will stumble across this post and finally take the plunge like I did.</p>
@@ -229,12 +330,10 @@ system(&#39;atom&#39;, &quot;_posts/#{the_post_file_name}&quot;)</pre></noscript
   </article>
   
   <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/11/28/after-three-weeks/">
-        After Three Weeks
-      </a>
-    </h1>
-    <time datetime="2015-11-28T00:00:00-08:00" class="post-date">28 Nov 2015</time>
+    
+      <h1 class="post-title"><a href="https://johnathanlyman.com/" rel="bookmark" title="After Three Weeks">After Three Weeks</a></h1>
+    
+    <time datetime="2015-11-28T00:00:00+00:00" class="post-date">28 Nov 2015</time>
     <p>I started the Bloc Rails Web Development bootcamp three weeks ago and I’d like to go over my experiences so far.</p>
 
 <p>The last few weeks have been pretty great, actually. There’s a lot of material to cover but it’s done in such a way that it’s broken down into small chunks. Assignments extend on the material being taught and incorporate material learned prior. Each assignment builds on the one before it and the beginning project walks you through the entire process.</p>
@@ -247,12 +346,10 @@ system(&#39;atom&#39;, &quot;_posts/#{the_post_file_name}&quot;)</pre></noscript
   </article>
   
   <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/11/10/seeing-the-forest-for-the-trees/">
-        Seeing the Forest for the Trees
-      </a>
-    </h1>
-    <time datetime="2015-11-10T00:00:00-08:00" class="post-date">10 Nov 2015</time>
+    
+      <h1 class="post-title"><a href="https://johnathanlyman.com/" rel="bookmark" title="Seeing the Forest for the Trees">Seeing the Forest for the Trees</a></h1>
+    
+    <time datetime="2015-11-10T00:00:00+00:00" class="post-date">10 Nov 2015</time>
     <p>It’s easy to miss the small picture when looking at the big picture. Thinking about what I have ahead of me in terms of the next year at Bloc gives me two thoughts: it’s going to take a long time and it’s easy to not see the forest for the trees.</p>
 
 <p>Bloc is a long program. It covers a lot of material in great detail. For the un-initiated, it can take quite some time. I’m told that based on my 72-week track, I should be doing five “checkpoints” per week. It’s Tuesday and I’ve killed seven. I know it might not always be like this and the first weeks are always the “yeah let’s do this!” weeks. As time goes on, the sheer size of the program will really start to show itself but the one thing I’ll need to keep in mind is that no matter how many different <em>things</em> I still have to do, I need to just focus on one at a time.</p>
@@ -263,12 +360,10 @@ system(&#39;atom&#39;, &quot;_posts/#{the_post_file_name}&quot;)</pre></noscript
   </article>
   
   <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/11/04/xp1k/">
-        Let me Introduce You to XP1K
-      </a>
-    </h1>
-    <time datetime="2015-11-04T00:00:00-08:00" class="post-date">04 Nov 2015</time>
+    
+      <h1 class="post-title"><a href="https://johnathanlyman.com/" rel="bookmark" title="Let me Introduce You to XP1K">Let me Introduce You to XP1K</a></h1>
+    
+    <time datetime="2015-11-04T00:00:00+00:00" class="post-date">04 Nov 2015</time>
     <p>If the little kid in you wishes he or she could take a <a href="http://truckyeah.jalopnik.com/your-next-epic-off-road-video-turbocharged-atv-vs-ind-1737821473">tricked-out ATV</a> and wreck apocolyptic-style wastelands of awesome, take the next 25 minutes and enjoy these videos.</p>
 
 <iframe class="youtube-player" type="text/html" width="100%" height="500" src="https://www.youtube.com/embed/rEbfteUIkYU?version=3&amp;rel=1&amp;fs=1&amp;autohide=2&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;wmode=transparent" frameborder="0" allowfullscreen="true"></iframe>
@@ -280,12 +375,10 @@ system(&#39;atom&#39;, &quot;_posts/#{the_post_file_name}&quot;)</pre></noscript
   </article>
   
   <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/10/31/starting-soon-bloc-io/">
-        Starting Soon: Bloc.io
-      </a>
-    </h1>
-    <time datetime="2015-10-31T00:00:00-07:00" class="post-date">31 Oct 2015</time>
+    
+      <h1 class="post-title"><a href="https://johnathanlyman.com/" rel="bookmark" title="Starting Soon: Bloc.io">Starting Soon: Bloc.io</a></h1>
+    
+    <time datetime="2015-10-31T00:00:00+00:00" class="post-date">31 Oct 2015</time>
     <p>I officially signed up last week for Bloc.io’s Full-stack developer bootcamp becuase I feel while I can learn a good deal of stuff on my own, I’m not going to make on my own to the level I need to be in order to make a fundamental career shift to software development that will actually still support my family.</p>
 
 <p>The program doesn’t officially start until the 9th of November so I have a little over a week to go. It’ll be a long year and change and a lot of new stuff will come my way. I’ve only scratched the surface of what Ruby and Rails can do. I started a simple Rails app a couple days ago that could one day turn into the platform for any and all of my sites, if I stick to it, enough. Right now, I don’t know enough on how to make it great.</p>
@@ -298,12 +391,10 @@ system(&#39;atom&#39;, &quot;_posts/#{the_post_file_name}&quot;)</pre></noscript
   </article>
   
   <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/10/25/how-to-fix-misspelled-column-names-in-a-ruby-on-rails-database/">
-        How to Fix Misspelled Column Names in a Ruby on Rails Database
-      </a>
-    </h1>
-    <time datetime="2015-10-25T00:00:00-07:00" class="post-date">25 Oct 2015</time>
+    
+      <h1 class="post-title"><a href="https://johnathanlyman.com/" rel="bookmark" title="How to Fix Misspelled Column Names in a Ruby on Rails Database">How to Fix Misspelled Column Names in a Ruby on Rails Database</a></h1>
+    
+    <time datetime="2015-10-25T00:00:00+00:00" class="post-date">25 Oct 2015</time>
     <p>I came across a small issue this afternoon while building out one of my first Ruby on Rails apps. When I generated the database table, I misspelled a column name. Luckily for me, it’s easy enough to fix and this is how I did it.</p>
 
 <h3 id="create-a-new-migration">1. Create a New Migration</h3>
@@ -328,56 +419,6 @@ system(&#39;atom&#39;, &quot;_posts/#{the_post_file_name}&quot;)</pre></noscript
 
   </article>
   
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/10/23/future-ruby-on-rails-developer/">
-        Future Ruby on Rails Developer
-      </a>
-    </h1>
-    <time datetime="2015-10-23T00:00:00-07:00" class="post-date">23 Oct 2015</time>
-    <p>“Rails Developer” has a nice ring to it, don’t you think?</p>
-
-<p>In my hunt to figure out where I want my career to head long term, I keep coming back to the idea of software development. I’ve told stories about how I had a rare opportunity a couple years back and I didn’t take it. Well, this time I’m the one creating the opportunity.</p>
-
-<p>Right now I’m working on a self-paced course through <a href="http://codermanual.com">Coder Manual</a> and I’m having a great time. However, it may be billed as a complete “bootcamp” but the next stage for me really needs to be one-on-one with a touch of free-wheeling. It’s easy to follow along and build the same stuff the instructor is building. Where the real learning takes place is when free flowing creativity starts to happen.</p>
-
-<p>This is where <a href="http://bloc.io">Bloc</a> comes in. A long-term coding bootcamp, <a href="http://bloc.io">Bloc</a> covers front end, rails, and full stack development with the end goal of being job-ready as a junior ruby on rails developer.</p>
-
-<p>I’ve considered other languages like Python, Java, Swift and Objective-C, but none of those really hit home for me what I want to do. Rails as a platform allows developers to build complex and fully-featured web applications that can do amazing things while not having to focus on the medial.</p>
-
-<p>Looking forward to what’s ahead.</p>
-
-
-  </article>
-  
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/10/21/returning/">
-        Returning to Morning Greatness
-      </a>
-    </h1>
-    <time datetime="2015-10-21T00:00:00-07:00" class="post-date">21 Oct 2015</time>
-    <p>Yesterday I decided to shake things up a little but when it comes to my morning routine. By shake things up I mean go back to what I used to do that seemed to work so well. And by what I used to do I mean be creative.</p>
-
-<p>I’ve talked about this struggle, before, but <a href="https://johnathanlyman.com/2015/03/moving-to-cali/">moving to California</a> ( <a href="https://johnathanlyman.com/2015/04/move-day-1/">and</a> <a href="https://johnathanlyman.com/2015/04/move-day-2/">the</a> <a href="https://johnathanlyman.com/2015/04/move-day-3/">effort</a> <a href="https://johnathanlyman.com/2015/04/move-day-4/">therein</a>) really <a href="https://johnathanlyman.com/2015/06/reset/">messed up</a> my <a href="https://johnathanlyman.com/?s=routine">routine</a>. I’ve decided enough is enough and am slowly working my way back into the old swing. Yesterday, and every day before, I would get up at 8 or even sometimes 7 AM. That’s way too late in my book. My new goal is to return to my 5 AM rise time which will allow me to exercise my mind with tasks I enjoy before work.</p>
-
-<p>With a cup of <a href="https://johnathanlyman.com/2015/09/the-cold-brew-coffee-adventure/">my home made cold brew iced coffee</a> at my desk, today is day one of that goal. I didn’t make it at 5 AM, but I did get up early. I figure every day I can push a little bit harder.</p>
-
-<p>So what inspired all this? A little site called <a href="http://mymorningroutine.com">My Morning Routine</a>. Every Wednesday a new individual is featured on the cover and they spend a few minutes talking about their morning routine and why it’s important to them. You can follow this up with <a href="http://mymorningroutine.com/statistics/">statistics</a> on each of the routines archived and the key points to take away.</p>
-
-<p>For example: did you know the average bed time for their respondants is 11:14 PM? That seems so late to me, but in reality, it’s not. It really depends on what you’re doing at that time. If I wanted to wake up at 5 AM, that may be a bit late, but in my case, 9 PM may not be.</p>
-
-<p>I also found it interesting that 68% of the people featured meditate or practice yoga in some fashion. This intrigues me because of <a href="https://johnathanlyman.com/2015/10/headspace/">my inital success with meditation</a>.</p>
-
-<p>The stories give me some fuel to shape my own morning routine that I find to work best for me. I’ve added a bit of extra work on top from the sole fact that I’m starting this at the time of year in California when it’s dark until almost 8 AM.</p>
-
-<p>Will it be hard? Probably, but the best things in life are the ones we have to work hardest for.</p>
-
-<p>I look forward to documenting my progress and eventually looking back and wondering how I was able to get by with practically doing just the bare minimum to stay alive (or so it’ll likely seem).</p>
-
-
-  </article>
-  
 </div>
 
 <div class="pagination">
@@ -393,7 +434,7 @@ system(&#39;atom&#39;, &quot;_posts/#{the_post_file_name}&quot;)</pre></noscript
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2015-12-07T20:12:52-08:00">2015</time>. Blog by Johnathan Lyman. All rights reserved.
+          &copy; <time datetime="2015-12-09T01:03:47+00:00">2015</time>. Blog by Johnathan Lyman. All rights reserved.
         </small>
       </footer>
     </div>

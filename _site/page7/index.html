@@ -17,6 +17,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="/styles.css">
 
+
   <!-- Icons -->
   <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
   <link rel="shortcut icon" href="/public/favicon.ico"> -->
@@ -36,6 +37,30 @@
   ga('send', 'pageview');
 
   </script>
+
+  <meta property="og:title" content="Home">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://johnathanlyman.com/page7/">
+  <meta property="og:image" content="https://johnathanlyman.com/assets/images/icon.png">
+  <meta property="og:description" content="The tech blog of a developer, writer, and support ops guy.">
+  <meta property="og:site_name" content="Johnathan Lyman">
+  <meta property="og:locale" content="en_us">
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@theejl" />
+  <meta name="twitter:title" content="Home" />
+  <meta name="twitter:description" content="The tech blog of a developer, writer, and support ops guy." />
+  <meta name="twitter:image" content="https://johnathanlyman.com/assets/images/icon.png" />
+
+  
+
+  
+
+  
+
+  <meta property="fb:admins" content="1586250162">
+  <meta property="fb:app_id" content="114316288938899">
+
 
 </head>
 
@@ -64,12 +89,171 @@
         <div class="posts">
   
   <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/06/26/check-yourself/">
-        Check Yourself
-      </a>
-    </h1>
-    <time datetime="2015-06-26T00:00:00-07:00" class="post-date">26 Jun 2015</time>
+    
+      <h1 class="post-title"><a href="https://johnathanlyman.com/page7/" rel="bookmark" title="StackEdit">StackEdit</a></h1>
+    
+    <time datetime="2015-06-30T00:00:00+00:00" class="post-date">30 Jun 2015</time>
+    <p><a href="http://stackedit.io">StackEdit</a> is a in-browser markdown editor that takes on the likes of iA Writer and GitHub Pages in terms of its capability. If you’re a fan of Markdown in even the least bit, it’ll be easy for StackEdit to be your go to text editor.</p>
+
+<p>The interface window features the basic text editor and styling controls like text format, linking, inserting code and images, and creating lists. In fact, it’s so easy to pick up, you really don’t need any instructions.</p>
+
+<p><a href="https://i1.wp.com/johnathanlyman.com/wp-content/uploads/2015/06/Screenshot-2015-06-30-15.57.20.png"><img src="https://i1.wp.com/johnathanlyman.com/wp-content/uploads/2015/06/Screenshot-2015-06-30-15.57.20.png?resize=882%2C559" alt="Screenshot 2015-06-30 15.57.20" /></a></p>
+
+<p>The dual pane editor/preview layout is like that of the NodeJS-powered Ghost blog platform. Everything you type shows up in real time on the right-hand side of the screen in proper format. When you’re done, you can sync your texts to Dropbox or Google Drive, save them in the editor, and even push them to various end points including Blogger, WordPress, GitHub, Tumblr, and an SSH server if you have your own static site platform you wish to use.</p>
+
+<p>What’s really cool? If you have a CouchDB instance, it’ll push straight to it. Pretty nifty.</p>
+
+<p>Give <a href="http://stackedit.io">StackEdit</a> a try. I think you’ll like it.</p>
+
+
+  </article>
+  
+  <article class="post">
+    
+      <h1 class="post-title"><a href="https://johnathanlyman.com/page7/" rel="bookmark" title="A Kitematic Overview">A Kitematic Overview</a></h1>
+    
+    <time datetime="2015-06-27T00:00:00+00:00" class="post-date">27 Jun 2015</time>
+    <p>I have only recently started tinkering with Docker when I made a brief attempt at getting Discourse running on my server. What started out as me being quite frustrated with my lack of SMTP knowledge ended in my admittance that a pre-packaged setup would be much easier, and indeed it was.</p>
+
+<p>Docker is good for that. Docker’s purpose is to allow swift and efficient deployment and management of applications that reside in their own containers. Think of a cargo ship. Each one of those containers can be its own app that runs exclusively in its own box/bubble/container/virtual world and on the outside Docker and the system it runs on maintains structural integrity so each container can keep running.</p>
+
+<p>If you’re relatively new to Docker like I am, you’ll probably be wondering how easy it is to get started.</p>
+
+<p>There are two routes: the command line route and the GUI route. Today I’m going to show off the GUI route by way of an app called Kitematic.</p>
+
+<p><a href="https://johnathanlyman.com/wp-content/uploads/2015/06/Screenshot-2015-06-27-16.02.42.png"><img src="https://i2.wp.com/johnathanlyman.com/wp-content/uploads/2015/06/Screenshot-2015-06-27-16.02.42.png?resize=882%2C570" alt="Screenshot 2015-06-27 16.02.42" /></a></p>
+
+<h3 id="overview">Overview</h3>
+<p>The purpose of Kitematic, in my opinion, is to bridge the gap that’s created by the learning curve created by not being fully aware of how to interact with Docker on the command line.</p>
+
+<p>Deploying an image is dirt simple. The UI presents you with a searchable area in which you can comb the Docker Hub. One click is all it takes to create an instance of the application you’re looking to install.</p>
+
+<p>The actual deployment time will depend on your Internet connection speed because the image has to be downloaded. The larger the application, the longer it’ll take to deploy, install, and configure, so keep that in mind.</p>
+
+<h3 id="deployment-tests">Deployment Tests</h3>
+<p>Here are a few examples of apps I downloaded and how long they took from the moment I clicked the Create button to the moment they were ready to go. These incredibly non-scientific numbers come from my 2011 Macbook Pro with a 2.2GHz Intel Core i7, 8GB of RAM, and the images being stored and run on an SSD. I also used the most popular choices for each of these images, including recommended ones if they were available. Each of the image were downloaded on a 125mbps Internet connection and the timing below includes that.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Application</td>
+      <td>Time to Ready</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Ghost</td>
+      <td>0m 26s</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Atlassian JIRA</td>
+      <td>1m 45s</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Redis</td>
+      <td>0m 12s</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MySQL</td>
+      <td>*</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Nginx</td>
+      <td>0m 5s</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Minecraft</td>
+      <td>1m 50s</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Jenkins</td>
+      <td>1m 16s</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Elasticsearch</td>
+      <td>0m 35s</td>
+      <td>I obviously want to stress that the above numbers are essentially me using a stopwatch and watching the process take place. When it came to MySQL, it never fully initialized and I was unable to determine its progress after about 30 seconds. I couldn’t connect to the service and the logs weren’t displaying anything. It’s possible that I just got a bad run and re-doing it could have fixed my issue. YMMV.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>If you plan on running Kitematic a lot, you’ll want to make sure you can reserve at least 2GB of RAM for the VirtualBox VM it runs in the background. Also, check Kitematic’s settings and check the box to clean up the VM on closure if you’re on a battery-powered system. It’ll take a bit of extra time on boot but it’ll save your battery when you’re not using it, for sure.</p>
+
+<p>I do believe it’s prudent to point out that if you choose the delete-on-closure option, you might find yourself with a VM that can’t fetch an IP address when you re-start Kitematic. This was the case 100% of the time I restarted Kitematic after killing VirtualBox on Kitematic’s closure.</p>
+
+<h3 id="the-bottom-line">The Bottom Line</h3>
+<p>So here’s where I tell you if it’s worth it. In short, completely. For people like me that just want to get things done and move on with my day and not have to deal with the command line all the time, this is a boon. If you’re a die-hard command line junkie that thrives on typos and mashing away at the keyboard, go do it the regular, old-fashioned way.</p>
+
+<p>Kitematic is free to use and is in Beta. It might be a bit rough around the edges, and may not work very well on Windows. I tried running the JIRA install on Windows and it failed every time.</p>
+
+<p>If you’re looking to break into Docker and the idea of containered apps, this is your vice.</p>
+
+<p>This slideshow requires JavaScript.</p>
+
+
+  </article>
+  
+  <article class="post">
+    
+      <h1 class="post-title"><a href="https://johnathanlyman.com/page7/" rel="bookmark" title="Check Yourself">Check Yourself</a></h1>
+    
+    <time datetime="2015-06-26T00:00:00+00:00" class="post-date">26 Jun 2015</time>
     <p>TAKE IT FROM ME.</p>
 
 <p>It’s easy to give advice. It’s actually way too easy. Standing on the outside, looking in, it’s easy to observe, to judge. We compare someone and the pieces that make them whole to ourselves and our own components.</p>
@@ -107,12 +291,10 @@
   </article>
   
   <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/06/25/on-accepting/">
-        On Accepting
-      </a>
-    </h1>
-    <time datetime="2015-06-25T00:00:00-07:00" class="post-date">25 Jun 2015</time>
+    
+      <h1 class="post-title"><a href="https://johnathanlyman.com/page7/" rel="bookmark" title="On Accepting">On Accepting</a></h1>
+    
+    <time datetime="2015-06-25T00:00:00+00:00" class="post-date">25 Jun 2015</time>
     <p>There’s a perpetual battle that takes place every day. This battle involves everything around you, your life, your hobbies, your friends, and your home.</p>
 
 <p>This battle isn’t really a battle at all. It’s a dance. A tango, of sorts. We wake up in the morning and it’s time to dance. We lay our heads down at night and only after we close our eyes and drift into dreamland do we stop the motions.</p>
@@ -157,12 +339,10 @@
   </article>
   
   <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/06/25/48-hours-of-slack/">
-        48 Hours of Slack
-      </a>
-    </h1>
-    <time datetime="2015-06-25T00:00:00-07:00" class="post-date">25 Jun 2015</time>
+    
+      <h1 class="post-title"><a href="https://johnathanlyman.com/page7/" rel="bookmark" title="48 Hours of Slack">48 Hours of Slack</a></h1>
+    
+    <time datetime="2015-06-25T00:00:00+00:00" class="post-date">25 Jun 2015</time>
     <p>Two nights ago, I convinced my team to pick up Slack. I wanted them to stop slacking on effective communication and while I can cut them some slack on being in different time zones, there’s no excuse with today’s technology.</p>
 
 <p>That’s about all I have for Slack puns and euphemisms. We’ve been using Slack for about 48 hours now and we’re loving it. I think I might be loving it the most because I championed the idea.</p>
@@ -193,12 +373,10 @@
   </article>
   
   <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/06/24/waiting-for-inspiration/">
-        Waiting for Inspiration
-      </a>
-    </h1>
-    <time datetime="2015-06-24T00:00:00-07:00" class="post-date">24 Jun 2015</time>
+    
+      <h1 class="post-title"><a href="https://johnathanlyman.com/page7/" rel="bookmark" title="Waiting for Inspiration">Waiting for Inspiration</a></h1>
+    
+    <time datetime="2015-06-24T00:00:00+00:00" class="post-date">24 Jun 2015</time>
     <p><a href="http://www.parapublishing.com/sites/para/about/danpoynter.cfm">Dan Poynter</a> once said:</p>
 
 <blockquote>
@@ -211,12 +389,10 @@
   </article>
   
   <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/06/24/crozdesk/">
-        Crozdesk
-      </a>
-    </h1>
-    <time datetime="2015-06-24T00:00:00-07:00" class="post-date">24 Jun 2015</time>
+    
+      <h1 class="post-title"><a href="https://johnathanlyman.com/page7/" rel="bookmark" title="Crozdesk">Crozdesk</a></h1>
+    
+    <time datetime="2015-06-24T00:00:00+00:00" class="post-date">24 Jun 2015</time>
     <p>I’m always looking for new places to discover great services and products. Last night Crozdesk followed me on Twitter and I couldn’t help but check them out and see what they offer. Really, I check out just about anyone that follows me on twitter. I’m by no means a superstar on the social network so I have time for things like that.</p>
 
 <p>Crozdesk is a place to find a company, service, or product offering to fulfill a need you might have in various spaces, be it web design, hosting, social media, marketing, or anything relatively similar.</p>
@@ -227,12 +403,10 @@
   </article>
   
   <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/06/19/the-great-discourse/">
-        The Great Discourse
-      </a>
-    </h1>
-    <time datetime="2015-06-19T00:00:00-07:00" class="post-date">19 Jun 2015</time>
+    
+      <h1 class="post-title"><a href="https://johnathanlyman.com/page7/" rel="bookmark" title="The Great Discourse">The Great Discourse</a></h1>
+    
+    <time datetime="2015-06-19T00:00:00+00:00" class="post-date">19 Jun 2015</time>
     <p>I’ve been meaning to tinker with Discourse for a while, now. It’s used at several of my favorite sites for their communities so I found it reasonable to try it out for myself and see how it works out.</p>
 
 <p>My end goal was to use it as a comment replacement.</p>
@@ -245,12 +419,10 @@
   </article>
   
   <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/06/19/creativity-2/">
-        Creativity
-      </a>
-    </h1>
-    <time datetime="2015-06-19T00:00:00-07:00" class="post-date">19 Jun 2015</time>
+    
+      <h1 class="post-title"><a href="https://johnathanlyman.com/page7/" rel="bookmark" title="Creativity">Creativity</a></h1>
+    
+    <time datetime="2015-06-19T00:00:00+00:00" class="post-date">19 Jun 2015</time>
     <p>So I’m sitting here, pondering what to write about. I’ve been a terrible person, not sticking to the plan.</p>
 
 <p>If you know me at all, you’ll know it is indeed a chaotic scene when there’s no plan and I’m involved.</p>
@@ -273,12 +445,10 @@
   </article>
   
   <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/06/16/keeping-score/">
-        Keeping Score
-      </a>
-    </h1>
-    <time datetime="2015-06-16T00:00:00-07:00" class="post-date">16 Jun 2015</time>
+    
+      <h1 class="post-title"><a href="https://johnathanlyman.com/page7/" rel="bookmark" title="Keeping Score">Keeping Score</a></h1>
+    
+    <time datetime="2015-06-16T00:00:00+00:00" class="post-date">16 Jun 2015</time>
     <p>I decided to start a project for the wrong reason. It’s because of this reason that I ended up giving up said project for the short term.</p>
 
 <p>I thought I had it all figured out. I carved out time on my calendar, I made plans, I had an idea…</p>
@@ -318,58 +488,6 @@
 
   </article>
   
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/06/16/incapacity/">
-        Incapacity
-      </a>
-    </h1>
-    <time datetime="2015-06-16T00:00:00-07:00" class="post-date">16 Jun 2015</time>
-    <p>What do you think of when I say that amateurs look for excuses?</p>
-
-<p>It’s a rhetorical question and I don’t expect an answer. Instead, that sentence should really be a statement. It’s an obvious one to someone who’s paying attention, but on the inside, it’s harder.</p>
-
-<p>Also known as the easy way out, looking to find a way out of a tough situation by copping out or giving up is modus operandi of those who can’t hack it. Amateurs.</p>
-
-<p>I’m not talking about people who aren’t good enough at a specific thing. No one should expect to be experts at everything they do. What I’m talking about is life. Sticking with the shit that comes your way. Dealing with less than ideal situations.</p>
-
-<p>Whoever first said “shit happens” is the realist realist the world will ever experience. One thing a professional understands is that sometimes you step in it, but the best route is to clean it off and keep moving.</p>
-
-<p>This idea became one I find myself gravitating towards after reading a relevant passage in <a href="http://amzn.to/1G234yc">Turning Pro</a>:</p>
-
-<blockquote>
-  <p>The habits and addictions of the amateur are…self-inflicted wounds…[Amateurs] no longer have to face the real fight of our lives, which is to become who we are and to realize our destiny and our calling.That’s not some hippie shit from a guy smoking weed. That’s real talk from a guy who used to be an amateur. If you’ve ever thought about reading what it takes to rock life and kick it’s ass, he’s the guy to go to.</p>
-</blockquote>
-
-<p>Think about this: how easy is it to make an excuse? It just slips right on out there without anyone noticing… except you… time and again… uttering the same garbage… because you can’t accept the fact you failed at something… or many somethings.</p>
-
-<p>A pro would admit wrong and rectify it. Today. Right freaking now.</p>
-
-<p>You also don’t see pros telling their boss they didn’t have time to create that presentation that’s due today, even though all they did was sit on Reddit and bitch about their boss. An amateur is quick to make excuses for themselves to protect their mediocrity and constant state of incapacitation of potential.</p>
-
-<p>I made a small resolution to kick ass this year, and this is one of the many ways to do it because 2015 isn’t quite over. I don’t have to relocate my foot in someone’s ass physically, to rock my goal.</p>
-
-<p>One of the many ways it starts is by accepting the challenge that lays in front of me, every day. Each moment, there’s a hurdle, and each moment I can jump or smash into it like a lumbering blob of crap.</p>
-
-<p>The latter doesn’t sound so appealing, does it…</p>
-
-
-  </article>
-  
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/2015/06/11/learnup/">
-        Learn Up
-      </a>
-    </h1>
-    <time datetime="2015-06-11T00:00:00-07:00" class="post-date">11 Jun 2015</time>
-    <blockquote>
-  <p><a href="http://www.learnup.com">LearnUp</a> provides entry-level job seekers with job-specific training and coaching to help them get hired.I really like the idea of <a href="http://www.learnup.com">this</a>. I wish this was around when I was just starting out in the professional world.</p>
-</blockquote>
-
-
-  </article>
-  
 </div>
 
 <div class="pagination">
@@ -385,7 +503,7 @@
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2015-12-07T20:12:52-08:00">2015</time>. Blog by Johnathan Lyman. All rights reserved.
+          &copy; <time datetime="2015-12-09T01:03:47+00:00">2015</time>. Blog by Johnathan Lyman. All rights reserved.
         </small>
       </footer>
     </div>
