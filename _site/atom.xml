@@ -4,7 +4,7 @@
  <title>Johnathan Lyman</title>
  <link href="https://johnathanlyman.com/atom.xml" rel="self"/>
  <link href="https://johnathanlyman.com/"/>
- <updated>2015-12-09T01:03:47+00:00</updated>
+ <updated>2015-12-10T20:09:05+00:00</updated>
  <id>https://johnathanlyman.com</id>
  <author>
    <name></name>
@@ -13,11 +13,13 @@
 
  
  <entry>
-   <title>A link post</title>
-   <link href="https://johnathanlyman.com/2015/12/09/link-post-test/"/>
-   <updated>2015-12-09T00:00:00+00:00</updated>
-   <id>https://johnathanlyman.com/2015/12/09/link-post-test</id>
-   <content type="html">&lt;p&gt;This is a link post.&lt;/p&gt;
+   <title>Mega Apple Software Update Day</title>
+   <link href="https://johnathanlyman.com/2015/12/09/mega-apple-software-update-day/"/>
+   <updated>2015-12-09T09:55:00+00:00</updated>
+   <id>https://johnathanlyman.com/2015/12/09/mega-apple-software-update-day</id>
+   <content type="html">&lt;p&gt;Ars Technica is on top of the mega update pushed out by Apple today that consists of updates to iOS 9.2, OSX 10.11.2 , watchOS 2.1, and tvOS 9.1.&lt;/p&gt;
+
+&lt;p&gt;Let the downloads commence.&lt;/p&gt;
 </content>
  </entry>
  
