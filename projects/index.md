@@ -7,3 +7,4 @@ title: Projects
 
 * [WordPress to Jekyll Post Converter](/projects/code/wordpress-jekyll-post-converter/) (ruby)
 * [Jekyll Post Generator](/projects/code/jekyll-post-generator/) (ruby)
+* [Pokémon Ruby](/projects/code/pokemon-ruby/) (ruby)
