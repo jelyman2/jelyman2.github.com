@@ -2,3 +2,5 @@
 /_site
 push
 .DS_Store
+/.sass-cache
+/.tweet-cache
