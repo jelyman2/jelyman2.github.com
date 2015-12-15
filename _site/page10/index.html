@@ -61,6 +61,8 @@
   <meta property="fb:admins" content="1586250162">
   <meta property="fb:app_id" content="114316288938899">
 
+  <script src="https://use.typekit.net/jdn4ymx.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 </head>
 
@@ -90,9 +92,114 @@
   
   <article class="post">
     
+      <h1 class="post-title"><a href="https://johnathanlyman.com/page10/" rel="bookmark" title="Dart: Java-Free Android Apps">Dart: Java-Free Android Apps</a></h1>
+    
+    <time datetime="2015-05-02T00:00:00+00:00" class="post-date">May 02, 2015  | 121 words</time>
+    <p>Made by some folks from the Chrome V8 Javascript engine team, Dart tries to solve 20-year old frustrations of working with Java. A language created completely in house, it feels a lot like Python.</p>
+
+<p>from ArsTechnica:</p>
+
+<blockquote>
+  <p>Being fast and responsive is one of the biggest goals for Sky. While 60FPS (or Hz) is the smoothness standard most devices and app developers aim for, the Dart team wants to crank that up to 120FPS, which isn’t even possible to display on the standard 60Hz smartphone screens we have today. That sounds rather improbable on Android, where many apps don’t stay at 60FPS, let alone 120. Rendering an app at 60FPS requires a frame to be drawn every 16ms, and apps “jank” or display an animation stutter, when they can’t keep up with the 16ms deadline.I know the feeling. I’ve experienced it myself many times when I used to own an Android device. I also am a fan of the word “jank.”</p>
+</blockquote>
+
+<blockquote>
+  <p>The Dart team brought along  <a href="https://play.google.com/store/apps/details?id=org.domokit.sky.demo">a demo app</a>, and it was rendering entire frames in 1.2ms. While it was a simple example, it appears Sky has plenty of headroom for silky-smooth animation on more complicated apps and makes that 120FPS goal (8ms rendering time) seem like a possibility. The Dart team says Sky is “Jank-free by design” with APIs that don’t block the main UI thread, meaning that even if the app slows down, the UI will still be fast and responsive.Now that’s what I’m talking about. I’m not entirely sure why 120fps is necessary as they’re still struggling to get 60fps to run smooth. Baby steps, folks. Sure there’s nothing wrong with aiming high, but I’d hate to see this dropped because they never got to 120fps in real world use cases.</p>
+</blockquote>
+
+<p>Read the rest of the article <a href="http://arstechnica.com/gadgets/2015/05/01/googles-dart-language-on-android-aims-for-java-free-120-fps-apps/">Dart on ArsTechnica</a> or <a href="http://dartlang.org">check out Dart</a> for yourself.</p>
+
+<p> </p>
+
+
+  </article>
+  
+  <article class="post">
+    
+      <h1 class="post-title"><a href="https://johnathanlyman.com/page10/" rel="bookmark" title="Bulk Updating Any Meta Values in WordPress Posts Automatically">Bulk Updating Any Meta Values in WordPress Posts Automatically</a></h1>
+    
+    <time datetime="2015-05-02T00:00:00+00:00" class="post-date">May 02, 2015  | 121 words</time>
+    <p>I updated the look of my site, today, and with that came a non-standard setup for featured images and the realization I’d have to manually update a lot of posts.</p>
+
+<p>The theme requires custom meta be used for the featured image setting to determine how to display an image. As of this post, I have roughly 170 blog posts in the database that would need updating from the beginning of January until now. I definitely didn’t want to spend the next 60 minutes (170 posts * time to click) updating each post, so I did a bit of quick and dirty PHP coding.</p>
+
+<p>Placing the code within the_loop() allowed it to run automatically for each post that was presented. Setting the per-page post count to 200, I effectively had all 170 posts pushed on screen at the same time. This subsequently updated all 170 posts at the same time. This of course put a little bit of a hit on my SQL database, but not so much that it bogged it down. I’m sure having 170 * 2 reads then writes all at once blew out a few of the cobwebs. Most of this site is cached pretty effectively so the database doesn’t do much.</p>
+
+<p><a href="https://i0.wp.com/johnathanlyman.com/wp-content/uploads/2015/05/Screenshot-2015-05-02-18.23.56.png"><img src="https://i0.wp.com/johnathanlyman.com/wp-content/uploads/2015/05/Screenshot-2015-05-02-18.23.56.png?resize=882%2C359" alt="Screenshot 2015-05-02 18.23.56" /></a></p>
+
+<p>You’ll see in the image above where I made the updates. The first spike should have been the only one, but I entered the wrong value for one of the custom meta fields so I had to go back and do it again. The code has logic so if it was already correct, it skipped it, hence the smaller second peak.</p>
+
+<p>If you’re curious, the above came from <a href="http://newrelic.com">NewRelic</a>, a service offering made by some pretty cool people. They’re free to use for the basic stuff and their customer service rocks. &lt;/shameless plug&gt;</p>
+
+<p>Anyway, without further delay, here’s the code that made this happen:</p>
+
+<script src="https://gist.github.com/jelyman2/56c68169e85ae18ce62c.js"></script>
+<noscript>View the code on <a href="https://gist.github.com/jelyman2/56c68169e85ae18ce62c">Gist</a>.</noscript>
+<p>Pretty neat, eh? I know it’s nothing spectacular but it gets the job done, for sure.</p>
+
+<p>Share this post with everyone you know who’s even just remotely interested in WordPress development. One could even bulk-update posts themselves with zero clicks or interaction necessary.</p>
+
+<p>I feel like I did a great thing, today. Time for a beer.</p>
+
+
+  </article>
+  
+  <article class="post">
+    
+      <h1 class="post-title"><a href="https://johnathanlyman.com/page10/" rel="bookmark" title="The Vox Media Open Source Meme Generator">The Vox Media Open Source Meme Generator</a></h1>
+    
+    <time datetime="2015-04-30T00:00:00+00:00" class="post-date">April 30, 2015  | 121 words</time>
+    <p>I spent some time scouring GitHub this afternoon looking for cool projects. One I stumbled upon was a tool created by Vox Media for creating Twitter cards and Instagram images that included text, source, and site brand logo. I thought it was pretty interesting so I gave it a look-see and started it up in my own space.</p>
+
+<p>I’m not sure if it’ll serve me much purpose and I haven’t seen Vox use it much if at all lately. It might have been a one-time use tool, probably around election time. If you’re interested in giving it a whirl, check it out their <a href="https://github.com/voxmedia/meme" title="Meme on Vox Media's GitHub page">GitHub page</a>, their <a href="http://www.sbnation.com/a/meme">running example</a>, or my <a href="http://mg.tools.jlyman.net">running example</a>.</p>
+
+<p>One thing I’m not sure they totally get is that these image aren’t quite memes. <a href="http://knowyourmeme.com">These</a> are memes.</p>
+
+
+  </article>
+  
+  <article class="post">
+    
+      <h1 class="post-title"><a href="https://johnathanlyman.com/page10/" rel="bookmark" title="The Sad, Lonely World of Yik Yak">The Sad, Lonely World of Yik Yak</a></h1>
+    
+    <time datetime="2015-04-30T00:00:00+00:00" class="post-date">April 30, 2015  | 121 words</time>
+    <iframe class="youtube-player" type="text/html" width="882" height="527" src="https://www.youtube.com/embed/O825ko-BK0k?version=3&amp;rel=1&amp;fs=1&amp;autohide=2&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;wmode=transparent" frameborder="0" allowfullscreen="true"></iframe>
+
+<p> </p>
+
+<p>So I downloaded what some are calling the winner of the Secret-Whisper-YikYak battle for anonymous sharing. YikYak works like Whisper and Secret, except there’s one thing very different about it, at least from what I can tell.</p>
+
+<p>After spending just ten minutes on the app, a trend started appearing. Actually, several trends. If you struggle with any of the following:</p>
+
+<ul>
+  <li>Boys</li>
+  <li>Periods</li>
+  <li>Love</li>
+  <li>ADHD Drugs</li>
+  <li>General Sadness</li>
+  <li>High School</li>
+  <li>Drinking</li>
+  <li>High School Drinking</li>
+  <li>General High School Sadness</li>
+  <li>Awkward First-Time Sex</li>
+  <li>Awkward Butt Stuff
+Then Yik Yak is for you. Ask your doctor about high-strength Yik Yak that involes constantly commenting on stranger’s life struggles with your own quips that likely have a nominal effect.</li>
+</ul>
+
+<p>One thing I noticed with Secret is that people seemed to as least be older than 15. I never tried Whisper so who knows what whack stuff went on there.</p>
+
+<p>So when it comes to YikYak…</p>
+
+<p>Enjoy. I think…</p>
+
+
+  </article>
+  
+  <article class="post">
+    
       <h1 class="post-title"><a href="https://johnathanlyman.com/page10/" rel="bookmark" title="For-Profit Colleges">For-Profit Colleges</a></h1>
     
-    <time datetime="2015-04-30T00:00:00+00:00" class="post-date">30 Apr 2015</time>
+    <time datetime="2015-04-30T00:00:00+00:00" class="post-date">April 30, 2015  | 121 words</time>
     <p>It’s not really surprising that Corinthian Colleges shut its doors. It’s also not surprising that there are students out there who are angry the schools are closing.</p>
 
 <p>I see two things come from this event.</p>
@@ -140,7 +247,7 @@ The second reason is likely a stretch and generalization, but there’s also a r
     
       <h1 class="post-title"><a href="https://johnathanlyman.com/page10/" rel="bookmark" title="Like That Zappos Guy">Like That Zappos Guy</a></h1>
     
-    <time datetime="2015-04-26T00:00:00+00:00" class="post-date">26 Apr 2015</time>
+    <time datetime="2015-04-26T00:00:00+00:00" class="post-date">April 26, 2015  | 121 words</time>
     <p>A couple days ago I talked about killing in people relations, a.k.a kicking ass at customer service. I suggested a book by Dale Carnegie called How to Win Friends and Influence People. I also said there was a second book I recommend.</p>
 
 <p>That second book is by the CEO of Zappos, the site that sells a ton of shoes. <a href="http://www.amazon.com/gp/product/B003JTHXN6/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B003JTHXN6&amp;linkCode=as2&amp;tag=jlymannet-20&amp;linkId=F2YCPEVVP25QDMQI">Delivering Happiness</a> isn’t just about learning how to smooth-talk through the phone or how to close a sale. It’s about making people feel appreciated. The book outlines what Tony Hsieh (pronounced shay) did and still does to make Zappos as awesome as possible.</p>
@@ -165,7 +272,7 @@ I took that list from Amazon’s description. They also feature a Q&amp;A with H
     
       <h1 class="post-title"><a href="https://johnathanlyman.com/page10/" rel="bookmark" title="100 Books">100 Books</a></h1>
     
-    <time datetime="2015-04-26T00:00:00+00:00" class="post-date">26 Apr 2015</time>
+    <time datetime="2015-04-26T00:00:00+00:00" class="post-date">April 26, 2015  | 121 words</time>
     <p><a href="//amazon.com">Amazon</a> came out with what equates to a bucket list for books. Their <a href="http://www.amazon.com/b?ie=UTF8&amp;node=8192263011">100 Books to Read in a Lifetime</a> features a load of great reads crossing all genres and categories. I’ve only read maybe a handful from this list, so perhaps it’s time to start a book club?</p>
 
 
@@ -175,7 +282,7 @@ I took that list from Amazon’s description. They also feature a Q&amp;A with H
     
       <h1 class="post-title"><a href="https://johnathanlyman.com/page10/" rel="bookmark" title="Killing It In People Relations">Killing It In People Relations</a></h1>
     
-    <time datetime="2015-04-23T00:00:00+00:00" class="post-date">23 Apr 2015</time>
+    <time datetime="2015-04-23T00:00:00+00:00" class="post-date">April 23, 2015  | 121 words</time>
     <p>My latest challenge in my career is executing the position of Senior Technical Support Lead for the Americas at <a href="http://getzephyr.com/">Zephyr</a>, the software company that is, I believe, up-ending the software test management space. My primary responsibility is making technical support as awesome as possible for our Americas customers. This got me thinking on what resources I could use to my advantage in bettering the experiences our customers have when they call in or open a case at <a href="http://support.getzephyr.com">support.getzephyr.com</a>.</p>
 
 <p>The first thing is my technical support team needs to be challenged. Not just technically, but challenged within themselves. Each individual needs to be challenged to better themselves including their confidence levels, relationship skills, communication, and being able to think on their feet when the time comes.</p>
@@ -203,7 +310,7 @@ I took that list from Amazon’s description. They also feature a Q&amp;A with H
     
       <h1 class="post-title"><a href="https://johnathanlyman.com/page10/" rel="bookmark" title="Norway&#8217;s Radio">Norway&#8217;s Radio</a></h1>
     
-    <time datetime="2015-04-21T00:00:00+00:00" class="post-date">21 Apr 2015</time>
+    <time datetime="2015-04-21T00:00:00+00:00" class="post-date">April 21, 2015  | 121 words</time>
     <p>There seems to be a bit of confusion surrounding Norway’s announcement they’ll stop broadcasting FM radio. Someone didn’t do their homework when they started writing titles for the various articles that are covering the matter, so I hope I can spend a few minutes and clarify the topic for you.</p>
 
 <p>Let’s start with the original source. An article by <a href="http://radio.no/2015/04/norway-to-switch-off-fm-in-2017/">Radio.no</a> uses the following title in their article:</p>
@@ -237,7 +344,7 @@ I took that list from Amazon’s description. They also feature a Q&amp;A with H
     
       <h1 class="post-title"><a href="https://johnathanlyman.com/page10/" rel="bookmark" title="Ten Days a Californian">Ten Days a Californian</a></h1>
     
-    <time datetime="2015-04-16T00:00:00+00:00" class="post-date">16 Apr 2015</time>
+    <time datetime="2015-04-16T00:00:00+00:00" class="post-date">April 16, 2015  | 121 words</time>
     <p>If my calendar is correct, ten days of living in California is today. As someone who’s lived in one state their whole life, nay, one metro area in one state, it’s been a huge change. The world around me is fresh and exciting, but equally craptacular.</p>
 
 <p>The good news is, I’m not leaving. Maybe that’s also the bad news, who knows. We’re here for the long haul and I’ve discussed and mentally prepared for it <a href="http://johnathanlyman.com/p/scared-to-act">quite</a> <a href="http://johnathanlyman.com/p/be-ready">far</a> <a href="http://johnathanlyman.com/p/couch-chapter">in</a> <a href="http://johnathanlyman.com/p/wasted">advance</a>. I even highlighted my trip by day in summary (day <a href="http://johnathanlyman.com/p/move-day-1">1</a>, <a href="http://johnathanlyman.com/p/move-day-2">2</a>, <a href="http://johnathanlyman.com/p/move-day-3">3</a>, <a href="http://johnathanlyman.com/p/move-day-4">4</a>) and <a href="http://johnathanlyman.com/p/dust-settling">reflected</a> briefly after all the dust settled.</p>
@@ -269,102 +376,6 @@ I took that list from Amazon’s description. They also feature a Q&amp;A with H
 
   </article>
   
-  <article class="post">
-    
-      <h1 class="post-title"><a href="https://johnathanlyman.com/page10/" rel="bookmark" title="California Move Day 4 &#8211; It&#8217;ll Fit, Watch!">California Move Day 4 &#8211; It&#8217;ll Fit, Watch!</a></h1>
-    
-    <time datetime="2015-04-14T00:00:00+00:00" class="post-date">14 Apr 2015</time>
-    <p>This was the day we were all waiting for. The day we drive into town, unload the truck, and start our lives in California. This was also the day I forgot how much I don’t like moving up and down stairs.</p>
-
-<p>When I pulled in, I barely fit. The power steering was whining because I insisted on holding the wheel all the way to the right. The truck fit, and the trailer followed behind, by only by a hair. Mere inches were between my front bumper and the gate edge, and same with my trailer wheels. Someone didn’t think the entrance through enough.</p>
-
-<p>Either way, I found a place to park the truck and get rid of the trailer so we could unload. It was warm, but not super hot… 60-something, if I remember correctly.</p>
-
-<p>It only took a few hours to unload the truck when we counted breaks. Having help was nice, especially when it came to conquering the three flights of stairs. Before dinner, we were done and the truck was back where it belonged.</p>
-
-<p>So glad it’s over.</p>
-
-
-  </article>
-  
-  <article class="post">
-    
-      <h1 class="post-title"><a href="https://johnathanlyman.com/page10/" rel="bookmark" title="California Move Day 3 &#8211; Coming &#8216;Round the Mountain">California Move Day 3 &#8211; Coming &#8216;Round the Mountain</a></h1>
-    
-    <time datetime="2015-04-12T00:00:00+00:00" class="post-date">12 Apr 2015</time>
-    <p>The Siskiyous mountains are rough for a moving truck. At times we hummed along at 55 to 60 mph and when we hit big climbs, we sputtered at 35 to 40. It’s rough going for a gas-powered truck-trailer. If you’re unfamiliar with what I’m talking about, please let me fill you in.</p>
-
-<p>Gas-powered trucks have zero oomph when pulling a load. None. Their torque is present at a much higher rev range than diesel and unfortunately, those higher revs also sit close to the engine’s limit. I wanted to give the truck 100% throttle to power up the hills, but if I did, I felt it would explode. See, to make our journey up a 7% grade even at 40 mph, the engine needed to run at 4000-4250 RPM. For scale, the gauge stops at 6000 and the truck shifts well before then. I was at my limit.</p>
-
-<p>Even with such slow and gas-guzzling climbs, we managed to stay on target for fuel usage and didn’t lose too much time. The most embarrassing part: loaded semi trucks passing you. Damn you, Budget Truck.</p>
-
-<p>After we got out of the mountains, we made a quick pit stop in Redding, CA to top off and sprinted to Sacramento, where we met friends for our last night on the road.</p>
-
-
-  </article>
-  
-  <article class="post">
-    
-      <h1 class="post-title"><a href="https://johnathanlyman.com/page10/" rel="bookmark" title="California Move Day 2 &#8211; To Medford">California Move Day 2 &#8211; To Medford</a></h1>
-    
-    <time datetime="2015-04-12T00:00:00+00:00" class="post-date">12 Apr 2015</time>
-    <p>Now the real fun begins. There’s nothing more that I’ve wanted from life than to drive a 40’ truck-trailer combination over 900 miles. Today’s journey took us to Medford, OR, where we make our first of two on-the-road stops.</p>
-
-<p>We chose to stay in the Ramada, and it’d been so long since I stayed in a place like that I forgot what it was like. Apparently, they opted to not redecorate since I last stayed in one in the 90s. The hotel was crap. I’m not sure it was worth the $64 a night price tag, but at least the WiFi was good. It was great actually. Probably because nobody was actually staying there besides truckers. The bed was hard and the breakfast was meh, but it did its job as a place to sleep for the night. Medford is a surprisingly beautiful area. The south Oregon mountains are awesome and quite a site to see, compared to the rest of the state.</p>
-
-<p>Not much happened on the journey south. We sat in the truck for nine hours including stops, filled up once with what seemed like an entire tanker of gas, and somehow managed 12mpg, with car trailer. I was quite impressed, but at the same time, not. Budget really needs to stop using gas engines in their tow-capable trucks. We could have skipped a stop if we were rolling in a diesel truck.</p>
-
-<p>I experienced a Popeye’s for the second time in my life. The first time involved me wishing I hadn’t experienced Popeye’s. This time, it was actually decent, but considering this was the fourth or fifth meal involving fast food, I was starting to feel pretty gross.</p>
-
-<p>The bane of my existence has yet to come, however.</p>
-
-<p> </p>
-
-
-  </article>
-  
-  <article class="post">
-    
-      <h1 class="post-title"><a href="https://johnathanlyman.com/page10/" rel="bookmark" title="California Move Day 1 – Deposits My Ass">California Move Day 1 – Deposits My Ass</a></h1>
-    
-    <time datetime="2015-04-12T00:00:00+00:00" class="post-date">12 Apr 2015</time>
-    <p>Today’s the day. We packed up all our stuff over the last couple of weeks and picked up our moving truck this morning. We loaded it all in a relatively short amount of time (we do only have an apartment, after all). So far, the trip’s been alright, as we haven’t left town, yet, and won’t until tomorrow morning. Funny story, though…</p>
-
-<p>We were up at 6:30 getting ready to start the long day. I’m dreading the level of effort that’s about to be bestowed upon me by the laws of gravity and physics. By 7:30 we had breakfast. Thanks Jack in the Box!</p>
-
-<p>By 8:00am, we were at the rental truck facility. By virtue of being the lowest price for our one-way trip, we graced Budget Truck with our presence. The place looked kinda sketchy and rightly so: it was nothing more than a double-wide. For a place that also offered rental cars via Avis, it was hard to tell what cars were actually available to rent.</p>
-
-<p>At 8:30 we had the truck back home and ready to accept our crap. Most of our stuff was already boxed up so it came down to making trips two and from the truck with the dolly. This part only took a couple hours. Most of our furniture was boxed up (we ordered some new stuff, because why not!).</p>
-
-<p>Come 10:30 and we’re back at Budget Truck ready for our car trailer. We’re taking a 22-foot truck (16 feet cargo space plus six feet for the chassis, give or take) and adding another 16.5-foot trailer on the back. I love the plan. This $45 trailer will net us $150 in gas savings.</p>
-
-<p>Did I mention we have a cat? No? Well… we have a cat, and this is where it starts getting interesting.</p>
-
-<p>It’s now 12:00 and we’re at our hotel, the Holiday In Express &amp; Suites. I’ve stayed there before and they were pretty nice for a 3-star hotel. I expected more nice-but-not-worthy-of-instagramming experiences. We checked in, and informed them of our cat, because I want to make sure the reservation at a pet-friendly hotel was still legitimate. Turns out it was, they are pet friendly. As it also turns out, they charge $50 per three nights as an added fee, like paying for a room for your pet. Oh… but according to Hanna, the wonderfully nice woman at the reception desk explained the moment she, herself discovered for the first time it seemed, they don’t take cats.</p>
-
-<p>So there’s that.</p>
-
-<p>I’m in a bit of a subdued panic because our whole schedule is pretty well locked down. We already turned in our apartment keys and for all intents and purposes, we’re transients. I’ll be honest, I paid $90 for my room through Hotwire. I thought it was a good deal. That’s about the price I paid the last time I stayed at HIES via Hotwire, roughly two to three years ago.</p>
-
-<p>I give Hotwire a call, crossing my fingers they’ll refund my non-refundable purchase. Turns out they will, only if the room and or reservation isn’t as advertised. I had the right in two areas: 1) they were only <em>partially</em> pet friendly, something Hotwire didn’t advertise properly, and 2) the rate on Hotwire’s site should have been the only amount I had to pay, which it wasn’t. After roughly five minutes, it was all squared away and I had my money back.</p>
-
-<p>But now what? I’m without a hotel room. In comes my trusty hotel sidekick to the rescue.</p>
-
-<p>There’s a single hotel chain that’s always come through for my family and my wife’s family alike, the La Quinta. It’s roughly on the same level as HIES, and about the same price. I gave them a rang because I know their properties and know what kind of rooms they offer up. An ever so friendly gentleman named Kurtis (I checked, he spells it that way) helped us out. They had a room open tonight and they were pet friendly. They also don’t charge a fee, because that’s weird.</p>
-
-<p>Since I’m a AAA member, they took 10% off and we were in business for $100. Sure it was $10 more, but I’d rather pay that difference than $50. It was within reason. Within 20 minutes we had our room and were moving in for the night.</p>
-
-<p>It’s 1:00pm and nap time.</p>
-
-<p>At around 3:30, my wife found it prudent to give our other hotel reservations a call and find out if they charge a separate pet fee. Turns out they both did. The Ramada in Medford, OR charges $20, and the Double Tree in Newark, CA charges $50. The $20 is okay, the $50 is not. I called Hotwire again, and complained once more. I fed them a story about false advertising and whatnot, and within a few minutes I had my money back, again. It would be great if Hotwire advertised extra fees like this before you buy your supposedly non-refundable stay.</p>
-
-<p>I enjoyed our stay at the La Quinta. While it’s nothing special to look at they’re good at making breakfast and having comfy beds. They could step up their WiFi game a bit. The particular hotel I stayed at had misconfigured WiFi. All of their hotspots were on the same channel. If you’re not technically inclined enough to know what that means, let me use this analogy: imagine six people talking to you at the same time, at the same volume, saying the same thing. Which one are you going to pay attention to? With all of the hotel’s hotspots on the same frequency, doing the same thing, the airwaves become a garbled mess, and my laptop had a hard time staying connected. Noob move.</p>
-
-<p>Overall, our first day was uneventful. We packed up and rested. The real fun begins on day two.</p>
-
-
-  </article>
-  
 </div>
 
 <div class="pagination">
@@ -380,10 +391,18 @@ I took that list from Amazon’s description. They also feature a Q&amp;A with H
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2015-12-10T20:09:05+00:00">2015</time>. Blog by Johnathan Lyman. All rights reserved.
+          &copy; <time datetime="2015-12-15T19:48:13+00:00">2015</time>. Blog by Johnathan Lyman. All rights reserved.
         </small>
       </footer>
     </div>
 
   </body>
+  <!--
+
+  ***BLOG STATS***
+
+  Total number of words in this blog: 92205
+  Average number of words per post: 353
+  The longest post in this blog has 2058 words.
+  -->
 </html>

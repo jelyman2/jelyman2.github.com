@@ -61,6 +61,8 @@
   <meta property="fb:admins" content="1586250162">
   <meta property="fb:app_id" content="114316288938899">
 
+  <script src="https://use.typekit.net/jdn4ymx.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 </head>
 
@@ -90,9 +92,135 @@
   
   <article class="post">
     
+      <h1 class="post-title"><a href="https://johnathanlyman.com/page23/" rel="bookmark" title="How I Solved Related Posts not Showing when Running WordPress, JetPack, and Nginx">How I Solved Related Posts not Showing when Running WordPress, JetPack, and Nginx</a></h1>
+    
+    <time datetime="2015-01-30T00:00:00+00:00" class="post-date">January 30, 2015  | 121 words</time>
+    <p>Ever since I started this blog up again at the beginning of January, I wanted to have related posts be visible at the end of each post. I use JetPack and I figured turning Related Posts on would be easy and I would be all set.</p>
+
+<p>Well, not so much.</p>
+
+<p>I turned on Related Posts and discovered nothing was appearing. I knew there wasn’t really anything that could be wrong as I don’t have any errors in WordPress, PHP-FPM doesn’t report errors in any of my logs, and I can use other services like WordPress.com Stats and the like.</p>
+
+<p>I did some digging and after my search turned up nothing, I reached out to Automatic support and asked about my JetPack issue. We worked through a few things including making sure WordPress.com Stats was working, the JetPack servers could see my site (which they did). We even checked to make sure the plugin was even grabbing data to display in the first place. This can be done by adding ?relatedposts to the end of any single post URL. You’ll get a JSON blob in return if it’s doing what it’s supposed to on the back end. We figured, well, that can’t be it either. Turns out, the answer wasn’t anywhere where I was expecting it to be.</p>
+
+<p>My problem was with my Nginx server configuration for this site.</p>
+
+<p>Here’s where it gets technical. For any path, you’ll have a set of URIs for the server to try before it gives up. The code usually looks like this:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>try_files $uri $uri/ /index.php
+</code></pre>
+</div>
+
+<p>In most cases, that’s right! WordPress will work just fine like this. You won’t notice errors and everything will parse fine… except for JetPack’s Related Posts plugin.</p>
+
+<p>See, with the above line of code, we’re telling Nginx that it’s ok to try the URI by itself, with a slash after it, or try index.php by itself, depending on what the URI actually is. Nginx, however, is <em>very</em> detail-oriented and will only do exactly what you tell it to do. In my case, I left out a specific instruction: process index.php with arguments, please. By doing so, we turn the above line of code into this line of code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>try_files $uri $uri/ /index.php?q=$uri&amp;$args
+</code></pre>
+</div>
+
+<p>Notice the bold text starting with the question mark? that’s what we were missing. JetPack calls upon that JSON blob I told you about a bit ago just like that: index.php followed by the URI (not fancy, something like a post ID), and any additional arguments necessary after that. So in the case where my post ID is 105 and it’s grabbing the related posts for that, it would be calling</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>index.php?q=105&amp;relatedposts=1
+</code></pre>
+</div>
+
+<p>Boom.</p>
+
+<p>I hope you find this helpful. If you did, <a href="/contact">please let me know</a>. I enjoy a good chat and meeting folks who enjoy blogging and WordPress as much as I do.</p>
+
+
+  </article>
+  
+  <article class="post">
+    
+      <h1 class="post-title"><a href="https://johnathanlyman.com/page23/" rel="bookmark" title="Learn to Code as Early as You Can!">Learn to Code as Early as You Can!</a></h1>
+    
+    <time datetime="2015-01-30T00:00:00+00:00" class="post-date">January 30, 2015  | 121 words</time>
+    <p>One thing I always wish I would have paid more attention to when I was younger was coding. I believe my generation is just the start of the potential batch of humans that become masters of writing code and making apps that do random things. My problem is I feel like I’m a bit behind the curve because I didn’t pay as much attention to it nor did I have a solid path to learn code in the first place…</p>
+
+<p>There’s a huge demand for software developers. A lot of these developers went to school for computer science and built up the foundations necessary to be successful in that career. While I’m decent—I could hold my own if I was writing something with HTML/CSS, Python, or PowerShell—I think I would be even better if I had paid more attention. When I was younger, I didn’t care so much about stuff like that. I wasn’t interested in the future. I was interested in girls and just making it through high school. If I had really kept my nose in the books so to speak, I could have gone to a good school and today I would have a CS degree and likely be pretty good in software development.</p>
+
+<p>I know what you’re thinking. Just because I didn’t get a degree doesn’t mean I can’t excel at programming. You’re right. That’s why I’m good with the above languages I cited. I used to be good with PHP, too, but that was before high school and those brain cells rusted out; a lot has changed with PHP but it’s not foreign to me. I use WordPress every day and I can handle my own when reading and understanding code.</p>
+
+<h2 id="where-to-learn">Where to Learn</h2>
+<p>There are a ton of resources out there to learn to code, some online and others in person. Here’s a good list from what I’ve discovered and personally think are fantastic:</p>
+
+<h3 id="online">Online</h3>
+<ul>
+  <li><a href="http://codeacademy.com">Code Academy</a></li>
+  <li><a href="http://code.org">Code.org</a></li>
+  <li><a href="https://www.codeschool.com">CodeSchool</a></li>
+  <li><a href="http://www.khanacademy.org/computing/hour-of-code">Khan Academy</a></li>
+  <li><a href="http://www.codeavengers.com">Code Avengers</a></li>
+  <li><a href="http://www.girldevelopit.com">Girl Develop It</a></li>
+  <li><a href="https://www.udacity.com">Udacity</a></li>
+  <li><a href="http://teamtreehouse.com">Treehouse</a>
+### In Person</li>
+  <li><a href="http://theironyard.com">The Iron Yard</a></li>
+  <li>Your Local University</li>
+  <li><a href="https://coderdojo.com">CoderDojo</a></li>
+  <li><a href="http://www.computerclubhouse.org">Intel Computer Clubhouse Network</a>
+There are a lot more out there, I’m sure, but these are just the ones I’m familiar with. Not all services and locations will offer up the same courses, but I think there’s a good mix of online and in-person resources to get anyone to a good place to start making their own apps.</li>
+</ul>
+
+<p>Once you have a solid foundation, it’s time to experiment and start making stuff. You’re at the point where you won’t get a high-paying software development job just yet, but it’s coming. Here are some ideas and idea lists to get you started:</p>
+
+<ul>
+  <li><a href="http://www.makeuseof.com/tag/5-project-ideas-help-learn-programming-faster/">5 Project Ideas To Help You Learn Programming Faster</a> (Make Use Of)</li>
+  <li><a href="http://www.codeconquest.com/programming-projects/ideas-for-programming-projects/%20">Ideas for Coding Projects</a> (Code Conquest)</li>
+  <li><a href="http://www.linuxtrainingacademy.com/projects/">1500+ Coding Project Ideas</a> (Linux Training Academy)</li>
+  <li><a href="http://fedoraproject.org/wiki/Summer_coding_ideas_for_2014">Summer Coding Ideas for 2014</a> (Fedora Project)</li>
+  <li><a href="https://github.com/karan/Projects-Solutions">List of Beginner Projects</a> (Github)</li>
+  <li><a href="https://www.daniweb.com/software-development/python/threads/131973/5-crucial-projects-for-beginners">Five Crucial Projects for Beginners</a> (DaniWeb)
+I’ve combed through a lot of these resources myself and have used some of the earlier resources I listed for learning to code. I personally believe that if you have the time and resources to learn in-person, you’ll have a much better time. If you don’t, please don’t fret. You might be surprised by how much you can learn online. If you ever get stuck, the very popular Q&amp;A site for whatever <a href="http://stackexchange.com">StackExchange</a> has great sub-sites for various programming languages but their biggest is <a href="http://stackoverflow.com">StackOverflow</a>. You’ll find an answer there, I’d almost guarantee it. Your problem probably isn’t unique if you’re working on something that may have been done before.</li>
+</ul>
+
+<p>I might have regrets about not learning to code sooner, but it’s also very much not too late to learn. With the amount of free resources, there’s no excuse.</p>
+
+<h3 id="bonus"><strong>Bonus</strong></h3>
+<p>There’s an iPad app called <a href="https://itunes.apple.com/us/app/codecademy-code-hour/id762950096?mt=8">Code Academy – Hour of Code</a> that also provides great resources on the basics of development and programming. If you have an iPad and want to learn the fundaments in an hour a day, give it a look. It’s free so you have nothing to lose and no excuse not to do it.</p>
+
+
+  </article>
+  
+  <article class="post">
+    
+      <h1 class="post-title"><a href="https://johnathanlyman.com/page23/" rel="bookmark" title="Start Before You&#8217;re Ready">Start Before You&#8217;re Ready</a></h1>
+    
+    <time datetime="2015-01-29T00:00:00+00:00" class="post-date">January 29, 2015  | 121 words</time>
+    <p>Because you’ll never be ready if all you’re doing it waiting until you’re ready. At some point, one needs to take a leap of faith. I’m not talking about religious faith. I’m talking about taking a chance on yourself and believing that you can succeed. There are new challenges almost every day in life, and while we try to be as world smart as we can and prepare for them as much as possible, sometimes things just don’t go according to plan.</p>
+
+<p>This is something that I am working on myself, as I prepare for a life-changing move to California at the end of Spring. As someone who’s grown up and lived in the Seattle area my entire life, a move like this that involves a new, permanent location of living for at least ten years is frankly frightening. However, there isn’t an amount of preparation in the world that could prepare me 100% for something like this. I will never be 100% ready. I don’t have the data to support a hypothesis that if we move, zero bad things will happen. It’s easy to be cautious with that kind of idea, but that caution can also prevent me from continuing to do what I love and to support my wife and what she loves.</p>
+
+
+  </article>
+  
+  <article class="post">
+    
+      <h1 class="post-title"><a href="https://johnathanlyman.com/page23/" rel="bookmark" title="If I Could Change Just One Thing">If I Could Change Just One Thing</a></h1>
+    
+    <time datetime="2015-01-28T00:00:00+00:00" class="post-date">January 28, 2015  | 121 words</time>
+    <p>I get it. Working with another team can suck at times. I’ve had my fair share of cases where I wasn’t exactly thrilled about the idea of working with a team of people who I didn’t believe were in the right position to be of assistance. While that’s certainly my opinion, it’s not my place to tell them they’re idiots. It’s also not appropriate. That’s not the only thing that bothers me about inter-team dynamics that seems all too common today.</p>
+
+<p>What really grinds me gears is the lack of open communication between multiple teams and parties that exists, today. Most companies have several teams and aren’t on the scrappy startup level. Some companies have multiple teams doing one type of task, although that number is significantly less. I am in the second boat. More times than I can witness, no matter what management has described, open communication didn’t exist and to even suggest it did was nothing short of heresy. </p>
+
+<p>There’s a comfort zone or bubble that builds up when a team has been around a while and has had the opportunity to essentially do things the way they want to do them for some time. That bubble becomes something the team wants to protect at all costs because its safe and it feels nice. To have that taken away for what would at first seem like no good reason because now there’s team B coming in and helping with the same type of tasks, it can feel threatening. </p>
+
+<p>This situation is amplified when team A tries to take the dominant position in the relationship and doesn’t even try to hide the fact that they’re trying to put team B into a lower, less useful-feeling place to perhaps push them back out. Think of it as a “good ol’ boys club” of sorts or even a country club. If you’re not a member of the special club or organization, then you’re nothing to them. You might as well golf in your backyard because you’ll never be doing it on their lush green grass.</p>
+
+<p>I would fix that, if I could. This is 2015, in case nobody noticed, not 1986. These scrappy startups and small companies are thriving because they’re kicking ass at being one cohesive unit. If anyone expects to continue to be successful or even succeed once, this relationship can’t exist. </p>
+
+<p>At this point, however, if it already exists, it won’t ever go away. This kind of dynamic comes from above. Subordinates tend to conform to how the rest of the team is moving. Changing something like this is hard if not impossible. In this scenario, someone will always be the redheaded step child. It’s about time we accept that and fire everyone who creates that type of environment. It’s not going to do anyone any good in the long run. It hurts morale and low morale hurts quality.</p>
+
+
+  </article>
+  
+  <article class="post">
+    
       <h1 class="post-title"><a href="https://johnathanlyman.com/page23/" rel="bookmark" title="Vivaldi &#8211; A New Browser for our Friends">Vivaldi &#8211; A New Browser for our Friends</a></h1>
     
-    <time datetime="2015-01-27T00:00:00+00:00" class="post-date">27 Jan 2015</time>
+    <time datetime="2015-01-27T00:00:00+00:00" class="post-date">January 27, 2015  | 121 words</time>
     <p>So there’s a new browser in town, put out by ex Opera big cheese Jón Stephenson von Tetzchner. It’s called <a href="https://vivaldi.net">Vivaldi</a> and so far, it looks just as good as Vivaldi’s music sounds.</p>
 
 <p>Vivaldi came to be after coming to the conclusion that Opera (the browser) just ain’t what it used to be. According to the <a href="https://vivaldi.net">site</a>: “[Opera] is no longer serving its community of users and contributors who helped build the browser in the first place.” That’s a bummer. I liked Opera for a while, but then it started feeling super fat. It started feeling like Firefox. For what it’s worth, at the time, all third party browsers were feeling super bloated like they needed to have extra water drained out of them.</p>
@@ -132,7 +260,7 @@ Download: <a href="https://vivaldi.net">Vivaldi.net</a></li>
     
       <h1 class="post-title"><a href="https://johnathanlyman.com/page23/" rel="bookmark" title="Favorite Thing to This Day">Favorite Thing to This Day</a></h1>
     
-    <time datetime="2015-01-27T00:00:00+00:00" class="post-date">27 Jan 2015</time>
+    <time datetime="2015-01-27T00:00:00+00:00" class="post-date">January 27, 2015  | 121 words</time>
     <p>In school my favorite subject was “Computers.” At the time, I didn’t quite know what that meant, nor did I really care. Kids thought I was nerdy because computers weren’t cool. The popular kids didn’t care about computers, they were athletes. That’s how they made friends. That didn’t deter me from keeping up with what I enjoyed the most.</p>
 
 <p>I started with HTML in the 6th grade, and it escalated from there to include design and photography. Today, I work in IT at a rather large software company you might have heard of, and I enjoy it. If I had to change career paths at this very moment, the only shift I would make would be to photography, something that was stimulated by computers, too.</p>
@@ -152,7 +280,7 @@ Download: <a href="https://vivaldi.net">Vivaldi.net</a></li>
     
       <h1 class="post-title"><a href="https://johnathanlyman.com/page23/" rel="bookmark" title="Just Sit Down and Write with Desk">Just Sit Down and Write with Desk</a></h1>
     
-    <time datetime="2015-01-27T00:00:00+00:00" class="post-date">27 Jan 2015</time>
+    <time datetime="2015-01-27T00:00:00+00:00" class="post-date">January 27, 2015  | 121 words</time>
     <p>I’ve been writing pretty religiously for the last few weeks now—I officially started this new chapter on January 6th—and one thing I’ve failed to talk much about is what exactly I do my writing on. I could go into a huge, winded preamble about how the best software matters and this and that and the other thing, but I’ll spare you the sappy crap. The reality is, I have one app I use when I’m at my desk, tapping away at my keyboard, making words appear in sentence form on a screen. It’s called <a href="http://desk.pm">Desk</a>. Yes, I use my computer on my desk, but on my computer is Desk. Boy that would be confusing if English wasn’t your first language. Anyway, without sounding two advertorial—sorry not sorry—I want to tell you a bit about the app.</p>
 
 <p><img src="https://i1.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/1-Desk-App-Screenshot-Platforms.png?w=882" alt="" /></p>
@@ -197,7 +325,7 @@ Platforms such as Ghost are hopefully coming soon!</li>
     
       <h1 class="post-title"><a href="https://johnathanlyman.com/page23/" rel="bookmark" title="Taking Notes">Taking Notes</a></h1>
     
-    <time datetime="2015-01-26T00:00:00+00:00" class="post-date">26 Jan 2015</time>
+    <time datetime="2015-01-26T00:00:00+00:00" class="post-date">January 26, 2015  | 121 words</time>
     <p>Reflecting on my journey so far, one thing I’ve noticed that seems to be most consistent is my desire to write has improved, ten fold. Instead of coming up with huge elaborate stories or long-winded essays about something I don’t even know if I completely understand, I’m starting to keep my thoughts to under a thousand words. This keeps me from getting bored with what I write, and if I do choose to write something more long-form, I can do so without feeling like that’s all I do and it’s just more words on a page. I’m also finding that I’m wanting to take time out of my day, whenever it is, to “write something real quick.” Take last weekend, for example, I wrote a total of [x] posts and published them all. Were they all related? No, but they were all things I had going on in my head and I made sure to take the time to put them down and share them. </p>
 
 <p>Going forward, I think this is something I’ll be doing more often. This has been a product of the changes in my morning routine now that I’m writing every day, almost without fail. So far I’ve had to resort to looking at my notes but a few times, but I can only speculate if that’ll get better or worse. I have at any one time, several different things I’m pondering or thinking about and am taking note of them on my iPhone with the built-in Notes app so when I get home in the evening or start spinning up first thing in the morning, I can look back on it and pick up where I left off. There’s no shame in checking notes to remember what you might want to talk about. I have complete faith that even the best of us do that, too. </p>
@@ -211,7 +339,7 @@ Platforms such as Ghost are hopefully coming soon!</li>
     
       <h1 class="post-title"><a href="https://johnathanlyman.com/page23/" rel="bookmark" title="Positioning for the Journey to Dreamland">Positioning for the Journey to Dreamland</a></h1>
     
-    <time datetime="2015-01-26T00:00:00+00:00" class="post-date">26 Jan 2015</time>
+    <time datetime="2015-01-26T00:00:00+00:00" class="post-date">January 26, 2015  | 121 words</time>
     <p>I saw a rather interesting article this morning <a href="http://www.wsj.com/news/articles/SB10001424127887324595704578241642030220064">via the Wall Street Journal</a> that talks about finding the perfect sleep position. I couldn’t help but think: “is there some mad science in here that will give me the answer to all things sleeping so I can sleep mad sleeps and wake up feeling like a million dollars?” Well, no. The only way to wake up feeling like a stack of cash is either a) have a million dollars or b) eat some of those crazy mushrooms the kids like.</p>
 
 <p>Anyway, <a href="http://www.wsj.com/news/articles/SB10001424127887324595704578241642030220064">This article</a> had some good points that I wanted to recap because it’s something I struggle with from time to time, and after adjusting my morning routine to better serve my daily writing goals, the best sleep I can get from the limited time I have is fine by me.</p>
@@ -234,7 +362,7 @@ Platforms such as Ghost are hopefully coming soon!</li>
     
       <h1 class="post-title"><a href="https://johnathanlyman.com/page23/" rel="bookmark" title="Hunting the Hunter: Trying to Take a Photo of my Cat">Hunting the Hunter: Trying to Take a Photo of my Cat</a></h1>
     
-    <time datetime="2015-01-26T00:00:00+00:00" class="post-date">26 Jan 2015</time>
+    <time datetime="2015-01-26T00:00:00+00:00" class="post-date">January 26, 2015  | 121 words</time>
     <p>I tried something interesting, yesterday. Every once in a while, I find the urge to pull out my camera and shoot stuff at home. It doesn’t happen very often, and for good reason. My space is outside, where things don’t move, where all I have to worry about is what time the sun sets, and how cold my fingers will end up at the end. The outdoors is peaceful. Nature doesn’t have a schedule and it largely sticks around for as long as it deems necessary. There are great places to hike, camp, and smell the roses, if there are any. </p>
 
 <p>Bringing it back into reality, however, my home isn’t anything like that. </p>
@@ -254,130 +382,6 @@ Platforms such as Ghost are hopefully coming soon!</li>
 
   </article>
   
-  <article class="post">
-    
-      <h1 class="post-title"><a href="https://johnathanlyman.com/page23/" rel="bookmark" title="On the Bus in the Fog Unlike a Dog on a Log in a Bog with Nog">On the Bus in the Fog Unlike a Dog on a Log in a Bog with Nog</a></h1>
-    
-    <time datetime="2015-01-26T00:00:00+00:00" class="post-date">26 Jan 2015</time>
-    <p>This is the first time I’ve tried to write a post on the bus. There’s a lot of free time to be had on the bus, that I could just waste reading ArsTechnica articles or scrolling Facebook. But after my recap on the finicky <a href="http://johnathanlyman.com/p/268/give-it-up">relationship I have with my iPhone</a> I feel like it’s necessary to look into putting it to better use.</p>
-
-<p>First off, let me be clear. I don’t have any special writing apps to craft posts for when I’m in a bus in the fog writing for my blog (or any other alliterative, Dr. Seuss-type wordplays). I’m using the basic Notes app that comes with all Apple devices these days. I’m not even bothering to check my spelling too much as autocorrect seems to be doing a pretty good job on its own. Now granted if my word choice ends up being a total crapfest, then I feel like I need to go back and update it.</p>
-
-<p>Along with the Notes app comes the <a href="http://WordPress by Automattic https://appsto.re/us/i9Mau.i">WordPress app from Automattic</a>. It’s how I interface with my site from both my iPhone and iPad.</p>
-
-<p>Second, I don’t find it necessary to spend every waking moment writing, although it is enjoyable. I’m sure if I tried hard enough I could find enough stuff to talk about during the day to write non stop for two people.</p>
-
-<p>Third, what’s a blog post anyway but a digital journal entry? All I’m doing is putting my thoughts on digital paper and sharing them. I understand the recourse of the idea that once it’s on the Internet it’s there forever.</p>
-
-<p>At some point, someone will want to sit next to me and hopefully I’ll be close to the end. There’s nothing I hate more than someone peeking over my shoulder trying to see what I’m up to. I get passing glances and whatnot, stuff happens. I can’t expect someone to never catch a glance of my kickass high score in Candy Crush.</p>
-
-<p>Now if you’ll excuse me, I have to clear my autocorrect dictionary after all the new crap words it seems to have recorded after I wrote this.</p>
-
-<p>PS: I might have seemed a bit ramble. That’s just how I write and think on a moments notice. I wrote this post more so to prove a point that to myself that I can write wherever I am. In the future, I think I’ll have to procure one of those keyboard iPad cases. A small screen makes my thumbs hurt.</p>
-
-
-  </article>
-  
-  <article class="post">
-    
-      <h1 class="post-title"><a href="https://johnathanlyman.com/page23/" rel="bookmark" title="The Workforce in 2030">The Workforce in 2030</a></h1>
-    
-    <time datetime="2015-01-26T00:00:00+00:00" class="post-date">26 Jan 2015</time>
-    <iframe class="youtube-player" type="text/html" width="882" height="527" src="https://www.youtube.com/embed/ux1GxExRUUY?version=3&amp;rel=1&amp;fs=1&amp;autohide=2&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;wmode=transparent" frameborder="0" allowfullscreen="true"></iframe>
-
-<p>I recently caught a <a href="https://www.youtube.com/watch?v=ux1GxExRUUY">TED Talk by Rainer Strack</a> on the shifting of the workforce in the few decades to come. There’s a fundamental change that’ll take place soon and one thing’s for sure, there’ll end up being a lot more vacancies in the job market than there are now. I’m sure you’re wondering: [Conservative] How can this be? Isn’t the economy in the toilet, still? [Progressive] How can this be? Isn’t the economy doing great already? Well fear not pundit! Because neither really matter. See, it’s not about how the economy’s doing but who’s working. In the 50s, we had what you’d call a “boom.” It wasn’t an industrial boom, nor an oil boom. It was a baby boom. While it sounds all fine and dandy, the problem lies in what will happen when that sharp population growth that took place fifty and almost sixty years ago all of a sudden decides to retire. I’m sure you can figure out the rest.</p>
-
-<p> </p>
-
-
-  </article>
-  
-  <article class="post">
-    
-      <h1 class="post-title"><a href="https://johnathanlyman.com/page23/" rel="bookmark" title="Never Gonna Give You Up, Never Gonna Put You Down&#8230; Sometimes.">Never Gonna Give You Up, Never Gonna Put You Down&#8230; Sometimes.</a></h1>
-    
-    <time datetime="2015-01-25T00:00:00+00:00" class="post-date">25 Jan 2015</time>
-    <p>As much as I try to stay current with technology, there’s a part of me that just doesn’t care if I check my phone all the time, or am constantly reading emails on the weekend. I know a lot of people keep up to date on the latest everything with every device they have and that’s awesome. I just can’t do that. However, there’s one device that I really can’t live without because it’s become a gateway to the “Quick-Check-to-See-if-the-World-Has-Burned-Down” reality: my iPhone.</p>
-
-<p>I’m quite sure the list of people that say they couldn’t live without their phone is staggering. Hell, Instagram is a phone-only thing and look at how many people share what they’re eating on regular basis! If people stopped caring so much about their phones and making sure everything that was going on was going through their phone, Instagram would shut down. It’s likely that twitter would take a big hit, too. Facebook… meh. People are still butthurt about the unbundling of services that Facebook did recently, because they don’t have anything else to be upset about. They’re rebelling against the system by using their browser or their computer as if that’ll do anything. You go guys… way to stick it to the man.</p>
-
-<p>Don’t get me wrong, I love having my phone around with me all the time, but it’s more of a just-in-case-something-happens kind of need. I might be listening to podcasts while I travel to and from work every day, but we’ve been able to do that for quite some time, before smartphones were a thing (remember the iPod?) so that doesn’t count as a dire need. I listen to music, too, but that also falls under what I just described. I might check twitter every now and then or watch Facebook all morning but that just drains me. Have you ever sat on twitter reading people’s 140-character-or-less thoughts and NOT felt drained or depressed afterwards? The world sucks nuts and I can only read about it for a little bit.</p>
-
-<p>The world used to be a simpler place. Cats used to sit inside cannons like it’s no big deal. You can tell a lot about a time period by whether you have a cat that’s willing to loiter around artillery. Those days were nice.</p>
-
-<figure id="attachment_267" style="width: 629px;" class="wp-caption aligncenter"><a href="https://i0.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/tumblr_neyf5bef5V1sfie3io1_1280.jpg"><img class="wp-image-267 size-large" src="https://i0.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/tumblr_neyf5bef5V1sfie3io1_1280-1024x642.jpg?resize=629%2C394" alt="tumblr_neyf5bef5V1sfie3io1_1280.jpg" data-recalc-dims="1" /></a><figcaption class="wp-caption-text">See!? A Cat. In a Cannon. What, did you think I made that up?</figcaption></figure>
-<p> </p>
-
-<p>For all I don’t use my iPhone for, though, if I didn’t have it with me, I’d feel disconnected, I’ll admit. It’s become more of a security blanket when I’m moving between point A and point B. I, and likely society as a whole, have been trained to think that if I leave my house without my phone, something bad might happen and I won’t be able to call for help! I wonder how people in the 90s even survived.</p>
-
-<p>I think if I absolutely had to, could resort to a dumb phone. Apple still makes iPods, so all my smart tools could just migrate to that device. I’d have iMessage wherever I had wifi and text messaging on my dumb phone. Turns out, though, that I’d still end up paying an arm and a leg for service. The difference of $20 for data isn’t worth the downgrade. On the flip side, the uncharge of $20 for data to have a smartphone is paltry.</p>
-
-<p>Perhaps one day I’ll see if I can go a whole day without my smartphone. I have a ton of technology around me at home, and a ton more at work, so really there’ll only be roughly three hours out of the day where I’m in that disconnected state that won’t allow me to get the latest tweets that I hate or read emails the bleeding freaking second they arrive.</p>
-
-<p>But that’s unlikely.</p>
-
-
-  </article>
-  
-  <article class="post">
-    
-      <h1 class="post-title"><a href="https://johnathanlyman.com/page23/" rel="bookmark" title="A Recap of the #10DaysBetterBlog Challenge">A Recap of the #10DaysBetterBlog Challenge</a></h1>
-    
-    <time datetime="2015-01-25T00:00:00+00:00" class="post-date">25 Jan 2015</time>
-    <p>I finished the Ten Days to a Better Blog (a.k.a. #10DaysBetterBlog) challenge a couple weeks ago and ever since, I just can’t stop writing! I knew I had it in me, but it took signing up for something and actually committing to it in order for me to realize I could actually find the time to put words down and express what’s in my head.</p>
-
-<p>So as a kind recap from the posts from a couple weeks ago, here’s the ten days, broken down by day. If you’d rather see them all listed out as posts, you can do so  <a href="/c/10daysbetterblog">here</a>…</p>
-
-<p>Day 1:  <a href="http://johnathanlyman.com/wp-admin/post.php?post=73&amp;action=edit" title="Edit “Ugg Boots to an Interview for America?”">Ugg Boots to an Interview for America?<br />
-</a></p>
-
-<p>My wife told me something quite hilarious this afternoon. She said she saw a woman wear Ugg boots to an interview.</p>
-
-<p>Day 2:  <a href="http://johnathanlyman.com/wp-admin/post.php?post=141&amp;action=edit" title="Edit “Why I Write”">Why I Write<br />
-</a></p>
-
-<p>Part of this newfound journey I’m on to blog better is to look inward at myself and try to figure out why I write.</p>
-
-<p>Day 3:  <a href="http://johnathanlyman.com/wp-admin/post.php?post=143&amp;action=edit" title="Edit “The Space in Which I Craft”">The Space in Which I Craft<br />
-</a></p>
-
-<p>One thing I’ve come to learn is that having a good writing space is important.</p>
-
-<p>Day 4:  <a href="http://johnathanlyman.com/wp-admin/post.php?post=150&amp;action=edit" title="Edit “Reflection”">Reflection<br />
-</a></p>
-
-<p>Every once in a while it’s a good idea to just take some time and reflect.</p>
-
-<p>Day 5: <a href="http://johnathanlyman.com/p/163/half" title="Half-Way There">Half-Way There</a></p>
-
-<p>Today marks my half-way point on my  <a href="http://johnathanlyman.com/c/10daysbetterblog">#10DaysBetterBlog</a> journey.</p>
-
-<p>Day 6: <a href="http://johnathanlyman.com/p/180/about" title="New About Page">New About Page</a></p>
-
-<p>I was able to stick to my routine this morning and sat down to craft my About page.</p>
-
-<p>Day 7: <a href="http://johnathanlyman.com/p/191/analytics" title="Analytics">Analytics</a></p>
-
-<p>See, I’m doing the  <a href="http://johnathanlyman.com/c/10daysbetterblog">#10DaysBetterBlog</a> challenge as a starting point to build up my blog…</p>
-
-<p>Day 8:  <a href="http://johnathanlyman.com/p/203/smart" title="Being S.M.A.R.T about Blogging Goals for the New Year">Being S.M.A.R.T about Blogging Goals for the New Year</a></p>
-
-<p>If you’re still with me, I’m on day eight of the  <a href="http://johnathanlyman.com/c/10daysbetterblog">#10DaysBetterBlog</a>challenge/workshop/event put on by  <a href="http://john.do/">John Saddingto</a>n of  <a href="http://desk.pm/" title="Desk.pm">Desk.pm</a> fame.</p>
-
-<p>Day 9:  <a href="http://johnathanlyman.com/p/209/coffee" title="Running Out of Coffee (Creamer)">Running Out of Coffee (Creamer)</a></p>
-
-<p>This morning I ran out of coffee creamer so I hope this all makes sense, if not… meh.</p>
-
-<p>Day 10:  <a href="http://johnathanlyman.com/p/215/one" title="And Then There Was One – Wrapping Up and Looking Back">And Then There Was One – Wrapping Up and Looking Back</a></p>
-
-<p>So this is it.</p>
-
-<hr />
-<p>That’s it folks, have a good evening and enjoy your week! Start it off with your best foot forward.</p>
-
-
-  </article>
-  
 </div>
 
 <div class="pagination">
@@ -393,10 +397,18 @@ Platforms such as Ghost are hopefully coming soon!</li>
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2015-12-10T20:09:05+00:00">2015</time>. Blog by Johnathan Lyman. All rights reserved.
+          &copy; <time datetime="2015-12-15T19:48:13+00:00">2015</time>. Blog by Johnathan Lyman. All rights reserved.
         </small>
       </footer>
     </div>
 
   </body>
+  <!--
+
+  ***BLOG STATS***
+
+  Total number of words in this blog: 92205
+  Average number of words per post: 353
+  The longest post in this blog has 2058 words.
+  -->
 </html>

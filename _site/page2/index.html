@@ -61,6 +61,8 @@
   <meta property="fb:admins" content="1586250162">
   <meta property="fb:app_id" content="114316288938899">
 
+  <script src="https://use.typekit.net/jdn4ymx.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 </head>
 
@@ -90,9 +92,83 @@
   
   <article class="post">
     
+      <h1 class="post-title"><a href="https://johnathanlyman.com/page2/" rel="bookmark" title="Seeing the Forest for the Trees">Seeing the Forest for the Trees</a></h1>
+    
+    <time datetime="2015-11-10T00:00:00+00:00" class="post-date">November 10, 2015  | 121 words</time>
+    <p>It’s easy to miss the small picture when looking at the big picture. Thinking about what I have ahead of me in terms of the next year at Bloc gives me two thoughts: it’s going to take a long time and it’s easy to not see the forest for the trees.</p>
+
+<p>Bloc is a long program. It covers a lot of material in great detail. For the un-initiated, it can take quite some time. I’m told that based on my 72-week track, I should be doing five “checkpoints” per week. It’s Tuesday and I’ve killed seven. I know it might not always be like this and the first weeks are always the “yeah let’s do this!” weeks. As time goes on, the sheer size of the program will really start to show itself but the one thing I’ll need to keep in mind is that no matter how many different <em>things</em> I still have to do, I need to just focus on one at a time.</p>
+
+<p>Before I know it, I’ll be done.</p>
+
+
+  </article>
+  
+  <article class="post">
+    
+      <h1 class="post-title"><a href="https://johnathanlyman.com/page2/" rel="bookmark" title="Let me Introduce You to XP1K">Let me Introduce You to XP1K</a></h1>
+    
+    <time datetime="2015-11-04T00:00:00+00:00" class="post-date">November 04, 2015  | 121 words</time>
+    <p>If the little kid in you wishes he or she could take a <a href="http://truckyeah.jalopnik.com/your-next-epic-off-road-video-turbocharged-atv-vs-ind-1737821473">tricked-out ATV</a> and wreck apocolyptic-style wastelands of awesome, take the next 25 minutes and enjoy these videos.</p>
+
+<iframe class="youtube-player" type="text/html" width="100%" height="500" src="https://www.youtube.com/embed/rEbfteUIkYU?version=3&amp;rel=1&amp;fs=1&amp;autohide=2&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;wmode=transparent" frameborder="0" allowfullscreen="true"></iframe>
+
+<iframe class="youtube-player" type="text/html" width="100%" height="500" src="https://www.youtube.com/embed/jxTvMaJBT3c?version=3&amp;rel=1&amp;fs=1&amp;autohide=2&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;wmode=transparent" frameborder="0" allowfullscreen="true"></iframe>
+
+<iframe class="youtube-player" type="text/html" width="100%" height="500" src="https://www.youtube.com/embed/jxTvMaJBT3c?version=3&amp;rel=1&amp;fs=1&amp;autohide=2&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;wmode=transparent" frameborder="0" allowfullscreen="true"></iframe>
+
+  </article>
+  
+  <article class="post">
+    
+      <h1 class="post-title"><a href="https://johnathanlyman.com/page2/" rel="bookmark" title="Starting Soon: Bloc.io">Starting Soon: Bloc.io</a></h1>
+    
+    <time datetime="2015-10-31T00:00:00+00:00" class="post-date">October 31, 2015  | 121 words</time>
+    <p>I officially signed up last week for Bloc.io’s Full-stack developer bootcamp becuase I feel while I can learn a good deal of stuff on my own, I’m not going to make on my own to the level I need to be in order to make a fundamental career shift to software development that will actually still support my family.</p>
+
+<p>The program doesn’t officially start until the 9th of November so I have a little over a week to go. It’ll be a long year and change and a lot of new stuff will come my way. I’ve only scratched the surface of what Ruby and Rails can do. I started a simple Rails app a couple days ago that could one day turn into the platform for any and all of my sites, if I stick to it, enough. Right now, I don’t know enough on how to make it great.</p>
+
+<p>With time, I will, and as I progress the app will improve. My goal is to one day have it replace WordPress as my blog, portfolio of work, and anything else about me I feature online. I may even adapt it to restart my photography portfolio.</p>
+
+<p>I’m really looking forward to what I’ll be learning in the coming months and I’ll be sure to share all of it with you.</p>
+
+
+  </article>
+  
+  <article class="post">
+    
+      <h1 class="post-title"><a href="https://johnathanlyman.com/page2/" rel="bookmark" title="How to Fix Misspelled Column Names in a Ruby on Rails Database">How to Fix Misspelled Column Names in a Ruby on Rails Database</a></h1>
+    
+    <time datetime="2015-10-25T00:00:00+00:00" class="post-date">October 25, 2015  | 121 words</time>
+    <p>I came across a small issue this afternoon while building out one of my first Ruby on Rails apps. When I generated the database table, I misspelled a column name. Luckily for me, it’s easy enough to fix and this is how I did it.</p>
+
+<h3 id="create-a-new-migration">1. Create a New Migration</h3>
+<p>At the command line from within your Rails application folder, run this:</p>
+
+<script src="https://gist.github.com/jelyman2/d6017c61588d2bfbe2fa.js"></script>
+<noscript>View the code on <a href="https://gist.github.com/jelyman2/d6017c61588d2bfbe2fa">Gist</a>.</noscript>
+<p>You’ll be generating a new database migration with the name FixColumnName (which interprets to <code class="highlighter-rouge">[timestamp]_fix_column_name.rb</code>) inside the <code class="highlighter-rouge">db/migrate</code> folder inside your rails application. Open that <code class="highlighter-rouge">.rb</code> file and update it so it looks something like this:</p>
+
+<script src="https://gist.github.com/jelyman2/2e29faf460cff05f803b.js"></script>
+<noscript>View the code on <a href="https://gist.github.com/jelyman2/2e29faf460cff05f803b">Gist</a>.</noscript>
+<p><code class="highlighter-rouge">:table_name</code> – the name of the table in question</p>
+
+<p><code class="highlighter-rouge">:old_column</code> – the misspelled column name<br />
+<code class="highlighter-rouge">:new_column</code> – the correct column nameIf you have multiple columns you need to change, introduce additional <code class="highlighter-rouge">rename_column</code> functions:</p>
+
+<script src="https://gist.github.com/jelyman2/9ea9fba6529008ed08dc.js"></script>
+<noscript>View the code on <a href="https://gist.github.com/jelyman2/9ea9fba6529008ed08dc">Gist</a>.</noscript>
+<p>Keep in mind that after this migration, you’ll need to update your references to the column everywhere within your app.</p>
+
+<p>Seems like a simple fix but as someone who’s relatively new to Ruby on Rails, this saved me a load of time figuring out what to do and preventing me from starting over.</p>
+
+  </article>
+  
+  <article class="post">
+    
       <h1 class="post-title"><a href="https://johnathanlyman.com/page2/" rel="bookmark" title="Future Ruby on Rails Developer">Future Ruby on Rails Developer</a></h1>
     
-    <time datetime="2015-10-23T00:00:00+00:00" class="post-date">23 Oct 2015</time>
+    <time datetime="2015-10-23T00:00:00+00:00" class="post-date">October 23, 2015  | 121 words</time>
     <p>“Rails Developer” has a nice ring to it, don’t you think?</p>
 
 <p>In my hunt to figure out where I want my career to head long term, I keep coming back to the idea of software development. I’ve told stories about how I had a rare opportunity a couple years back and I didn’t take it. Well, this time I’m the one creating the opportunity.</p>
@@ -112,7 +188,7 @@
     
       <h1 class="post-title"><a href="https://johnathanlyman.com/page2/" rel="bookmark" title="Returning to Morning Greatness">Returning to Morning Greatness</a></h1>
     
-    <time datetime="2015-10-21T00:00:00+00:00" class="post-date">21 Oct 2015</time>
+    <time datetime="2015-10-21T00:00:00+00:00" class="post-date">October 21, 2015  | 121 words</time>
     <p>Yesterday I decided to shake things up a little but when it comes to my morning routine. By shake things up I mean go back to what I used to do that seemed to work so well. And by what I used to do I mean be creative.</p>
 
 <p>I’ve talked about this struggle, before, but <a href="https://johnathanlyman.com/2015/03/moving-to-cali/">moving to California</a> ( <a href="https://johnathanlyman.com/2015/04/move-day-1/">and</a> <a href="https://johnathanlyman.com/2015/04/move-day-2/">the</a> <a href="https://johnathanlyman.com/2015/04/move-day-3/">effort</a> <a href="https://johnathanlyman.com/2015/04/move-day-4/">therein</a>) really <a href="https://johnathanlyman.com/2015/06/reset/">messed up</a> my <a href="https://johnathanlyman.com/?s=routine">routine</a>. I’ve decided enough is enough and am slowly working my way back into the old swing. Yesterday, and every day before, I would get up at 8 or even sometimes 7 AM. That’s way too late in my book. My new goal is to return to my 5 AM rise time which will allow me to exercise my mind with tasks I enjoy before work.</p>
@@ -138,7 +214,7 @@
     
       <h1 class="post-title"><a href="https://johnathanlyman.com/page2/" rel="bookmark" title="The iMac as Told From the Inside">The iMac as Told From the Inside</a></h1>
     
-    <time datetime="2015-10-20T00:00:00+00:00" class="post-date">20 Oct 2015</time>
+    <time datetime="2015-10-20T00:00:00+00:00" class="post-date">October 20, 2015  | 121 words</time>
     <blockquote>
   <p>“When we did the previous mouse we spent so much time dialing those feet, the material, the geometry, everything, so that it sounds good and feels good when you move it on the table,” says Ternus, whose title is VP for Mac, iPad, Ecosystem and Audio Engineering. “But then you change the mass of the product and you change the resonant frequency of the product and all of a sudden the feet that we loved weren’t great anymore. They weren’t what we wanted.”<br />
 What exactly was wrong with it? I wanted to know.<br />
@@ -152,7 +228,7 @@ What exactly was wrong with it? I wanted to know.<br />
     
       <h1 class="post-title"><a href="https://johnathanlyman.com/page2/" rel="bookmark" title="Headspace">Headspace</a></h1>
     
-    <time datetime="2015-10-20T00:00:00+00:00" class="post-date">20 Oct 2015</time>
+    <time datetime="2015-10-20T00:00:00+00:00" class="post-date">October 20, 2015  | 121 words</time>
     <p>I’m always looking for new an interesting ways to stimulate my brain. I’m also always looking for new ways to clear my head when necessary.</p>
 
 <p>This is where <a href="https://www.headspace.com/">Headspace</a> comes in. I’ve used Headspace for a total of one day as of this writing and so far, I’m pretty impressed. Only time will tell if it’ll be worth investing money in. After my first session, I did feel a bit more relaxed and “with the program.”</p>
@@ -174,7 +250,7 @@ What exactly was wrong with it? I wanted to know.<br />
     
       <h1 class="post-title"><a href="https://johnathanlyman.com/page2/" rel="bookmark" title="Formula E: All the Speed Without the Noise">Formula E: All the Speed Without the Noise</a></h1>
     
-    <time datetime="2015-10-19T00:00:00+00:00" class="post-date">19 Oct 2015</time>
+    <time datetime="2015-10-19T00:00:00+00:00" class="post-date">October 19, 2015  | 121 words</time>
     <p>Sometimes I wish this type of racing would come to my neck of the woods. In this video, Formula E is described as being the quietest race in the world.</p>
 
 <iframe class="youtube-player" type="text/html" width="882" height="527" src="https://www.youtube.com/embed/PuyxR3MRg5c?version=3&amp;rel=1&amp;fs=1&amp;autohide=2&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;wmode=transparent" frameborder="0" allowfullscreen="true"></iframe>
@@ -194,96 +270,12 @@ What exactly was wrong with it? I wanted to know.<br />
     
       <h1 class="post-title"><a href="https://johnathanlyman.com/page2/" rel="bookmark" title="Extra Life 2015">Extra Life 2015</a></h1>
     
-    <time datetime="2015-10-17T00:00:00+00:00" class="post-date">17 Oct 2015</time>
+    <time datetime="2015-10-17T00:00:00+00:00" class="post-date">October 17, 2015  | 121 words</time>
     <p>Folks, serious post here. I’m participating in <a href="http://www.extra-life.org/index.cfm?fuseaction=donorDrive.participant&amp;participantID=176691">Extra Life 2015</a> in support of UCSF Benioff Children’s Hospital and I think it would be amazing if you <a href="http://www.extra-life.org/index.cfm?fuseaction=donorDrive.participant&amp;participantID=176691">donated</a> just a few bucks. I’ll be streaming on Twitch the 24 gaming session and will be interacting with everyone.</p>
 
 <p><a href="http://www.extra-life.org/index.cfm?fuseaction=donorDrive.participant&amp;participantID=176691">Link to my Extra Life page</a>.</p>
 
 <p>Thanks in advance. It means a lot!</p>
-
-
-  </article>
-  
-  <article class="post">
-    
-      <h1 class="post-title"><a href="https://johnathanlyman.com/page2/" rel="bookmark" title="Macs Equal Fewer Helpdesk Calls">Macs Equal Fewer Helpdesk Calls</a></h1>
-    
-    <time datetime="2015-10-16T00:00:00+00:00" class="post-date">16 Oct 2015</time>
-    <p>I’ve been a mac user for four years and I can honestly say that I’ve spent less time needing to maintain my systems than any Windows PC I’ve never owned.</p>
-
-<p>It’s not really news that IBM rolling out the usage of Macs for its employees, but one thing that’s made at least small headlines is that after rolling out 1900 Macs a week, IBM made an <a href="http://www.jamfsoftware.com/blog/mac-ibm-zero-to-30000-in-6-months/">announcement</a> during a talk at the <a href="http://www.jamfsoftware.com/blog/mac-ibm-zero-to-30000-in-6-months/">JAMF Nation User Conference</a> that during their deployments and thereafter, the number of Mac users who’ve contacted their tech support for assistance has been <a href="http://www.jamfsoftware.com/blog/mac-ibm-zero-to-30000-in-6-months/">several times</a> less than their PC counterparts.</p>
-
-<blockquote>
-  <p>To much fanfare from the crowd, Previn said that IBM is deploying 1,900 Macs per week and currently have 130,000 Macs and iOS devices in the hands of users. And all of these devices are supported by a total of 24 help desk staff members, meaning that each staff member effectively supports 5,375 employees. One stat that particularly stood out was that 5% of Mac users call the help desk, compared to 40% of PC users. </p>
-</blockquote>
-
-
-  </article>
-  
-  <article class="post">
-    
-      <h1 class="post-title"><a href="https://johnathanlyman.com/page2/" rel="bookmark" title="Total Transparency">Total Transparency</a></h1>
-    
-    <time datetime="2015-10-15T00:00:00+00:00" class="post-date">15 Oct 2015</time>
-    <p>I’m a huge fan of transparency. To see <a href="https://baremetrics.com/open">BareMatrics</a> supporting ten companies’ pushing for transparency in their business is awesome. Check out their <a href="https://baremetrics.com/open">site</a> and see which ten startups are totally open about how they’re doing.</p>
-
-<p><a href="https://baremetrics.com/open"><img src="https://johnathanlyman.com/wp-content/uploads/2015/10/ScreenShot2015-10-15at9.18.22AM.png" alt="" /></a></p>
-
-
-  </article>
-  
-  <article class="post">
-    
-      <h1 class="post-title"><a href="https://johnathanlyman.com/page2/" rel="bookmark" title="The Costs of Technology">The Costs of Technology</a></h1>
-    
-    <time datetime="2015-10-14T00:00:00+00:00" class="post-date">14 Oct 2015</time>
-    <p>It’s pretty common knowledge that the cost of technology goes down over time, but there’s one category, as <a href="http://www.businessinsider.com/historical-price-trends-for-tech-products-2015-10">highlighted</a> by <a href="http://www.businessinsider.com/historical-price-trends-for-tech-products-2015-10">Buisness Insider</a> in this rather impressive graphic, that’s actually become more expensive.</p>
-
-<p><a href="http://www.businessinsider.com/historical-price-trends-for-tech-products-2015-10"><img src="https://johnathanlyman.com/wp-content/uploads/2015/10/20151014_prices_bi.png" alt="" /></a></p>
-
-<p>The top line (green if you’re color blind) is the cable/satellite/radio category. What I’m not sure of is if this category covers Internet as well.</p>
-
-<p>There are two things I know for sure:</p>
-
-<ul>
-  <li>There’s less Internet and television competition in the United States than there should be.</li>
-  <li>I’m paying less than I did a few years ago.
-Regarding that second point: I may be in the minority, and I probably know more than the average person on how to land the best deal possible on my information services. Part of me wonders if increasing royalties (radio) and retransmissions fees (aka broadcast network greed) are just blindly being passed on to consumers. It wouldn’t surprise me.</li>
-</ul>
-
-<p>The only way Internet prices go down is via competition. I live in an area that may someday have Google Fiber (it’s on the list of “potential” cities) and as such, Comcast charges me $135/month for roughly 175mbps of download bandwidth and 220 channels on TV including HBO, Streampix, DVR service, and whatever else that all comes with. In essence, I’m paying $67.50 a month for a 175mbps Internet connection. While Google Fiber would cost roughly $70 for the same basic prospect and raise the limit to 1000mbps, it would be hard to take advantage of that full speed without spending several hundred extra dollars to upgrade my WiFi hardware to match.</p>
-
-<p>Needless to say, also, is that I shouldn’t have to get 220 cable channels to get that kind of price for Internet, but I do. I enjoy watching TV so in my case I get my money’s worth. Cord cutting would cost more, every month (by around +$20) and would come with siloed content services.</p>
-
-<p>Without getting too far off course, we still shouldn’t be seeing the overall price of these services rising. It doesn’t matter the reason. If something’s moving the market in a direction that’s affecting profits, figure out how to make your service more appealing to the mass market, again, don’t just programatically raise rates to counteract and keep those coffins padded with C-notes.</p>
-
-
-  </article>
-  
-  <article class="post">
-    
-      <h1 class="post-title"><a href="https://johnathanlyman.com/page2/" rel="bookmark" title="On Never Quitting">On Never Quitting</a></h1>
-    
-    <time datetime="2015-10-14T00:00:00+00:00" class="post-date">14 Oct 2015</time>
-    <p>There seems to be a trend that occurs every few months with me when it comes to my writing. I find myself, and I lose myself, and I repeat. I battle with staying consistent every day and writing something, even if it’s not that interesting. When I first started blogging on a regular basis, I did it in the morning before work as a way to get my mind right and get focused for the day.</p>
-
-<p>Now, I don’t feel like I need to do that before I go to work (my job is much more satisfying) so the time I’ve set aside to write has pretty much drifted off into space. I never came up with an alternate solution to fix this problem.</p>
-
-<p>A friend of mine, maker of <a href="http://desk.pm">Desk</a> (the minimal blogging and publishing app collection), and habitual blogger, <a href="http://john.do">John Saddington</a> recently <a href="http://john.do/seth-on-6000/">reflected</a> on sticking with something and “ <a href="http://john.do/seth-on-6000/">showing up every day</a>” and it really gave me the boost I need to jump start my creative juices, again.</p>
-
-<p>It’s so easy for me to blame the lack of creativity when it comes to missing a day, and there were a lot of those. When I first started this blog right after New Years 2015, I was showing up and writing several thousand words a week. Within the first twelve weeks, I put down almost 60,000 words on digital blogging paper and I enjoyed it. I cranked out thoguhts and musings every weekday morning from 5-6AM and didn’t feel like I didn’t have enough time. I just sat down and wrote.</p>
-
-<p>When my Wife and I <a href="https://johnathanlyman.com/2015/04/move-day-1/">moved to California</a>, my routine changed, and it put a huge damper on things. We moved to an area we weren’t huge fans of, and I just couldn’t get comfortable. It was hard for me to focus, to be honest, and the environment played a huge factor.</p>
-
-<p>Now that we’ve <a href="https://johnathanlyman.com/2015/10/moving/">moved, again</a>, to a much more satisfying neighborhood, I feel like I can focus, again. I don’t feel like I’m having to battle with everything around me for some musing time.</p>
-
-<p>When someone who’s likely written over <a href="http://john.do/9000-posts/">ten thousand</a> blog posts (9500+ of which are on <a href="http://john.do/9000-posts/">his current blog</a>) says something like this:</p>
-
-<blockquote>
-  <p>continuing to move forward, personally, professionally, whatever it may be, is the most important thing that you can be doing. Creating momentum and being as confident as you can be in those few steps is life-giving, life-changing.I pay attention. This is advice I can use not only in my side worlds, but in my personal and professional worlds, too. When it comes to improving myself to land a better job doing the next great thing with the next great company or just showing up to be the best husband that I can be to my wife is all I need. Everything else will fall into place.</p>
-</blockquote>
-
-<p>So much has happened in the last couple years. I can’t wait to see what the next couple years have in store. The number of potential opportunties around me will grow and my time to jump will happen soon… I just have to continue working to reach my greatest level of awesome.</p>
 
 
   </article>
@@ -303,10 +295,18 @@ Regarding that second point: I may be in the minority, and I probably know more 
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2015-12-10T20:09:05+00:00">2015</time>. Blog by Johnathan Lyman. All rights reserved.
+          &copy; <time datetime="2015-12-15T19:48:13+00:00">2015</time>. Blog by Johnathan Lyman. All rights reserved.
         </small>
       </footer>
     </div>
 
   </body>
+  <!--
+
+  ***BLOG STATS***
+
+  Total number of words in this blog: 92205
+  Average number of words per post: 353
+  The longest post in this blog has 2058 words.
+  -->
 </html>
