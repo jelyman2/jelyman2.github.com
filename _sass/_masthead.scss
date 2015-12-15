@@ -36,9 +36,11 @@
   padding: 0;
   overflow: hidden;
   background-color: white;
+  text-align: center;
 
   li {
-    float: left;
+    /* loat: left; */
+    display: inline-block;
     font-size: .75rem;
     padding-top: 14px;
     padding-bottom: 16px;
