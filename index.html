@@ -11,7 +11,7 @@ title: Home
     {% else %}
       <h1 class="post-title"><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h1>
     {% endif %}
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date: '%B %d, %Y' }}</time>
+    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date: '%B %d, %Y' }}</time> | {{ page.content | number_of_words }} words
     {{ post.content }}
   </article>
   {% endfor %}
