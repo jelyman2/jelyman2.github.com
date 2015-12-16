@@ -2,7 +2,7 @@
 title: "Harder Than it Should Be: Jekyll Word Count"
 author: Johnathan Lyman
 layout: post
-date: 2015-12-15 12:29
+date: 2015-12-15 12:00:00 -0800
 permalink: /2015/12/15/harder-than-it-should-be-jekyll-word-count/
 categories:
     - Blog

@@ -3,13 +3,26 @@ layout: default
 ---
 
 <article class="post">
-  {% if page.link %}
-    <h1 class="post-title"><i class="fa fa-bookmark permalink"></i> <a href="{{ page.link }}">{{ page.title }}</a> &#x279e;</h1>
+  {% if post.link %}
+    <h1 class="post-title"><a href="{{ page.link }}">{{ post.title }}</a>&nbsp;&nbsp;<i class="fa fa-link"></i></h1>
   {% else %}
     <h1 class="post-title"><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
   {% endif %}
-  <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
-  {{ content }}
+  <div class="post-meta">
+    <time datetime="{{ page.date | date_to_xmlschema }}" class="post-meta-entry">
+      <i class="fa fa-calendar"></i>
+      {{ page.date | date: '%B %d, %Y' }}
+    </time>
+    <span class="post-meta-entry">
+      <i class="fa fa-folder-open-o"></i>
+      {{ page.categories }}
+    </span>
+    <span class="post-meta-entry">
+      <i class="fa fa-keyboard-o"></i>
+      {{ page.content | number_of_words }} words
+    </span>
+  </div>
+  {{ page.content }}
 </article>
 
 {% if site.related_posts != empty %}

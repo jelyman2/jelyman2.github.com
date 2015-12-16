@@ -4,7 +4,7 @@
  <title>Johnathan Lyman</title>
  <link href="https://johnathanlyman.com/atom.xml" rel="self"/>
  <link href="https://johnathanlyman.com/"/>
- <updated>2015-12-16T00:04:21+00:00</updated>
+ <updated>2015-12-16T00:44:28+00:00</updated>
  <id>https://johnathanlyman.com</id>
  <author>
    <name></name>
@@ -15,7 +15,7 @@
  <entry>
    <title>Harder Than it Should Be: Jekyll Word Count</title>
    <link href="https://johnathanlyman.com/2015/12/15/harder-than-it-should-be-jekyll-word-count/"/>
-   <updated>2015-12-15T12:29:00+00:00</updated>
+   <updated>2015-12-15T20:00:00+00:00</updated>
    <id>https://johnathanlyman.com/2015/12/15/harder-than-it-should-be-jekyll-word-count</id>
    <content type="html">&lt;p&gt;When I was running this site through WordPress, I had a plugin that would count the number of words each of my posts contained and give me some metrics. It was a pretty slick plugin and had all sorts of visuals.&lt;/p&gt;
 
