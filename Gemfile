@@ -12,4 +12,5 @@ group :jekyll_plugins do
   gem 'jekyll-watch'
   gem 'jekyll-feed'
   gem 'jekyll-sitemap'
+  gem 'font-awesome-sass'
 end

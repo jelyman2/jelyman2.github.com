@@ -92,6 +92,23 @@
   
   <article class="post">
     
+      <h1 class="post-title"><a href="https://johnathanlyman.com/" rel="bookmark" title="Harder Than it Should Be: Jekyll Word Count">Harder Than it Should Be: Jekyll Word Count</a></h1>
+    
+    <time datetime="2015-12-15T12:29:00+00:00" class="post-date">December 15, 2015  | 121 words</time>
+    <p>When I was running this site through WordPress, I had a plugin that would count the number of words each of my posts contained and give me some metrics. It was a pretty slick plugin and had all sorts of visuals.</p>
+
+<p>With Jekyll, I don’t have such capabilities out of the box (or even remotely close to the box) so I went hunting for a plugin. I found one, and it works, but it’s slow, and I don’t really think there’s much that can be done about it. Given the static nature of Jekyll, it’s not really easy to save persistent information somewhere like in a database without also having a plugin for the database.</p>
+
+<p>The plugin brought down my build to a crawl (140s over 13s) and GitHub didn’t whitelist the plugin, so it was pretty much a non-starter.</p>
+
+<p>Needless to say, I pulled it, but if you want to see the commit where I added it, go <a href="https://github.com/jelyman2/jelyman2.github.io/commit/004b155426b3cd8cb08316c7e6941562baa1075d">here</a> (then the subsequent commits <a href="https://github.com/jelyman2/jelyman2.github.io/commit/89bf68b99961afb38a251c148744cdadba936dbd">here</a> and <a href="https://github.com/jelyman2/jelyman2.github.io/commit/7bdf194867708871df67037e89e34679643ad1ba">here</a>. <a href="https://github.com/jelyman2/jelyman2.github.io/commit/a4ed6e097b9bbe86ef12453704a8e419ee3a0eed">Here</a>’s where I pulled it).</p>
+
+<p>For the record, before this post: 92,205 words. With this post: 92,392 words.</p>
+
+  </article>
+  
+  <article class="post">
+    
       <h1 class="post-title"><i class="fa fa-bookmark permalink"></i> <a href="https://www.youtube.com/watch?v=LbduDRH2m2M">Independence Day 2016</a> &#x1f517;</h1>
     
     <time datetime="2015-12-13T15:59:00+00:00" class="post-date">December 13, 2015  | 121 words</time>
@@ -383,22 +400,6 @@ system(&#39;atom&#39;, &quot;_posts/#{the_post_file_name}&quot;)</pre></noscript
 
   </article>
   
-  <article class="post">
-    
-      <h1 class="post-title"><a href="https://johnathanlyman.com/" rel="bookmark" title="After Three Weeks">After Three Weeks</a></h1>
-    
-    <time datetime="2015-11-28T00:00:00+00:00" class="post-date">November 28, 2015  | 121 words</time>
-    <p>I started the Bloc Rails Web Development bootcamp three weeks ago and I’d like to go over my experiences so far.</p>
-
-<p>The last few weeks have been pretty great, actually. There’s a lot of material to cover but it’s done in such a way that it’s broken down into small chunks. Assignments extend on the material being taught and incorporate material learned prior. Each assignment builds on the one before it and the beginning project walks you through the entire process.</p>
-
-<p>Future projects are more open-ended and require the student to call upon what was learned in order to succeed. I am only a few weeks in after all so I haven’t been able to relfect upon the open-ended projects. However taking a cursory glance at them tells me they’re not overly challenging but they do require dedication and that you paid attention to the introductory courses.</p>
-
-<p>I look forward to the next three weeks. With Christmas approaching, I don’t suspect I’ll be as active in the program (I’ve progressed much farther than the minimum states). After the first of the year, I predict I’ll be into one of the open projects and what I’ve learned will be tested. A challenge never hurts.</p>
-
-
-  </article>
-  
 </div>
 
 <div class="pagination">
@@ -414,18 +415,10 @@ system(&#39;atom&#39;, &quot;_posts/#{the_post_file_name}&quot;)</pre></noscript
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2015-12-15T19:56:11+00:00">2015</time>. Blog by Johnathan Lyman. All rights reserved.
+          &copy; <time datetime="2015-12-16T00:04:21+00:00">2015</time>. Blog by Johnathan Lyman. All rights reserved.
         </small>
       </footer>
     </div>
 
   </body>
-  <!--
-
-  ***BLOG STATS***
-
-  Total number of words in this blog: 92205
-  Average number of words per post: 353
-  The longest post in this blog has 2058 words.
-  -->
 </html>

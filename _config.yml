@@ -7,7 +7,7 @@ permalink:           pretty
 # Setup
 title:               Johnathan Lyman
 tagline:             Writer. Developer. Support Ops.
-url:                 http://johnathanlyman.com
+url:                 https://johnathanlyman.com
 paginate:            10
 baseurl:             ""
 
@@ -17,12 +17,6 @@ baseurl:             ""
 sass:
   sass_dir:          _sass
   style:            :compressed
-
-# About/contact
-author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
 
 # Custom vars
 version:             2.0.0
@@ -35,6 +29,7 @@ gems:
   - rouge
   - jekyll-feed
   - jekyll-sitemap
+  - font-awesome-sass
 
 timezone:       America/Los Angeles # eg. Asia/Kathmandu
 locale:         en_us # eg. en_us
