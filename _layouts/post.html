@@ -3,8 +3,8 @@ layout: default
 ---
 
 <article class="post">
-  {% if post.link %}
-    <h1 class="post-title"><a href="{{ page.link }}">{{ post.title }}</a>&nbsp;&nbsp;<i class="fa fa-link"></i></h1>
+  {% if page.link %}
+    <h1 class="post-title"><a href="{{ page.link }}">{{ page.title }}</a>&nbsp;&nbsp;<i class="fa fa-link"></i></h1>
   {% else %}
     <h1 class="post-title"><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
   {% endif %}
