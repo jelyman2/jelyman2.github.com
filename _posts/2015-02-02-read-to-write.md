@@ -3,7 +3,7 @@ title: "To Write, You Must Read"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/02/read-to-write/
-categories:
+category:
     - Blog
 ---
 

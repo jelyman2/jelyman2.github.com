@@ -3,7 +3,7 @@ title: "Lies for Money"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/08/28/lies-for-money/
-categories:
+category:
     - Blog
 ---
 

@@ -3,7 +3,7 @@ title: "Being a Great Leader Means Being Genuinely Interested"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/05/05/being-a-great-leader/
-categories:
+category:
     - Blog
 ---
 

@@ -3,7 +3,7 @@ title: "Disabling Comments on Existing Posts After Disabling Comments Site-Wide 
 author: Johnathan Lyman
 layout: post
 permalink: /2015/01/01/wordpress-comments-bug/
-categories:
+category:
     - Blog
 ---
 

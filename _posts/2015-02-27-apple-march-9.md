@@ -3,7 +3,7 @@ title: "Apple Event: March 9"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/27/apple-march-9/
-categories:
+category:
     - Blog
 ---
 

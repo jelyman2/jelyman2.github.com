@@ -3,7 +3,7 @@ title: "The Sad, Lonely World of Yik Yak"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/04/30/the-sad-lonely-world-of-yik-yak/
-categories:
+category:
     - Blog
 ---
 

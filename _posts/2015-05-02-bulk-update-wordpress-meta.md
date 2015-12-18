@@ -3,7 +3,7 @@ title: "Bulk Updating Any Meta Values in WordPress Posts Automatically"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/05/02/bulk-update-wordpress-meta/
-categories:
+category:
     - Blog
 ---
 

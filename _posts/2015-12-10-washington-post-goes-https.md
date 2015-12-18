@@ -4,7 +4,7 @@ author: Johnathan Lyman
 layout: post
 date: 2015-12-10 12:13
 permalink: /2015/12/10/washington-post-goes-https/
-categories:
+category:
     - Blog
 
 link: https://developer.washingtonpost.com/pb/blog/post/2015/12/10/moving-the-washington-post-to-https/

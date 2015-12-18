@@ -3,7 +3,7 @@ title: "Internetaholics Anonymous"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/20/internetaholics-anonymous/
-categories:
+category:
     - Blog
 ---
 

@@ -3,7 +3,7 @@ title: "Favorite Thing to This Day"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/01/27/favorite-thing/
-categories:
+category:
     - Blog
 ---
 

@@ -3,7 +3,7 @@ title: "Time to Stop Hounding McDonalds"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/14/mcdonalds/
-categories:
+category:
     - Blog
 ---
 

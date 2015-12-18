@@ -3,7 +3,7 @@ title: "Triple Digits on Earth"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/03/16/triple-digits/
-categories:
+category:
     - Blog
 ---
 

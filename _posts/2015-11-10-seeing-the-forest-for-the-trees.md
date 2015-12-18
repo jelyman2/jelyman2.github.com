@@ -3,7 +3,7 @@ title: "Seeing the Forest for the Trees"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/11/10/seeing-the-forest-for-the-trees/
-categories:
+category:
     - Blog
 ---
 

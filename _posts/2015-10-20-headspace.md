@@ -3,7 +3,7 @@ title: "Headspace"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/10/20/headspace/
-categories:
+category:
     - Blog
 ---
 

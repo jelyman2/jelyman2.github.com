@@ -3,7 +3,7 @@ title: "Norway&#8217;s Radio"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/04/21/norways-radio/
-categories:
+category:
     - Blog
 ---
 

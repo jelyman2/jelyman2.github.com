@@ -3,7 +3,7 @@ title: "Hunting the Hunter: Trying to Take a Photo of my Cat"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/01/26/hunting-cats/
-categories:
+category:
     - Blog
 ---
 

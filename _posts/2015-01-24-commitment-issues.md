@@ -3,7 +3,7 @@ title: "I&#8217;m Sorry, I Have Commitment Issues"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/01/24/commitment-issues/
-categories:
+category:
     - Blog
 ---
 

@@ -3,7 +3,7 @@ title: "Scared to Act"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/01/22/scared-to-act/
-categories:
+category:
     - Blog
 ---
 

@@ -3,7 +3,7 @@ title: "Ryan Gibley on The Martian"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/10/01/ryan-gibley-on-the-martian/
-categories:
+category:
     - Blog
 ---
 

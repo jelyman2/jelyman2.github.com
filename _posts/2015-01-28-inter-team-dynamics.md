@@ -3,7 +3,7 @@ title: "If I Could Change Just One Thing"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/01/28/inter-team-dynamics/
-categories:
+category:
     - Blog
 ---
 

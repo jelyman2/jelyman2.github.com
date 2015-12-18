@@ -13,16 +13,32 @@ title: Home
     {% endif %}
     <div class="post-meta">
       <time datetime="{{ post.date | date_to_xmlschema }}" class="post-meta-entry">
-        <i class="fa fa-calendar"></i>
+        <i class="fa fa-calendar">&nbsp;</i>
         {{ post.date | date: "%B %-d, %Y" }}
       </time>
       <span class="post-meta-entry">
-        <i class="fa fa-folder-open-o"></i>
+        <i class="fa fa-folder-open-o">&nbsp;</i>
+        {% if post.category contains "Blog" %}
+        <span class="category-color-blog">
+        {% elsif post.category contains "Technology" %}
+        <span class="category-color-technology">
+        {% elsif post.category contains "Programming" %}
+        <span class="category-color-programming">
+        {% elsif post.category contains "Learning" %}
+        <span class="category-color-learning">
+        {% else %}
+        <span>
+        {% endif %}
         {{ post.categories }}
+        </span>
       </span>
       <span class="post-meta-entry">
-        <i class="fa fa-keyboard-o"></i>
+        <i class="fa fa-keyboard-o">&nbsp;</i>
         {{ post.content | number_of_words }} words
+      </span>
+      <span class="post-meta-entry">
+        <i class="fa fa-link">&nbsp;</i>
+        <a href="{{ post.permalink }}">Permalink</a>
       </span>
     </div>
     {{ post.content }}

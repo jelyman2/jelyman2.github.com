@@ -3,7 +3,7 @@ title: "Re-Invent High School"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/10/10/re-invent-high-school/
-categories:
+category:
     - Blog
 ---
 

@@ -3,7 +3,7 @@ title: "Learn to Code as Early as You Can!"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/01/30/learn-to-code/
-categories:
+category:
     - Blog
 ---
 

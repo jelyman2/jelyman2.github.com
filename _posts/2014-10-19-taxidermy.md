@@ -3,7 +3,7 @@ title: "Ten Dollar Taxidermy"
 author: Johnathan Lyman
 layout: post
 permalink: /2014/10/19/taxidermy/
-categories:
+category:
     - Blog
 ---
 

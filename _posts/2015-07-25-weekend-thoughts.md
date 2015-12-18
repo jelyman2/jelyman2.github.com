@@ -3,7 +3,7 @@ title: "Weekend Thoughts"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/07/25/weekend-thoughts/
-categories:
+category:
     - Blog
 ---
 

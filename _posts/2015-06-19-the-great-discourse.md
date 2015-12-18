@@ -3,7 +3,7 @@ title: "The Great Discourse"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/06/19/the-great-discourse/
-categories:
+category:
     - Blog
 ---
 

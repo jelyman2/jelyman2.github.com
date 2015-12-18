@@ -3,7 +3,7 @@ title: "No Fly Zone"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/12/no-fly-zone/
-categories:
+category:
     - Blog
 ---
 

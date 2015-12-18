@@ -3,7 +3,7 @@ title: "A Recap of the #10DaysBetterBlog Challenge"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/01/25/blog-challenge-recap/
-categories:
+category:
     - Blog
 ---
 

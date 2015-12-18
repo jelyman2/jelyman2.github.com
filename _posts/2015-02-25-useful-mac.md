@@ -3,7 +3,7 @@ title: "Useful Mac"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/25/useful-mac/
-categories:
+category:
     - Blog
 ---
 

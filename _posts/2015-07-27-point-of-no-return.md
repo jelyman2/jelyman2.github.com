@@ -3,7 +3,7 @@ title: "Point of No Return"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/07/27/point-of-no-return/
-categories:
+category:
     - Blog
 ---
 

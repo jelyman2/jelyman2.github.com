@@ -3,7 +3,7 @@ title: "Always Find Time"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/23/always-find-time/
-categories:
+category:
     - Blog
 ---
 

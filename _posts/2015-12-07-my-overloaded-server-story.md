@@ -4,7 +4,7 @@ author: Johnathan Lyman
 layout: post
 date: 2015-12-07 22:02
 permalink: /2015/12/07/my-overloaded-server-story/
-categories:
+category:
     - Blog
 ---
 

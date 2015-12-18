@@ -3,7 +3,7 @@ title: "For-Profit Colleges"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/04/30/for-profit-colleges/
-categories:
+category:
     - Blog
 ---
 

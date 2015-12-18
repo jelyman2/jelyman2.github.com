@@ -3,7 +3,7 @@ title: "Another New Book"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/19/another-book/
-categories:
+category:
     - Blog
 ---
 

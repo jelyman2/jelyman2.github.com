@@ -3,7 +3,7 @@ title: "Beginner&#8217;s Mind"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/05/22/beginners-mind/
-categories:
+category:
     - Blog
 ---
 

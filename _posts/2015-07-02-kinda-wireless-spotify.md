@@ -3,7 +3,7 @@ title: "Wireless Streaming of Spotify (sort of)"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/07/02/kinda-wireless-spotify/
-categories:
+category:
     - Blog
 ---
 

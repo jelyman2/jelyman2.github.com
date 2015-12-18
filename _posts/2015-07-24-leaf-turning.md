@@ -3,7 +3,7 @@ title: "Leaf Turning"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/07/24/leaf-turning/
-categories:
+category:
     - Blog
 ---
 

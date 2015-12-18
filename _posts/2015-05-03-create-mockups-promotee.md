@@ -3,7 +3,7 @@ title: "Create High-Resolution Mockups for Your App or Site with Promotee"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/05/03/create-mockups-promotee/
-categories:
+category:
     - Blog
 ---
 

@@ -3,7 +3,7 @@ title: "After Three Weeks"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/11/28/after-three-weeks/
-categories:
+category:
     - Blog
 ---
 

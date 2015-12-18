@@ -3,7 +3,7 @@ title: "The Costs of Technology"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/10/14/the-costs-of-technology/
-categories:
+category:
     - Blog
 ---
 

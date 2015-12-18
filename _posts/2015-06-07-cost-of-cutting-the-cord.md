@@ -3,7 +3,7 @@ title: "The Cost of Cutting the Cord"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/06/07/cost-of-cutting-the-cord/
-categories:
+category:
     - Blog
 ---
 

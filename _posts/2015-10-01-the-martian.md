@@ -3,7 +3,7 @@ title: "The Martian"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/10/01/the-martian/
-categories:
+category:
     - Blog
 ---
 

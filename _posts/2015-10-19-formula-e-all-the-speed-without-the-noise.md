@@ -3,7 +3,7 @@ title: "Formula E: All the Speed Without the Noise"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/10/19/formula-e-all-the-speed-without-the-noise/
-categories:
+category:
     - Blog
 ---
 

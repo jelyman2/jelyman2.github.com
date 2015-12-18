@@ -3,7 +3,7 @@ title: "Goodbye Dev Blog"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/03/11/goodbye-dev-blog/
-categories:
+category:
     - Blog
 ---
 

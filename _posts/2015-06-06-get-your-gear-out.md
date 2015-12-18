@@ -3,7 +3,7 @@ title: "Get Your Gear Out"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/06/06/get-your-gear-out/
-categories:
+category:
     - Blog
 ---
 

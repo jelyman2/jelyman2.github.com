@@ -3,7 +3,7 @@ title: "Make School"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/03/14/make-school/
-categories:
+category:
     - Blog
 ---
 

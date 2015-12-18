@@ -3,7 +3,7 @@ title: "18 Resources for Getting Started with WordPress"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/05/03/18-wordpress-resources/
-categories:
+category:
     - Blog
 ---
 

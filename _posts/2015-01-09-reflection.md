@@ -3,7 +3,7 @@ title: "Reflection"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/01/09/reflection/
-categories:
+category:
     - Blog
 ---
 

@@ -3,7 +3,7 @@ title: "Sentimental"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/10/03/sentimental/
-categories:
+category:
     - Blog
 ---
 

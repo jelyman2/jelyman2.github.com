@@ -3,7 +3,7 @@ title: "Enemies Considered"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/10/11/enemies-considered/
-categories:
+category:
     - Blog
 ---
 

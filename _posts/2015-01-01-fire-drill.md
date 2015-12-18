@@ -3,7 +3,7 @@ title: "Poor Planning on Your Part Does not Necessarily Constitute an Emergency 
 author: Johnathan Lyman
 layout: post
 permalink: /2015/01/01/fire-drill/
-categories:
+category:
     - Blog
 ---
 

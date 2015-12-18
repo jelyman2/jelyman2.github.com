@@ -3,7 +3,7 @@ title: "Buzz Killers"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/27/buzz-killers/
-categories:
+category:
     - Blog
 ---
 

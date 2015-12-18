@@ -3,7 +3,7 @@ title: "Self-Comparison"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/23/self-comparison/
-categories:
+category:
     - Blog
 ---
 

@@ -3,7 +3,7 @@ title: "Moving to Cali"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/03/18/moving-to-cali/
-categories:
+category:
     - Blog
 ---
 

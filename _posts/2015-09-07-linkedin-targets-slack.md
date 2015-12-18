@@ -3,7 +3,7 @@ title: "LinkedIn Target&#8217;s Slack"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/09/07/linkedin-targets-slack/
-categories:
+category:
     - Blog
 ---
 

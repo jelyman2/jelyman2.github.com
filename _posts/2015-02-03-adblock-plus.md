@@ -3,7 +3,7 @@ title: "Ad-doesn&#8217;t-Block Plus Premium Elite Edition"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/03/adblock-plus/
-categories:
+category:
     - Blog
 ---
 

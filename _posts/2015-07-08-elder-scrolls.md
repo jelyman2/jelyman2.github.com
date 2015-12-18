@@ -3,7 +3,7 @@ title: "Elder Scrolls Online: Tamirel Unlimited"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/07/08/elder-scrolls/
-categories:
+category:
     - Blog
 ---
 

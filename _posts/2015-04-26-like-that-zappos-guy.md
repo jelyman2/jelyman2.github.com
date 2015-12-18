@@ -3,7 +3,7 @@ title: "Like That Zappos Guy"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/04/26/like-that-zappos-guy/
-categories:
+category:
     - Blog
 ---
 

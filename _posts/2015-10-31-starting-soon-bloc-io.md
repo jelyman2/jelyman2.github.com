@@ -3,7 +3,7 @@ title: "Starting Soon: Bloc.io"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/10/31/starting-soon-bloc-io/
-categories:
+category:
     - Blog
 ---
 

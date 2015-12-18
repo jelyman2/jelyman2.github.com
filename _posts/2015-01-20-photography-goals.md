@@ -3,7 +3,7 @@ title: "Extending My Writing Goals to Photography"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/01/20/photography-goals/
-categories:
+category:
     - Blog
 ---
 

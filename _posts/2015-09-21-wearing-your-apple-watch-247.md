@@ -3,7 +3,7 @@ title: "Wearing your Apple Watch 24/7"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/09/21/wearing-your-apple-watch-247/
-categories:
+category:
     - Blog
 ---
 

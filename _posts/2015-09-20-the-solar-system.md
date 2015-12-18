@@ -3,7 +3,7 @@ title: "The Solar System"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/09/20/the-solar-system/
-categories:
+category:
     - Blog
 ---
 

@@ -3,7 +3,7 @@ title: "Lenovo Lawsuits"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/24/lenovo-lawsuits/
-categories:
+category:
     - Blog
 ---
 

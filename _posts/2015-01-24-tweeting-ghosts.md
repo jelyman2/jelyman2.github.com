@@ -3,7 +3,7 @@ title: "Ghostly Sharing to Twitter from Jetpack&#8217;s Publicize Plugin"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/01/24/tweeting-ghosts/
-categories:
+category:
     - Blog
 ---
 

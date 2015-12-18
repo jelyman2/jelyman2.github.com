@@ -3,7 +3,7 @@ title: "Tweet Deleter"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/22/tweet-delete/
-categories:
+category:
     - Blog
 ---
 

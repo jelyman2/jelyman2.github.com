@@ -3,7 +3,7 @@ title: "Forget Your Goals"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/05/07/forget-goals/
-categories:
+category:
     - Blog
 ---
 

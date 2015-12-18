@@ -3,7 +3,7 @@ title: "Live Long and Prosper"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/27/live-long-and-prosper/
-categories:
+category:
     - Blog
 ---
 

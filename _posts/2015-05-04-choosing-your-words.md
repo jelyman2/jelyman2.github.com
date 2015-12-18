@@ -3,7 +3,7 @@ title: "Choosing Your Words"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/05/04/choosing-your-words/
-categories:
+category:
     - Blog
 ---
 

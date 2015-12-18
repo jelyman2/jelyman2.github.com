@@ -3,7 +3,7 @@ title: "The Difference Four Years Makes"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/10/02/the-difference-four-years-makes/
-categories:
+category:
     - Blog
 ---
 

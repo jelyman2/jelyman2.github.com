@@ -3,7 +3,7 @@ title: "The iMac as Told From the Inside"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/10/20/the-imac-as-told-from-the-inside/
-categories:
+category:
     - Blog
 ---
 

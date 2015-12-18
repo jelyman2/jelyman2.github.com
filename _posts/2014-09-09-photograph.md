@@ -3,7 +3,7 @@ title: "Create A Photograph"
 author: Johnathan Lyman
 layout: post
 permalink: /2014/09/09/photograph/
-categories:
+category:
     - Blog
 ---
 

@@ -3,7 +3,7 @@ title: "Thinking About Old Posts"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/13/thinking-about-old-posts/
-categories:
+category:
     - Blog
 ---
 

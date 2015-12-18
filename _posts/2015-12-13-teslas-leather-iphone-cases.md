@@ -4,7 +4,7 @@ author: Johnathan Lyman
 layout: post
 date: 2015-12-13 08:15
 permalink: /2015/12/13/teslas-leather-iphone-cases/
-categories:
+category:
     - Blog
 link: http://www.theverge.com/2015/12/11/9891696/tesla-leather-iphone-case-6-plus
 ---

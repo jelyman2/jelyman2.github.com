@@ -4,7 +4,7 @@ author: Johnathan Lyman
 layout: post
 date: 2015-12-16 09:55
 permalink: /2015/12/16/ios-programming-guide-with-big-nerd-ranch/
-categories:
+category:
     - Blog
 link: http://amzn.to/1QqK32b
 ---

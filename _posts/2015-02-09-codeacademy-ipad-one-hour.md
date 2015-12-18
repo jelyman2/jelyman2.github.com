@@ -3,7 +3,7 @@ title: "CodeAcademy &#8211; The Basics of Code in One Hour"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/09/codeacademy-ipad-one-hour/
-categories:
+category:
     - Blog
 ---
 

@@ -3,7 +3,7 @@ title: "Apple Repairing Macbooks for Free"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/21/free-mbp-repair/
-categories:
+category:
     - Blog
 ---
 

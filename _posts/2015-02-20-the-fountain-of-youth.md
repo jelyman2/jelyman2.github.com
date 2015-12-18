@@ -3,7 +3,7 @@ title: "The Fountain of Youth"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/20/the-fountain-of-youth/
-categories:
+category:
     - Blog
 ---
 

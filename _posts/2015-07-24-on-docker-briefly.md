@@ -3,7 +3,7 @@ title: "On Docker (Briefly)"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/07/24/on-docker-briefly/
-categories:
+category:
     - Blog
 ---
 

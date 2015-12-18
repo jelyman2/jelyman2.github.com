@@ -3,7 +3,7 @@ title: "Like a Girl"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/03/07/like-a-girl/
-categories:
+category:
     - Blog
 ---
 

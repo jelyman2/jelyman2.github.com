@@ -3,7 +3,7 @@ title: "How to Fix Misspelled Column Names in a Ruby on Rails Database"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/10/25/how-to-fix-misspelled-column-names-in-a-ruby-on-rails-database/
-categories:
+category:
     - Blog
 ---
 

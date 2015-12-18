@@ -4,7 +4,7 @@ author: Johnathan Lyman
 layout: post
 date: 2015-12-13 15:59
 permalink: /2015/12/13/independence-day-2016/
-categories:
+category:
     - Blog
 link: https://www.youtube.com/watch?v=LbduDRH2m2M
 ---

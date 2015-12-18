@@ -3,7 +3,7 @@ title: "Waiting for Inspiration"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/06/24/waiting-for-inspiration/
-categories:
+category:
     - Blog
 ---
 

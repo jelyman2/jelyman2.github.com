@@ -3,7 +3,7 @@ title: "Three Hobbies"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/23/three-hobbies/
-categories:
+category:
     - Blog
 ---
 

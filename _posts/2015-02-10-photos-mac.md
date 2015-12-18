@@ -3,7 +3,7 @@ title: "Photos for Mac"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/10/photos-mac/
-categories:
+category:
     - Blog
 ---
 

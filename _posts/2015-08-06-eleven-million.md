@@ -3,7 +3,7 @@ title: "Eleven Million"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/08/06/eleven-million/
-categories:
+category:
     - Blog
 ---
 

@@ -3,7 +3,7 @@ title: "Dust Settling"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/04/11/dust-settling/
-categories:
+category:
     - Blog
 ---
 

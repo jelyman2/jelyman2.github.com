@@ -3,7 +3,7 @@ title: "How I Solved Related Posts not Showing when Running WordPress, JetPack, 
 author: Johnathan Lyman
 layout: post
 permalink: /2015/01/30/related-posts/
-categories:
+category:
     - Blog
 ---
 

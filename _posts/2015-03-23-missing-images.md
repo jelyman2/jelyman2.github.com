@@ -3,7 +3,7 @@ title: "Missing Images"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/03/23/missing-images/
-categories:
+category:
     - Blog
 ---
 

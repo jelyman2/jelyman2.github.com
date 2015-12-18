@@ -3,7 +3,7 @@ title: "Future Ruby on Rails Developer"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/10/23/future-ruby-on-rails-developer/
-categories:
+category:
     - Blog
 ---
 

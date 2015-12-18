@@ -3,7 +3,7 @@ title: "CrashPlan"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/17/crashplan/
-categories:
+category:
     - Blog
 ---
 

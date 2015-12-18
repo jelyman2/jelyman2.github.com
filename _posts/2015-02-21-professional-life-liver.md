@@ -3,7 +3,7 @@ title: "Putting In the Effort to Become a Professional Life Liver"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/21/professional-life-liver/
-categories:
+category:
     - Blog
 ---
 

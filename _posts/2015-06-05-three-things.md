@@ -3,7 +3,7 @@ title: "Three Things I Wish I Did Sooner"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/06/05/three-things/
-categories:
+category:
     - Blog
 ---
 

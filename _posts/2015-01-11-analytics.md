@@ -3,7 +3,7 @@ title: "Analytics"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/01/11/analytics/
-categories:
+category:
     - Blog
 ---
 

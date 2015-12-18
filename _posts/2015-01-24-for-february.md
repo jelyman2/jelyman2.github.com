@@ -3,7 +3,7 @@ title: "Looking Ahead to February"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/01/24/for-february/
-categories:
+category:
     - Blog
 ---
 

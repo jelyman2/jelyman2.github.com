@@ -3,7 +3,7 @@ title: "Killing It In People Relations"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/04/23/killing-it-in-people-relations/
-categories:
+category:
     - Blog
 ---
 

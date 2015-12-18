@@ -3,7 +3,7 @@ title: "The Difference Four Years Makes: Part 2: Disk IO"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/10/02/the-difference-four-years-makes-part-2-disk-io/
-categories:
+category:
     - Blog
 ---
 

@@ -3,7 +3,7 @@ title: "Kill Switch: Engage"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/12/kill-switch-engage/
-categories:
+category:
     - Blog
 ---
 

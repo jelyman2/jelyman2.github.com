@@ -3,7 +3,7 @@ title: "Getting Started with Loggly Part 2: The Cool Stuff!"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/03/14/loggly-part-2/
-categories:
+category:
     - Blog
 ---
 

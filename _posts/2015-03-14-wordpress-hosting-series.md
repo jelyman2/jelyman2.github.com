@@ -3,7 +3,7 @@ title: "WordPress Hosting Series"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/03/14/wordpress-hosting-series/
-categories:
+category:
     - Blog
 ---
 

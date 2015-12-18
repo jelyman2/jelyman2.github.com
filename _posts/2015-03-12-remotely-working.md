@@ -3,7 +3,7 @@ title: "Remotely Working"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/03/12/remotely-working/
-categories:
+category:
     - Blog
 ---
 

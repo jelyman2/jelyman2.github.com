@@ -3,7 +3,7 @@ title: "Bored of the Sun"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/05/06/bored-of-the-sun/
-categories:
+category:
     - Blog
 ---
 

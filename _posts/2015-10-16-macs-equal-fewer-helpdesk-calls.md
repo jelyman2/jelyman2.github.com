@@ -3,7 +3,7 @@ title: "Macs Equal Fewer Helpdesk Calls"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/10/16/macs-equal-fewer-helpdesk-calls/
-categories:
+category:
     - Blog
 ---
 

@@ -3,7 +3,7 @@ title: "And so the LOL&#8217;s Continue"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/04/adblock-plus-2/
-categories:
+category:
     - Blog
 ---
 

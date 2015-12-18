@@ -3,7 +3,7 @@ title: "Recovering From Failure, Part 2"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/03/04/failure-part-2/
-categories:
+category:
     - Blog
 ---
 

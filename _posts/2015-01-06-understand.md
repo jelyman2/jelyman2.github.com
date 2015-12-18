@@ -3,7 +3,7 @@ title: "You Really Just Would not Understand!"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/01/06/understand/
-categories:
+category:
     - Blog
 ---
 

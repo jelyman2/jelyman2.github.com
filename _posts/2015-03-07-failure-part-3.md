@@ -3,7 +3,7 @@ title: "Failure, Part 3"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/03/07/failure-part-3/
-categories:
+category:
     - Blog
 ---
 

@@ -3,7 +3,7 @@ title: "A Kitematic Overview"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/06/27/a-kitematic-overview/
-categories:
+category:
     - Blog
 ---
 

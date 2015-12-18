@@ -3,7 +3,7 @@ title: "Telling People&#8217;s Stories"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/04/telling-stories/
-categories:
+category:
     - Blog
 ---
 

@@ -3,7 +3,7 @@ title: "StackEdit"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/06/30/stackedit/
-categories:
+category:
     - Blog
 ---
 

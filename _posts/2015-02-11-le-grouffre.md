@@ -3,7 +3,7 @@ title: "Le Gouffre"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/11/le-grouffre/
-categories:
+category:
     - Blog
 ---
 

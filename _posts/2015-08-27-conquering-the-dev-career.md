@@ -3,7 +3,7 @@ title: "Conquering the Dev Career"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/08/27/conquering-the-dev-career/
-categories:
+category:
     - Blog
 ---
 

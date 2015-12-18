@@ -3,7 +3,7 @@ title: "Magic Room"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/02/magic-room/
-categories:
+category:
     - Blog
 ---
 

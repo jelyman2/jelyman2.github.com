@@ -3,7 +3,7 @@ title: "The Weekend Off"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/03/02/the-weekend-off/
-categories:
+category:
     - Blog
 ---
 

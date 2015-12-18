@@ -3,7 +3,7 @@ title: "Getting Started with Loggly"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/03/14/loggly-start/
-categories:
+category:
     - Blog
 ---
 

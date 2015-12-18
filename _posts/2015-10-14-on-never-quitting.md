@@ -3,7 +3,7 @@ title: "On Never Quitting"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/10/14/on-never-quitting/
-categories:
+category:
     - Blog
 ---
 

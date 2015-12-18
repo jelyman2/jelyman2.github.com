@@ -3,7 +3,7 @@ title: "Apple iMilk"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/01/25/apple-imilk/
-categories:
+category:
     - Blog
 ---
 

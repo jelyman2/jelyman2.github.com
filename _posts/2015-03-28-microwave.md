@@ -3,7 +3,7 @@ title: "The Microwave"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/03/28/microwave/
-categories:
+category:
     - Blog
 ---
 

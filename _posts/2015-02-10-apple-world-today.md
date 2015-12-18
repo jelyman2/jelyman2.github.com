@@ -3,7 +3,7 @@ title: "Apple World.Today"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/10/apple-world-today/
-categories:
+category:
     - Blog
 ---
 

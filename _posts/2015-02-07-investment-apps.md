@@ -3,7 +3,7 @@ title: "Financial Planning and Investment Apps that Don&#8217;t Suck"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/07/investment-apps/
-categories:
+category:
     - Blog
 ---
 

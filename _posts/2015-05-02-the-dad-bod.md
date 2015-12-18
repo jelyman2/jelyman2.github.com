@@ -3,7 +3,7 @@ title: "The Dad Bod"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/05/02/the-dad-bod/
-categories:
+category:
     - Blog
 ---
 

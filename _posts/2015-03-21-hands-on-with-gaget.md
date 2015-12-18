@@ -3,7 +3,7 @@ title: "Hands on with GAget"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/03/21/hands-on-with-gaget/
-categories:
+category:
     - Blog
 ---
 

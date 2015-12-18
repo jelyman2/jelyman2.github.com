@@ -3,7 +3,7 @@ title: "The Couch&#8217;s Next Chapter"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/03/22/couch-chapter/
-categories:
+category:
     - Blog
 ---
 

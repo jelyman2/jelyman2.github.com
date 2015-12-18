@@ -3,7 +3,7 @@ title: "Monsoon II"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/10/05/monsoon-ii/
-categories:
+category:
     - Blog
 ---
 

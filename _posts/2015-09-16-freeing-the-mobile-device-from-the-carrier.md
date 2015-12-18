@@ -3,7 +3,7 @@ title: "Freeing the Mobile Device from the Carrier"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/09/16/freeing-the-mobile-device-from-the-carrier/
-categories:
+category:
     - Blog
 ---
 

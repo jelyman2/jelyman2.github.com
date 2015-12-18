@@ -3,7 +3,7 @@ title: "Total Transparency"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/10/15/total-transparency/
-categories:
+category:
     - Blog
 ---
 

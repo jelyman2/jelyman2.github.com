@@ -4,7 +4,7 @@ author: Johnathan Lyman
 layout: post
 date: 2015-12-17 13:38
 permalink: /2015/12/17/martin-shkreli-arrested/
-categories:
+category:
     - Blog
 link: http://www.nytimes.com/2015/12/18/business/shkreli-fraud-charges.html
 ---

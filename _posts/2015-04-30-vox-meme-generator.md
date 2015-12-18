@@ -3,7 +3,7 @@ title: "The Vox Media Open Source Meme Generator"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/04/30/vox-meme-generator/
-categories:
+category:
     - Blog
 ---
 

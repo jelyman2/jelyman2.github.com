@@ -3,7 +3,7 @@ title: "Just Sit Down and Write with Desk"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/01/27/desk-overview/
-categories:
+category:
     - Blog
 ---
 

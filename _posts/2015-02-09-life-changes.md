@@ -3,7 +3,7 @@ title: "The Best Way I Make Life Changes"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/09/life-changes/
-categories:
+category:
     - Blog
 ---
 

@@ -3,7 +3,7 @@ title: "Custom Domains on Medium"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/07/09/custom-domains-on-medium/
-categories:
+category:
     - Blog
 ---
 

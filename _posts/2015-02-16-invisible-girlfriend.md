@@ -3,7 +3,7 @@ title: "The Invisible Girlfriend"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/16/invisible-girlfriend/
-categories:
+category:
     - Blog
 ---
 

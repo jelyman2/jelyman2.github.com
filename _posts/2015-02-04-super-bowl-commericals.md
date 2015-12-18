@@ -3,7 +3,7 @@ title: "My Favorite Super Bowl Commercials"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/04/super-bowl-commericals/
-categories:
+category:
     - Blog
 ---
 

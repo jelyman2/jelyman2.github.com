@@ -3,7 +3,7 @@ title: "Positioning for the Journey to Dreamland"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/01/26/sleeping-positions/
-categories:
+category:
     - Blog
 ---
 

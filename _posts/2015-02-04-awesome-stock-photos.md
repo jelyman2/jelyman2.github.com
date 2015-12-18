@@ -3,7 +3,7 @@ title: "Where I Get My Stock Photos"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/04/awesome-stock-photos/
-categories:
+category:
     - Blog
 ---
 

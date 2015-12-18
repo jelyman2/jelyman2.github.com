@@ -4,7 +4,7 @@ author: Johnathan Lyman
 layout: post
 date: 2015-12-16 10:01
 permalink: /2015/12/16/how-can-i-learn-to-code/
-categories:
+category:
     - Blog
 link: https://medium.com/bloc-posts/how-can-i-learn-to-code-8a627847549a#.k02ajhvd3
 ---

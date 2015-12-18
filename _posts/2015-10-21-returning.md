@@ -3,7 +3,7 @@ title: "Returning to Morning Greatness"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/10/21/returning/
-categories:
+category:
     - Blog
 ---
 

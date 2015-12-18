@@ -4,8 +4,7 @@ author: Johnathan Lyman
 layout: post
 date: 2015-12-18 10:54
 permalink: /2015/12/18/selfdriving-car-garage-hackerstyle/
-categories:
-    - Technology
+category: Technology
 link: http://www.bloomberg.com/features/2015-george-hotz-self-driving-car/
 ---
 

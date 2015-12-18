@@ -3,7 +3,7 @@ title: "On Accepting"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/06/25/on-accepting/
-categories:
+category:
     - Blog
 ---
 

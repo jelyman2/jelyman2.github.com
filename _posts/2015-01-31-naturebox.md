@@ -3,7 +3,7 @@ title: "NatureBox &#8211; Super Tasty Snacks in the Mail"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/01/31/naturebox/
-categories:
+category:
     - Blog
 ---
 

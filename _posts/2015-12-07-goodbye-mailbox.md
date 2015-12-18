@@ -4,7 +4,7 @@ author: Johnathan Lyman
 layout: post
 date: 2015-12-07 19:50
 permalink: /2015/12/07/goodbye-mailbox/
-categories:
+category:
     - Blog
 ---
 

@@ -3,7 +3,7 @@ title: "Playlist for Heads Down Working Hard"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/10/playlist-working-hard/
-categories:
+category:
     - Blog
 ---
 

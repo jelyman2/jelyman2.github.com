@@ -3,7 +3,7 @@ title: "How to Learn to Code"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/05/06/how-to-learn-to-code/
-categories:
+category:
     - Blog
 ---
 

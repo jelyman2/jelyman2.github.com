@@ -3,7 +3,7 @@ title: "Taking Notes"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/01/26/taking-notes/
-categories:
+category:
     - Blog
 ---
 

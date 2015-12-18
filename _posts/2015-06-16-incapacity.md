@@ -3,7 +3,7 @@ title: "Incapacity"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/06/16/incapacity/
-categories:
+category:
     - Blog
 ---
 

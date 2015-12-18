@@ -3,7 +3,7 @@ title: "Check Yourself"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/06/26/check-yourself/
-categories:
+category:
     - Blog
 ---
 

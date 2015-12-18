@@ -3,7 +3,7 @@ title: "Turning Pro"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/18/turning-pro/
-categories:
+category:
     - Blog
 ---
 

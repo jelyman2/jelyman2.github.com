@@ -3,7 +3,7 @@ title: "Creativity"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/06/19/creativity-2/
-categories:
+category:
     - Blog
 ---
 

@@ -3,7 +3,7 @@ title: "I&#8217;m Completely Okay with Being Entrenched in the Apple Ecosystem"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/01/01/apple-ecosystem/
-categories:
+category:
     - Blog
 ---
 

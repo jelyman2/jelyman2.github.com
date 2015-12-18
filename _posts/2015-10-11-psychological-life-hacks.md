@@ -3,7 +3,7 @@ title: "Psychological Life Hacks"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/10/11/psychological-life-hacks/
-categories:
+category:
     - Blog
 ---
 

@@ -3,7 +3,7 @@ title: "On Web Comics"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/08/06/on-web-comics/
-categories:
+category:
     - Blog
 ---
 

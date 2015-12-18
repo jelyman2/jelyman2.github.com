@@ -3,7 +3,7 @@ title: "Office Online Update Bring Better PDF Stuff and Other Stuff"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/12/office-online-update/
-categories:
+category:
     - Blog
 ---
 

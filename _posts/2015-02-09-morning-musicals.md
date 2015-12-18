@@ -3,7 +3,7 @@ title: "Morning Musicals"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/09/morning-musicals/
-categories:
+category:
     - Blog
 ---
 

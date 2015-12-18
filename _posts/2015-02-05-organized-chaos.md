@@ -3,7 +3,7 @@ title: "State of Organized Chaos"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/05/organized-chaos/
-categories:
+category:
     - Blog
 ---
 

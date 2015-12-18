@@ -3,7 +3,7 @@ title: "Shadow of Mordor &#8211; a.k.a Shadow of Difficult Awesomeness"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/08/shadow-of-mordor/
-categories:
+category:
     - Blog
 ---
 

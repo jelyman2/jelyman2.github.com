@@ -3,7 +3,7 @@ title: "My Support"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/24/my-support/
-categories:
+category:
     - Blog
 ---
 

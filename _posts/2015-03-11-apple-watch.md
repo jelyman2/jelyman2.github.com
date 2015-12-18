@@ -3,7 +3,7 @@ title: "Apple Watch"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/03/11/apple-watch/
-categories:
+category:
     - Blog
 ---
 

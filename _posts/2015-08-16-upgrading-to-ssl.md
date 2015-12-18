@@ -3,7 +3,7 @@ title: "Upgrading to SSL"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/08/16/upgrading-to-ssl/
-categories:
+category:
     - Blog
 ---
 

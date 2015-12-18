@@ -3,7 +3,7 @@ title: "Dump Flash"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/08/06/dump-flash/
-categories:
+category:
     - Blog
 ---
 

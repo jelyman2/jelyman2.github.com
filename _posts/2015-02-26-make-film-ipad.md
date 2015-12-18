@@ -3,7 +3,7 @@ title: "Make a Film with an iPad"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/26/make-film-ipad/
-categories:
+category:
     - Blog
 ---
 

@@ -3,7 +3,7 @@ title: "Power Rangers"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/25/power-rangers/
-categories:
+category:
     - Blog
 ---
 

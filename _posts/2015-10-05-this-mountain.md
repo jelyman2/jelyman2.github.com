@@ -3,7 +3,7 @@ title: "This Mountain"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/10/05/this-mountain/
-categories:
+category:
     - Blog
 ---
 

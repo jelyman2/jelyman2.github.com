@@ -3,7 +3,7 @@ title: "My First Smartphone"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/01/19/first-smartphone/
-categories:
+category:
     - Blog
 ---
 

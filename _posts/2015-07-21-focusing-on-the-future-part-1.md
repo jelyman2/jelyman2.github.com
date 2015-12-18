@@ -3,7 +3,7 @@ title: "Focusing on the Future, Part 1"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/07/21/focusing-on-the-future-part-1/
-categories:
+category:
     - Blog
 ---
 

@@ -3,7 +3,7 @@ title: "Keeping Score"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/06/16/keeping-score/
-categories:
+category:
     - Blog
 ---
 

@@ -3,7 +3,7 @@ title: "Sunday Fun Day"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/07/26/sunday-fun-day/
-categories:
+category:
     - Blog
 ---
 

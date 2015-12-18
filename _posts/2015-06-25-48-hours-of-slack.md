@@ -3,7 +3,7 @@ title: "48 Hours of Slack"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/06/25/48-hours-of-slack/
-categories:
+category:
     - Blog
 ---
 

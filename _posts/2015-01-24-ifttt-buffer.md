@@ -3,7 +3,7 @@ title: "How to Set up Automatic WordPress Blog Post Scheduling with IFT.TT, and 
 author: Johnathan Lyman
 layout: post
 permalink: /2015/01/24/ifttt-buffer/
-categories:
+category:
     - Blog
 ---
 

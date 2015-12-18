@@ -3,7 +3,7 @@ title: "Starting Ruby on Rails"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/10/04/starting-ruby-on-rails/
-categories:
+category:
     - Blog
 ---
 

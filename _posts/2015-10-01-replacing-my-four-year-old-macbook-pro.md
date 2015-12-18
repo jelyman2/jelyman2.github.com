@@ -3,7 +3,7 @@ title: "Replacing My Four-Year-Old Macbook Pro"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/10/01/replacing-my-four-year-old-macbook-pro/
-categories:
+category:
     - Blog
 ---
 

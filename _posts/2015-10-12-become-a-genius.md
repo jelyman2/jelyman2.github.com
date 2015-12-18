@@ -3,7 +3,7 @@ title: "Become a Genius"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/10/12/become-a-genius/
-categories:
+category:
     - Blog
 ---
 

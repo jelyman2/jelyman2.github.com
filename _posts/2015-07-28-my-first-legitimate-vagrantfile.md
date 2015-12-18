@@ -3,7 +3,7 @@ title: "My First Legitimate Vagrantfile"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/07/28/my-first-legitimate-vagrantfile/
-categories:
+category:
     - Blog
 ---
 

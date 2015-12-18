@@ -4,7 +4,7 @@ author: Johnathan Lyman
 layout: post
 date: 2015-12-09 09:55
 permalink: /2015/12/09/mega-apple-software-update-day/
-categories:
+category:
     - Blog
 link: http://arstechnica.com/apple/2015/12/mega-apple-update-day-brings-ugprades-to-os-x-ios-watchos-and-tvos/
 ---

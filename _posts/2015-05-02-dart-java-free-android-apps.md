@@ -3,7 +3,7 @@ title: "Dart: Java-Free Android Apps"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/05/02/dart-java-free-android-apps/
-categories:
+category:
     - Blog
 ---
 

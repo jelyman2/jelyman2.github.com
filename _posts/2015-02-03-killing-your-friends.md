@@ -3,7 +3,7 @@ title: "Killing Your Friends when They Think You&#8217;re not Looking"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/02/03/killing-your-friends/
-categories:
+category:
     - Blog
 ---
 

@@ -3,7 +3,7 @@ title: "The Cold Brew Coffee Adventure"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/09/28/the-cold-brew-coffee-adventure/
-categories:
+category:
     - Blog
 ---
 

@@ -3,7 +3,7 @@ title: "Morning Email: Check In Without Checking Out"
 author: Johnathan Lyman
 layout: post
 permalink: /2015/05/06/morning-email/
-categories:
+category:
     - Blog
 ---
 
