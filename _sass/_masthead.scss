@@ -3,58 +3,67 @@
 // Super small header above the content for site name and short description.
 
 .masthead {
-  padding-top:    1rem;
-  padding-bottom: 1rem;
-  margin-bottom: 3rem;
+  padding-top: 1rem;
+  /* padding-bottom: 1rem; */
+  margin-bottom: 5rem;
   text-align: center;
-
+  // background-color: #ffffff;
 }
 
 .masthead-title {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #505050;
-  font-size: 2rem;
-  a {
-    color: #505050;
+  /* margin-top: 0; */
+/* margin-bottom: 0; */
+  color: #333333;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  /* height: 150px; */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  span {
+    color: #333333;
     display: block;
     width: 100%;
-
   }
 
   small {
-    font-size: 50%;
+    font-size: 30%;
     font-weight: 400;
-    color: #c0c0c0;
-    letter-spacing: 0;
+    color: #666666;
+    text-transform: uppercase;
+    letter-spacing: 0px;
   }
 }
 
 .navigation {
   list-style-type: none;
   margin: 0;
+  margin-top: 1rem;
+  background-color: black;
   padding: 0;
   overflow: hidden;
-  background-color: white;
   text-align: center;
 
   li {
-    /* loat: left; */
+    /* float: left; */
     display: inline-block;
     font-size: .75rem;
     padding-top: 14px;
     padding-bottom: 16px;
     padding-right: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
     a {
-      font-size: 1rem;
+      font-size: 0.75rem;
       display: block;
-      color: #777777;
+      color: #ffffff;
       text-align: center;
-      text-decoration: none;
+      text-decoration: none
     }
     a:hover {
       text-decoration: underline;
-      color: #268bd2;
+      color: #ffffff;
     }
   }
 }

@@ -4,13 +4,99 @@
  <title>Johnathan Lyman</title>
  <link href="https://johnathanlyman.com/atom.xml" rel="self"/>
  <link href="https://johnathanlyman.com/"/>
- <updated>2015-12-16T00:44:28+00:00</updated>
+ <updated>2015-12-18T20:31:04+00:00</updated>
  <id>https://johnathanlyman.com</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Self-Driving Car: Garage Hacker-Style</title>
+   <link href="https://johnathanlyman.com/2015/12/18/selfdriving-car-garage-hackerstyle/"/>
+   <updated>2015-12-18T10:54:00+00:00</updated>
+   <id>https://johnathanlyman.com/2015/12/18/selfdriving-car-garage-hackerstyle</id>
+   <content type="html">&lt;p&gt;From &lt;a href=&quot;http://www.bloomberg.com/features/2015-george-hotz-self-driving-car/&quot;&gt;Ashlee Vance, Bloomberg&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I ask Hotz what it felt like the first time he got the car to work. “Dude,” he says, “the first time it worked was this morning.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;They won’t come out and say it but &lt;a href=&quot;https://www.teslamotors.com/support/correction-article-first-person-hack-iphone-built-self-driving-car&quot;&gt;Tesla’s response&lt;/a&gt; seems pretty defensive:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;We think it is extremely unlikely that a single person or even a small company that lacks extensive engineering validation capability will be able to produce an autonomous driving system that can be deployed to production vehicles.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Translation:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you don’t have an CEO that thinks Mars is something to be conquered in a weekend and billions of dollars, you’re going to fail.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Sounds about right.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Martin Shkreli Arrested</title>
+   <link href="https://johnathanlyman.com/2015/12/17/martin-shkreli-arrested/"/>
+   <updated>2015-12-17T13:38:00+00:00</updated>
+   <id>https://johnathanlyman.com/2015/12/17/martin-shkreli-arrested</id>
+   <content type="html">&lt;p&gt;Karma can be so sweet.&lt;/p&gt;
+
+&lt;p&gt;via Stephanie Clifford and Andrew Pollack from the &lt;a href=&quot;http://www.nytimes.com/2015/12/18/business/shkreli-fraud-charges.html&quot;&gt;New York Times&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The indictment says that Mr. Shkreli ran three schemes.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;First, he is accused of lying to investors at MSMB Capital, which he ran from 2009 to 2012, about how well the fund was doing and how much money it had, and of falsely claiming that it had an independent auditor and administrator. He prevented investors from redeeming their money in MSMB Capital, again by lying about the fund’s performance. During this period, Mr. Shkreli “and others” were misusing the fund’s assets, the indictment said.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;He performed a similar scheme with MSMB Healthcare, which he ran in 2011 and 2012, the indictment alleges.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Finally, he and Mr. Greebel inappropriately routed money from Retrophin “in an effort to satisfy Shkreli’s personal and unrelated professional debts and obligations,” the indictment said. Mr. Greebel was the lead outside counsel to Retrophin from 2012 to 2014, when he was a partner at Katten Muchin Rosenman. His name appears on many of the Retrophin filings with the Securities and Exchange Commission.&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How Can I Learn to Code</title>
+   <link href="https://johnathanlyman.com/2015/12/16/how-can-i-learn-to-code/"/>
+   <updated>2015-12-16T10:01:00+00:00</updated>
+   <id>https://johnathanlyman.com/2015/12/16/how-can-i-learn-to-code</id>
+   <content type="html">&lt;p&gt;A great &lt;a href=&quot;https://medium.com/bloc-posts/how-can-i-learn-to-code-8a627847549a#.1p9g24lt5&quot;&gt;post on Medium&lt;/a&gt; from Roshan Choxi, the co-founder and CEO of &lt;a href=&quot;http://www.bloc.io/&quot;&gt;Bloc&lt;/a&gt;, one of the premiere remote coding bootcamps out there&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you focus on building the habit of programming for 20–30 hours a week, you will reach your goal of being a web developer. If you focus on the goal of being a web developer in X months, you get nothing from that but stress and insecurity about how far along you are.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If you’re in the same boat as I, it’s definitely worth a read.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;I should know, I’m in it. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>iOS Programming Guide with Big Nerd Ranch</title>
+   <link href="https://johnathanlyman.com/2015/12/16/ios-programming-guide-with-big-nerd-ranch/"/>
+   <updated>2015-12-16T09:55:00+00:00</updated>
+   <id>https://johnathanlyman.com/2015/12/16/ios-programming-guide-with-big-nerd-ranch</id>
+   <content type="html">&lt;p&gt;I’m definitely looking forward to 2016. The latest iOS Programming Guide from Big Nerd Ranch drops on the 21st (just a couple days from now) and it’ll make a great 2016 project. Bring on the Swifts and Objective-C’s.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Harder Than it Should Be: Jekyll Word Count</title>

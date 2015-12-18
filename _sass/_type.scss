@@ -8,6 +8,9 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
   color: #313131;
   text-rendering: optimizeLegibility;
+  a {
+    text-decoration: none;
+  }
 }
 
 h1 {
@@ -52,11 +55,14 @@ dd {
 }
 
 hr {
-  position: relative;
-  margin: 1.5rem 0;
-  border: 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #fff;
+  max-width: 90%;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  background-color: #336699;
+  height: 1px;
+  margin-left:auto;
+  margin-right: auto;
+  border: none;
 }
 
 abbr {
@@ -73,7 +79,7 @@ abbr {
 
 blockquote {
   padding: .5rem 1rem;
-  margin: .8rem 0;
+  // margin: .8rem 0;
   color: #7a7a7a;
   border-left: .25rem solid #e5e5e5;
 
@@ -82,8 +88,8 @@ blockquote {
   }
 
   @media (min-width: 30em) {
-    padding-right: 5rem;
-    padding-left: 1.25rem;
+    // padding-right: 5rem;
+    // padding-left: 1.25rem;
   }
 }
 

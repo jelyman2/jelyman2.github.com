@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="/styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="alternate" type="application/atom+xml" title="Johnathan Lyman" href="/atom.xml">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700italic,700,300' rel='stylesheet' type='text/css'>
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -38,8 +39,8 @@
   
   <meta property="fb:admins" content="1586250162">
   <meta property="fb:app_id" content="114316288938899">
-  <script src="https://use.typekit.net/jdn4ymx.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <!-- <script src="https://use.typekit.net/jdn4ymx.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script> -->
 </head>
 
 
@@ -48,7 +49,7 @@
     <div class="container content">
       <header class="masthead">
         <h3 class="masthead-title">
-          <a href="/" title="Home">Johnathan Lyman</a>
+          <span>Johnathan Lyman</span>
           <small>Writer. Developer. Support Ops.</small>
         </h3>
         <ul class="navigation">
@@ -65,6 +66,200 @@
 
       <main>
         <div class="posts">
+  
+  <article class="post">
+    
+      <h1 class="post-title"><a href="/2015/01/24/tweeting-ghosts/" rel="bookmark" title="Ghostly Sharing to Twitter from Jetpack&#8217;s Publicize Plugin">Ghostly Sharing to Twitter from Jetpack&#8217;s Publicize Plugin</a></h1>
+    
+    <div class="post-meta">
+      <time datetime="2015-01-24T00:00:00+00:00" class="post-meta-entry">
+        <i class="fa fa-calendar"></i>
+        January 24, 2015
+      </time>
+      <span class="post-meta-entry">
+        <i class="fa fa-folder-open-o"></i>
+        Blog
+      </span>
+      <span class="post-meta-entry">
+        <i class="fa fa-keyboard-o"></i>
+        200 words
+      </span>
+    </div>
+    <p>A rather odd thing started happening shortly after I implemented Jetpack on this site. I was seeing my posts show up on twitter, which is nice and all, but not through the method I had set up. I describe how I set up automatic post scheduling for the various social networks in this past. These tweets were being written without a fancy permalink, which seemed odd and told me that it wasn’t something of my intentional doing. After doing some research, I discovered someone having an issue with the Publicize plugin not removing a social media account properly. In order to fix their issue, they re-added their account and removed it again.</p>
+
+<p>I figured it would be a stretch but I knew it couldn’t hurt anything so I tried that myself just to see what would happen. I Added my Facebook page, and after authorization, lo and behold, my twitter account showed up, too. It wasn’t previously authorized so I had a pretty good idea this ghost authorization was what was causing these unwanted shares. Un-linking my twitter account immediately solved the problem, and I was on my way to sharing the way I want to: WordPress &gt; IFTTT &gt; Buffer.</p>
+
+
+  </article>
+  <hr clas="post-separator" />
+  
+  <article class="post">
+    
+      <h1 class="post-title"><a href="/2015/01/24/ifttt-buffer/" rel="bookmark" title="How to Set up Automatic WordPress Blog Post Scheduling with IFT.TT, and Buffer">How to Set up Automatic WordPress Blog Post Scheduling with IFT.TT, and Buffer</a></h1>
+    
+    <div class="post-meta">
+      <time datetime="2015-01-24T00:00:00+00:00" class="post-meta-entry">
+        <i class="fa fa-calendar"></i>
+        January 24, 2015
+      </time>
+      <span class="post-meta-entry">
+        <i class="fa fa-folder-open-o"></i>
+        Blog
+      </span>
+      <span class="post-meta-entry">
+        <i class="fa fa-keyboard-o"></i>
+        680 words
+      </span>
+    </div>
+    <p>Let’s be honest. The year is 2015 and nobody wants to do things by hand or manually if they can help it. Companies are hiring people to automate the hell out of everything because like M.I.A (sort of, not really) <a href="http://go.jlyman.net/1JnTw3K">famously rapped</a>:</p>
+
+<blockquote>
+  <p>“<em>live fast, die young, robots do it well.</em>“I’ll admit, I like speeding up the process of sharing what I’ve written but I like controlling it a bit more than some. Here’s how I do it.</p>
+</blockquote>
+
+<p>You’ll want to create an account with <a href="http://go.jlyman.net/1Cpvd3e" title="IFTTT">IFTTT</a> and <a href="https://bufferapp.com">Buffer</a> if you haven’t already. IFTTT stands for <strong>IF</strong>  <strong>T</strong> his, <strong>T</strong> hen <strong>T</strong> hat. The premise is that you can take data being expelled from one service, and based on certain criteria, do something with it via another. Things like “Text me with the daily weather report at 5AM” are easy and, well, kind of cheesy. If you become a power user of IFT.TT or already are, you’ll know that there’s so much more you can do with the service like auto-tweet breaking news stories from news sources or trigger your Philips Hue home lighting to change color when a storm warning comes into effect.</p>
+
+<p>In my case, I want to sync IFTTT with my WordPress install. To start, I’ll need to create a new recipe and click on the blue <em>this</em> link (A) and choose the WordPress trigger channel (B). This will be the source for the data that IFTT uses.</p>
+
+<p><a href="https://i1.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/ifttt_step1.jpg"><img src="https://i0.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/ifttt_step1-1024x640.jpg?resize=629%2C393" alt="ifttt_step1" /></a></p>
+
+<p> </p>
+
+<p>Once I have that set, I can choose whether I want this action to be triggered by any new post from WordPress, or just when the post has a particular tag or category. In my case, I choose the former, because I want to share all posts.</p>
+
+<p><a href="https://i0.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/Screenshot-2015-01-24-20.48.33.png"><img src="https://i0.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/Screenshot-2015-01-24-20.48.33.png?resize=629%2C243" alt="Screenshot 2015-01-24 20.48.33" /></a></p>
+
+<p> </p>
+
+<p>We can skip Step 3 as there’s nothing else to set for these triggers and move on to step four. Click Create Trigger.</p>
+
+<p>So at this point we’ve established that if there’s any new post on WordPress Blog then we’ll do something. Now we establish what that something is. Click the blue _that _link. In my case, I want to share to Buffer.</p>
+
+<p><a href="https://i0.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/Screenshot-2015-01-24-20.51.36.png"><img src="https://i1.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/Screenshot-2015-01-24-20.51.29.png?resize=627%2C199" alt="Screenshot 2015-01-24 20.51.29" /></a></p>
+
+<p><a href="https://i0.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/Screenshot-2015-01-24-20.51.36.png"><img src="https://i0.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/Screenshot-2015-01-24-20.51.36.png?resize=627%2C262" alt="Screenshot 2015-01-24 20.51.36" /></a></p>
+
+<p> </p>
+
+<p>I will want to choose the “Add to Buffer” option since I won’t be pushing photos from my source. My final step is to set up how I want my shares to look and then I create my action.</p>
+
+<p><em>Note: If this is your first time, you’ll have to set up what account you want Buffer to schedule this IFTTT-pushed content on. </em></p>
+
+<p><a href="https://i2.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/Screenshot-2015-01-24-20.53.36.png"><img src="https://i2.wp.com/johnathanlyman.com/wp-content/uploads/2015/01/Screenshot-2015-01-24-20.53.36.png?resize=627%2C308" alt="Screenshot 2015-01-24 20.53.36" /></a></p>
+
+<p>There are a couple things to keep in mind when setting this up. Anything pushed from IFTTT to Buffer: 1) will be set to whatever schedules you have created and 2), will only be pushed to whatever social media account you have set up for this channel. You can only have one social media account chosen for this type of setup.</p>
+
+<p>If you want to use more than just one social media account to share you content, I recommend creating separate recipes for each. Granted, only one of them will be scheduled via Buffer, so keep that in mind. In my situation, I don’t really mind, and I use Buffer so much already that I like having the ability to manually schedule for other social media accounts that don’t get as much regular pushing of content.</p>
+
+<h3 id="all-done">All Done!</h3>
+<p>It’s that simple. If you have account with IFTTT and Buffer already set up, this will take you thirty seconds to do. You’ll find this thirty seconds will save you time in the long run and will become something that you don’t even think about at the end of the day.</p>
+
+<p>Sure you could use WordPress plugins, too, and that’s all fine and dandy. I’m not stopping you! This is how I like to do it and I figured someone out there might like to know.</p>
+
+<p>Thanks for stopping by, have a good one!</p>
+
+<p> </p>
+
+<p> </p>
+
+
+  </article>
+  <hr clas="post-separator" />
+  
+  <article class="post">
+    
+      <h1 class="post-title"><a href="/2015/01/24/for-february/" rel="bookmark" title="Looking Ahead to February">Looking Ahead to February</a></h1>
+    
+    <div class="post-meta">
+      <time datetime="2015-01-24T00:00:00+00:00" class="post-meta-entry">
+        <i class="fa fa-calendar"></i>
+        January 24, 2015
+      </time>
+      <span class="post-meta-entry">
+        <i class="fa fa-folder-open-o"></i>
+        Blog
+      </span>
+      <span class="post-meta-entry">
+        <i class="fa fa-keyboard-o"></i>
+        798 words
+      </span>
+    </div>
+    <p>I missed writing yesterday, for the first time in almost three weeks but I had good reason. I was testing out an alarm clock app on my iPhone that plays gentle sounds that are supposed to gradually wake you. I thought this would be a great idea as I’m all about waking up to something less than an apocalypse coming from a bedside table. I promise this is going somewhere and is related to what I eventually want to talk about.</p>
+
+<p>The first night I tried this app, it didn’t work. Turns out, it’s useless when you blatantly lock the phone. The notifications it throws are also useless in alerting you that it’s time to wake if you use the night-time privacy setting, like I do. After the first morning, all I got were a bunch of notifications that meant nothing to me anymore and was instead awoken by my wife, who just happened to be awake at the time.</p>
+
+<p>The second night, I did a bit of poking around and found out that an app cannot play sounds while the phone is locked without user intervention. This is why I can play music and sounds all day so long as I tap a play button but an alarm clock app cannot automatically start making music. The workaround for my new alarm clock app friend is to leave the screen open, don’t let it lock, and just darken it after X minutes passes. That’s all find and dandy. The first few minutes the screen was on didn’t bother me as the screen was technically pretty dark to begin with; the UI elements weren’t bright at all, likely by design for night usage.</p>
+
+<p>Come morning, however, this is where I realized I need a bit more push than gentle sounds to wake me up. I set my alarm for 3:30am to start making noise and work its way through sounds that get louder and more abrasive. Turns out, that did very little. It took two hours for me to notice my alarm was going off, a.k.a. 5:30am. Most days, I would be walking out the door at that point. With a small change of plans, I started rushing through my morning and I started remembering exactly why I get up earlier. Having the extra time to spin up every morning is much nicer and feels much better than getting more sleep. I’d trade an hour and a half of sleep for an hour and a half of time I can be productive, any day, so long as it’s in the morning. I’m not so much a fan of staying up late at night because by around 8pm, I’m pretty tired and staying up later doesn’t yield much productivity.</p>
+
+<p>So anyway, back to my original topic of discussion. Because I missed my alarm, that was apparently going off for two hours like it was no big deal, I missed a writing session. I would have been writing from 4:15 to 5:15 or so and my creative juices would have been flowing. I told myself it was going to be all right and I was still meeting <a href="http://johnathanlyman.com/p/203/smart" title="Being S.M.A.R.T about Blogging Goals for the New Year">my goals for writing</a> something substantial at least twice a week. However, it got me thinking about expanding that idea and having two substantial posts and a few more minor posts talking about smaller topics. Here’s where we get into plans for February.</p>
+
+<p>To say I don’t write enough isn’t quite accurate. I think at this point in time, based on recent history—three weeks—I’m writing plenty, that’s not the modification to my goal. What I want to start enforcing with myself is that I write every day of the week, no matter what and no matter how short or long the posts are, so long as I have two substantial posts per week. This plays on my old goals and gives me something to fill in for the remaining days of the week. I was thinking to myself just this morning that I could skip writing today because I’m still meeting my goals, but I really don’t want to skip writing. I enjoy writing. I enjoy telling a story about something that happened to me. I like sharing an experience. I like giving a tutorial or sharing instructions.</p>
+
+<p>So be it. Every day, I’m writing more. March, I’ll up the ante, again in a small way—so as to not over-burden myself and end up quitting—and so on. Starting with February, I’m sticking to a daily writing routine with two days of substantial content and five days of shorter topics, minimum. I won’t stop myself from putting down three thousand words on a subject if I feel like it, I just won’t require it (yet).</p>
+
+
+  </article>
+  <hr clas="post-separator" />
+  
+  <article class="post">
+    
+      <h1 class="post-title"><a href="/2015/01/24/commitment-issues/" rel="bookmark" title="I&#8217;m Sorry, I Have Commitment Issues">I&#8217;m Sorry, I Have Commitment Issues</a></h1>
+    
+    <div class="post-meta">
+      <time datetime="2015-01-24T00:00:00+00:00" class="post-meta-entry">
+        <i class="fa fa-calendar"></i>
+        January 24, 2015
+      </time>
+      <span class="post-meta-entry">
+        <i class="fa fa-folder-open-o"></i>
+        Blog
+      </span>
+      <span class="post-meta-entry">
+        <i class="fa fa-keyboard-o"></i>
+        1839 words
+      </span>
+    </div>
+    <p>I hope the title drew you in a bit because unfortunately I’m not talking about anything super juicy. I do a lot of different things here and there that relate to my career in the IT field as well as activities that have zero to do with it. I’ll admit, I enjoy my job and the new challenges it brings, but sometimes, at the end of the day, I just want to see someone else play video games. Other days, I want to keep my options open <a href="http://jlymanphotography.net">go photograph a sunset</a>. That doesn’t make me a bad person, it just makes me easy to distract. Fortunately, I don’t have that problem with my personal relationships, or I’m sure my wife would kill me. Moving on…</p>
+
+<p>Let me start by saying that I don’t have a huge list of hobbies for good reason. If I did, I wouldn’t ever finish any of them. I have a few things I really enjoy and I tend to stick with them. These things include photography, writing, web design, and gaming. I’m going to break these down into their own parts and describe what about them is important to me and why, at times, it takes precedence over everything else. </p>
+
+<h2 id="photography">﻿Photography</h2>
+<p>As a hobby, I believe it to be the most serious one, as it is the one I have sunk the most money into. I have yet to turn a profit, and part of that is intentional. I really enjoy making photographs, but I do not have the time to make it a full-time job, yet. Perhaps someday in the future, I will be able to live off of print sales, but the odds are not in my favor and I would rather not bet against the house on that one.</p>
+
+<p>Over the last few years, I kept telling myself I would spend more time making photographs than I did the year prior. While that statement has mostly been hot air, there has been some truth to it. I have created more quality photos in 2014 than I did in 2013, and 2015 is already starting off on the right foot, with more quality photos made than in the same month a year prior. I believe the trend will continue, so long as I do not find myself getting caught up in everything else, which might happen.</p>
+
+<p>I put photography first on my list because it is the hobby I see myself sticking with the longest. It allows me to get out and adventure more than anything else I do, mainly because everything else I do is a largely stationary activity. One does not frag noobs in the forest. The biggest hurdle and detractor from making this hobby an even more serious part of my life is motivation. In 2014, I visited places I had never seen before, and likely would have never visited. It gave me an excuse to up to the mountains and stand around looking at nature. I don’t know many people who willy-nilly drive almost three hours each way to stand around. I’m sure most people would extrapolate that a bit and call it hiking; I’m not much of a hiker if I don’t have my camera. </p>
+
+<p>In 2015, big life changes are coming my way and that has and will continue to be my motivation to get out more and shoot while I still can. My wife and I won’t likely be coming back to the Seattle area for at least five years, maybe six or seven. That’s a long time to be away from great locations to shoot.</p>
+
+<h2 id="writing">Writing</h2>
+<p>With writing, I don’t have a problem actually doing it. I really enjoy it. In fact, this particular post is my fourth for the day. It’s a great way to kill time and stimulate my mind simultaneously. It’s better than playing video games and watching TV. It’s not as stimulating as photography, however, but it’s not very warm outside right now. If we were currently in the summer season, I might be sitting outside or at least with the window open, getting some natural air and light exposure. Right now, it’s dark and bleh.</p>
+
+<p>My largest hurdle with writing is motivation, just like photography. It’s easy to say that I’ll do it later or I’d rather play video games because I’m tired of typing. In reality, typing is just a thing, like breathing, that happens when I write. I can type for hours if I have something to type. ﻿Once I get the spark that ignites my internal writing engine, I can hammer out a college paper in a few hours or a story on cheap taxidermy in no time at all, without even thinking about it. My mind just flows and whatever is up next gets put onto the digital paper.</p>
+
+<p>My lack of commitment to writing is already actively being addressed via several angles. First, I formally started up this blog by taking the Ten Days to a Better Blog challenge (also referred to as #10DaysBetterBlog). It was a simple challenge/workshop that involved writing for ten days straight and in the meantime, working out the kinks that prevent you from being able to write consistently and making realistic goals for yourself to build up your writing lifestyle. It didn’t have anything to do with writing styles, topics, or anything of the sort. Search Engine Optimization wasn’t a part of it, either. The idea was solely that no matter what, you should never not write. Writing is a great way to voice opinions, ideas, thoughts, and help others. Even if the topics are seemingly random, it still helps in two ways by helping you learn to write more and get used to the idea of putting your ideas and thoughts on digital (or even regular) paper and the possibility that someone might stumble upon something you wrote at one time and it ends up helping them with whatever issue they were having that may or may not have been related to what you were talking about.</p>
+
+<p>One I stated getting into the workshop, I started changing my morning routine, too. I now wake up 90 minutes earlier every day so I can take time and write. It gets me going in the morning and gets me thinking about something worthwhile. I find that self-discovery and reflection is a great thing to do in the morning. Plus, I’ve gotten used to sleeping a more consistent schedule so I’m not always so groggy in the morning. Before I hacked my morning routine, I felt rushed and grumpy every morning as I was heading into work. I didn’t feel useful or productive until well into mid-morning, and it was starting to piss me off. I really can thank the #10DaysBetterBlog challenge/workshop for the assist in getting my morning crap worked out. </p>
+
+<h2 id="web-design">Web Design</h2>
+<p>I like working with the Web. To say I’m a designer isn’t really true in the strict sense of it, but I think it still technically fits. I’m always working on a new way to display my site and am constantly tweaking it. Would something like that land me a job doing it full time? Probably not. Typically companies are looking for more than just someone who likes tweaking with their web server settings every now and then after discovering some crazy new tool or script that does this one thing that no one will ever know about and may not actually be useful in any way.</p>
+
+<p>I took the time on purpose to build up this site from scratch. I built the server, installed the proper software, configured it, installed and configured WordPress, and more, all on my own, all intentionally. It’s stuff I like to do. I’m sure there are a lot of different ways to go about doing what I just described and there are many different series that do that for you because frankly some people just don’t have the time to tweak and screw with stuff to get it to work. If I felt that way, I’d be all over those services, too. ﻿I like to think that learning more about how the inner workings of a web server actually function would help me in my career. I don’t do it just for giggles. </p>
+
+<p>One thing I want to work on for 2015 is taking the time to deep dive into a particular technology and understand it fully. For example, I know what Memcached is, and I could get it running with reference material, but that’s it. If I wanted to excel in that tech, I’d need to know it inside and out and really understand how it works and what its strengths and weaknesses are. Same goes for a lot of services tech companies use these days like NodeJS, Cassandra, Hadoop, etc. </p>
+
+<h2 id="gaming">Gaming</h2>
+<p>I’ve always had this idea in the back of my head that one day I’ll be able to play video games professionally. I see people on YouTube who do it and do it well and they make loads of cash. Granted they’ve spent a vast amount of time getting to where they are now. I don’t know if I’d ever be able to make it that far with everything else I have going on and with the fact that at times, I’ll go a few months without playing more than a couple hours worth of video games. At my current pace, I’ll become a pro gamer in the year 2150. Good thing I bought a Turtle Beach Major League Gaming-branded headset to shout into when I’m playing Destiny and smoking fools. ﻿</p>
+
+<p>I don’t have any desire to change the level of commitment I have to this hobby. It’s a great distraction when I don’t want to think about much and would rather veg and checkout from reality for a bit. I can totally understand why some people play games non stop. There’s a whole different world in each game that doesn’t involve anything remotely like being yourself. You really could be anybody and that’s kind of creepy but cool at the same time. </p>
+
+<h2 id="at-the-end-of-the-day">At the End of the Day…</h2>
+<p>I’m not that bad. I’m sorry I don’t spend enough time with you. I understand your needs are important but to be honest, my needs are, too. Sometimes they change a bit. Don’t think I forget about you, though. I never forget, which is why I keep coming back. Just don’t expect me to constantly pay attention to you. ﻿I enjoy keeping it fresh. We’ll go on that hike soon and I’m sure we’ll have some great views and come back with some awesome memories. Likewise, I’m sure I’ll get around to that book I’ve always been meaning to write with you.Don’t forget I bought you that pass so we could spend more time together making fools out of our enemies. I got that because I knew we could enjoy it together, I just wasn’t expecting you to want that all the time. </p>
+
+
+  </article>
+  <hr clas="post-separator" />
   
   <article class="post">
     
@@ -90,6 +285,7 @@
 
 
   </article>
+  <hr clas="post-separator" />
   
   <article class="post">
     
@@ -127,6 +323,7 @@
 
 
   </article>
+  <hr clas="post-separator" />
   
   <article class="post">
     
@@ -178,6 +375,7 @@
 
 
   </article>
+  <hr clas="post-separator" />
   
   <article class="post">
     
@@ -225,6 +423,7 @@
 
 
   </article>
+  <hr clas="post-separator" />
   
   <article class="post">
     
@@ -262,6 +461,7 @@
 
 
   </article>
+  <hr clas="post-separator" />
   
   <article class="post">
     
@@ -310,167 +510,9 @@ That’s the idea. Yesterday was a bit rough as I woke up at a more in-opportune
 
 
   </article>
+  <hr clas="post-separator" />
   
-  <article class="post">
-    
-      <h1 class="post-title"><a href="/2015/01/12/smart/" rel="bookmark" title="Being S.M.A.R.T about Blogging Goals for the New Year">Being S.M.A.R.T about Blogging Goals for the New Year</a></h1>
-    
-    <div class="post-meta">
-      <time datetime="2015-01-12T00:00:00+00:00" class="post-meta-entry">
-        <i class="fa fa-calendar"></i>
-        January 12, 2015
-      </time>
-      <span class="post-meta-entry">
-        <i class="fa fa-folder-open-o"></i>
-        Blog
-      </span>
-      <span class="post-meta-entry">
-        <i class="fa fa-keyboard-o"></i>
-        1198 words
-      </span>
-    </div>
-    <p>If you’re still with me, I’m on day eight of the <a href="/c/10daysbetterblog">#10DaysBetterBlog</a> challenge/workshop/event put on by <a href="http://john.do">John Saddingto</a>n of <a href="http://desk.pm" title="Desk.pm">Desk.pm</a> fame. He’s on year 14 of blogging so chances are he knows a thing or two. Today’s topic has to do with coming up with goals in relation to where I want my blogging to go using the S.M.A.R.T. principle. It is outlined like so:</p>
 
-<ul>
-  <li><strong>Specific</strong> – target a specific area for improvement.</li>
-  <li><strong>Measurable</strong> – quantify or at least suggest an indicator of progress.</li>
-  <li><strong>Assignable</strong> – specify who will do it.</li>
-  <li><strong>Realistic</strong> – state what results can realistically be achieved, given available resources.</li>
-  <li><strong>Time-related</strong> – specify when the result(s) can be achieved.
-Those seem easy enough. When placed over the idea of writing, it seemed a bit daunting at first but that’s really only because I just started doing so consistently. Here’s a breakdown of how the above translates to me and the whole idea of writing and blogging:</li>
-</ul>
-
-<h2 id="specific-target-area">Specific Target Area</h2>
-<p>I know I can produce quality writing if I just sit down and do it. I’ve never had a problem with that. I enjoy telling stupid stories, giving slightly janky points of view on seemingly random things, and also talking about real stuff that I find important. I don’t care so much if I’m maximizing my potential audience by covering as many topics as possible, because that’s my why I’m posting this—or anything—to my site. I need to focus on actually doing. I say I’ll become a master of X subject and never actually follow through with it. I’ll say I’ll go on more hikes next year because my gut says I could lose a few. I might not be able to control those things in this scenario. I can say this: if a bear craps in the woods, then I’m writing. I’m not talking about telling a story about a bear cutting pipe. I’m talking about the assurance that words will flow out of my mind, through my hands, into my keyboard, through the bits and digital stuff inside my computer, blah blah blah, to where you can see it.</p>
-
-<p>TL;DR: WRITE.PERIOD.</p>
-
-<h2 id="measurable-progress">Measurable Progress</h2>
-<p>My first blog post since I started writing daily was on <a href="http://johnathanlyman.com/p/73/ugg" title="Ugg Boots to an Interview for America?">January 6th, 2014</a>, which as I write this, was six days ago. It’s easy for me to say that since I’ve conquered seven days, including this post, without stopping, I could bust out a whole year. Whether or not that’s true, nobody will know, because I don’t feel like it’s realistic! I’m writing every day because I made a promise to myself that I’d do this challenge and see it through to completion. I never said “I’m going to write at least 365 blog posts over the course of the year, with at least one per day, or I’ll eat my hat.” That’s stupid. Unless I worked for a publication that required articles to be created in the turn-and-burn style, I’d get maybe a month into it and burn out.</p>
-
-<p>I need to make myself a little bit more seriously and treat blogging and writing as a form of genuine expression. Because of my personality, if I’ve been talking <em>all day</em>, I tend to get bored of people and bored of talking. Just like talking, I’d get bored of writing. Why sit down at my computer and but out some words about something that I may care a grand total of zero percent about for twenty minutes when I could sit in front of my T.V. and not even have to think about using my brain. Exactly. That’s stupid. Even in school I enjoyed writing papers not because it was homework (that was quite foul), but that I was writing about a topic. I didn’t write every single damn day and I was alright with that. I hated the topic I was writing about, but I enjoyed the fact that I was writing about it.</p>
-
-<p>Being able to split up my writing adventures to a couple times a week is much more manageable because I can spend more time, perhaps over a few days, and craft a more quality piece, than some lame three hundred words on how tasty Garlic Jim’s pizza is. (side note: it’s delicious.)</p>
-
-<p>My measurement of progress is that I’m writing two to four pieces a calendar week, with two being the hard minimum. I need to still keep myself to a commitment, just like people commit to stop smoking. It’s hard to start, but with a hard limit like dying when it comes to smoking, having a hard limit on how few of times I sit down and put my thoughts on paper must be a thing, no matter what.</p>
-
-<h2 id="assignable">Assignable</h2>
-<p>If it’s not obvious by now, this goal is mine and mine alone. No one else needs to be responsible for my writing tasks, assignments, topics, or anything of the sort. This is my beast so let me conquer it. By making this a solo task, this is something I can wholly own and have zero fear of something outside that I cannot control mucking it up.</p>
-
-<h2 id="realism">Realism</h2>
-<p>Which brings me to this. As the popular saying goes: shit happens. It happened this morning when I twisted my ankle in the dark while walking the dog. Could I have done something about it? I don’t know, it was dark. I haven’t figured out how to turn on my night vision eyes, yet. With writing, sometimes life will get in the way and I’m completely OK with that. If I miss a week, then I’ll do my best to make up for it next week. If I know I’ll be missing a week in advance, I’ll put in extra time the previous week and schedule it out. WordPress has this fancy post-scheduling feature. While not as genuine and not as on-the-spot as some would like, I think I’m still totally genuine and real and on-the-spot. What I write down rarely gets condensed, censored, edited for time, etc. I just write. That’s always been one of my stronger traits when it came to writing; I hate outlines and I hate planning my words.</p>
-
-<p>Secret: corporate, politically correct emails are the bane of my existence.</p>
-
-<h2 id="deadlines">Deadlines</h2>
-<p>I’m giving my self 1/4 year (13 weeks). If I can sit down and discuss quality topics with quality time at least twice a week, but no more than four, for 13 weeks, then I’m in business. If I make it, I’ll do it again, but add another stipulation. If I fail, I’ll pull back a bit. I think it’s doable. Given the possibility of the next six months to a year changing quite radically and a whole host of new experiences coming my way, I don’t think I’ll have an issue. I’m pretty confident I’ll have enough to talk about.</p>
-
-<hr />
-<p><em>Read more from my <a href="/c/10daysbetterblog">#10DaysBetterBlog</a> challenge to stay in the loop with my progress and the challenge as a whole. Follow me on a twitter <a href="//twitter.com/theejl">@theejl</a>, Instagram <a href="//instagram.com/jlymanphoto">@jlymanphoto</a>, or <a href="http://johnathanlyman.com/contact" title="Contact">email me</a> if you’re adventurous.</em></p>
-
-
-  </article>
-  
-  <article class="post">
-    
-      <h1 class="post-title"><a href="/2015/01/11/analytics/" rel="bookmark" title="Analytics">Analytics</a></h1>
-    
-    <div class="post-meta">
-      <time datetime="2015-01-11T00:00:00+00:00" class="post-meta-entry">
-        <i class="fa fa-calendar"></i>
-        January 11, 2015
-      </time>
-      <span class="post-meta-entry">
-        <i class="fa fa-folder-open-o"></i>
-        Blog
-      </span>
-      <span class="post-meta-entry">
-        <i class="fa fa-keyboard-o"></i>
-        244 words
-      </span>
-    </div>
-    <p>I’m cheating a little bit.</p>
-
-<p>See, I’m doing the <a href="/c/10daysbetterblog">#10DaysBetterBlog</a> challenge as a starting point to build up my blog, but after I started, I realized the last day of the challenge overlapped onto a day I’m taking vacation and probably won’t be writing much, at all. So I wrote this post, along with my day 6 post. Perhaps it’t not exactly cheating but I’d rather do two in one day than miss a day.</p>
-
-<p>As I start building up this blog, one thing I want to keep track of is the content people enjoy the most and how long they enjoy it for before leaving. I’ve installed Google Analytics and am hoping I get some good data out of it.</p>
-
-<p>This will also include links from social networks, as I am building them with the “utm” variables in the URLs so as to accurately determine via which method people are visiting the site and reading my content.</p>
-
-<p>One thing I know may be surprising is what people find most interesting. Topics, stories, and ideas I like may not resonate as well with others and they might enjoy stuff I don’t cover as often. This is what the analytics should tell me.</p>
-
-<hr />
-<p><em>Read more from my <a href="/c/10daysbetterblog">#10DaysBetterBlog</a> challenge to stay in the loop with my progress and the challenge as a whole. Follow me on a twitter <a href="//twitter.com/theejl">@theejl</a>, Instagram <a href="//instagram.com/jlymanphoto">@jlymanphoto</a>, or <a href="http://johnathanlyman.com/contact" title="Contact">email me</a> if you’re adventurous.</em></p>
-
-
-  </article>
-  
-  <article class="post">
-    
-      <h1 class="post-title"><a href="/2015/01/11/about/" rel="bookmark" title="New About Page">New About Page</a></h1>
-    
-    <div class="post-meta">
-      <time datetime="2015-01-11T00:00:00+00:00" class="post-meta-entry">
-        <i class="fa fa-calendar"></i>
-        January 11, 2015
-      </time>
-      <span class="post-meta-entry">
-        <i class="fa fa-folder-open-o"></i>
-        Blog
-      </span>
-      <span class="post-meta-entry">
-        <i class="fa fa-keyboard-o"></i>
-        144 words
-      </span>
-    </div>
-    <p>I was able to stick to my routine this morning and sat down to craft my About page. I’ve never really spent much time working on it so reflecting on who I am and how I got here was actually very helpful in deciding what to write and what to share. Looking back, I can’t really think of a good reason why I didn’t write one before, except for the idea that I just didn’t take it very seriously. 2015 is full of changes, including this one. Now if you’ll excuse me, I need some coffee!</p>
-
-<p><a href="http://johnathanlyman.com/about" title="About">Read about yours truly here</a>.</p>
-
-<hr />
-<p><em>Read more from my <a href="/c/10daysbetterblog">#10DaysBetterBlog</a> challenge to stay in the loop with my progress and the challenge as a whole. Follow me on a twitter <a href="//twitter.com/theejl">@theejl</a>, Instagram <a href="//instagram.com/jlymanphoto">@jlymanphoto</a>, or <a href="http://johnathanlyman.com/contact" title="Contact">email me</a> if you’re adventurous.</em></p>
-
-
-  </article>
-  
-  <article class="post">
-    
-      <h1 class="post-title"><a href="/2015/01/10/half/" rel="bookmark" title="Half-Way There">Half-Way There</a></h1>
-    
-    <div class="post-meta">
-      <time datetime="2015-01-10T00:00:00+00:00" class="post-meta-entry">
-        <i class="fa fa-calendar"></i>
-        January 10, 2015
-      </time>
-      <span class="post-meta-entry">
-        <i class="fa fa-folder-open-o"></i>
-        Blog
-      </span>
-      <span class="post-meta-entry">
-        <i class="fa fa-keyboard-o"></i>
-        529 words
-      </span>
-    </div>
-    <p>Today marks my half-way point on my <a href="/c/10daysbetterblog">#10DaysBetterBlog</a> journey.</p>
-
-<p>This site has served many purposes over the last couple of years, and none of them have really taken off. Looking back on how my routines have changed and what I am spending more time focusing on, I can really tell that at some point in the future that I can’t determine (yet), this site will finally become a permanent and consistent place for me to write and share my voice and thoughts.</p>
-
-<p>One thing I’ve always thought about doing is starting a full-on tech blog, but the work involved is greater than the amount of time I have to spend, right now. I’m sure that’ll change in the future, and when it does, I’ll revisit the idea. In the mean time, I’m content with this one property.</p>
-
-<p>While thinking about how my routines have changed, I know I still have a small struggle with the weekends. Over the last few days, I’ve been writing early in the morning before I leave for work and it’s been helping me start my day in a more gradual and stimulating fashion. The weekend is still a struggle though because subconsciously I know I don’t have anywhere to be in particular so why should I bother getting up early? Since hindsight is always 20/20, I can tell my 8 hour-past self that I wouldn’t feel like crap for sleeping 14 hours and my day wouldn’t be half-wasted away. I could have done a ton of stuff in the 5-7 hours I could have had as extra if I stuck to the routine I set up during the week.</p>
-
-<p>With any new habit, it takes time to break out of the old one and build up a new one, so tomorrow is always another opportunity to try again.</p>
-
-<p>One of my end goals with this blog is to be able to write about one particular complete topic related to the previous day. I know there are so many different things that happen all the time that I could have enough content for years, but a lot of it I don’t keep record of or even remember. I can’t remember where I read it but a statistic stated that we only remember roughly 6% of what happened the day before. Maybe that number is higher, but I also remember that within a week, that number drops to 1%. I know I can agree on the second number because this time last weekend, I remember very little of what I was doing…</p>
-
-<p>I don’t want to just write about a random smattering of things, though. I want to keep it to topics I find interesting and relevant… stuff that describes myself and my interests, not just what I ate for breakfast, yesterday (oatmeal). It’ll take a bit of time to build up, but I’ll get there. Keeping my self writing everyday will help do that.</p>
-
-<hr />
-<p><em>Read more from my <a href="/c/10daysbetterblog">#10DaysBetterBlog</a> challenge to stay in the loop with my progress and the challenge as a whole. Follow me on a twitter <a href="//twitter.com/theejl">@theejl</a>, Instagram <a href="//instagram.com/jlymanphoto">@jlymanphoto</a>, or <a href="http://johnathanlyman.com/contact" title="Contact">email me</a> if you’re adventurous.</em></p>
-
-
-  </article>
-  
 </div>
 
 <div class="pagination">
@@ -486,7 +528,7 @@ Those seem easy enough. When placed over the idea of writing, it seemed a bit da
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2015-12-16T00:44:28+00:00">2015</time>. Blog by Johnathan Lyman. All rights reserved.
+          &copy; <time datetime="2015-12-18T20:31:04+00:00">2015</time>. Blog by Johnathan Lyman. All rights reserved.
         </small>
       </footer>
     </div>
